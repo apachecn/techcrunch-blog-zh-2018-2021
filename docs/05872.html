@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Exclusive: Baseband attacks can spy on popular Android phones</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">独家:基带攻击可以窥探流行的安卓手机</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/11/08/android-baseband-flaws/">https://web.archive.org/web/https://techcrunch.com/2019/11/08/android-baseband-flaws/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">安全研究人员发现，几款流行的Android手机可以利用一个弱点，让配件访问手机的底层基带软件，从而被诱骗窥探其所有者。</p>
+<p class="translated">攻击者可以利用这种访问欺骗易受攻击的手机放弃他们的唯一标识符，如IMEI和IMSI号码，降级目标的连接以拦截电话呼叫，将呼叫转移到另一部手机或完全阻止所有电话呼叫和互联网接入。</p>
+<p class="translated">这项与TechCrunch独家分享的研究影响了至少10款受欢迎的安卓设备，包括谷歌的Pixel 2、华为的Nexus 6P和三星的Galaxy S8+。</p>
+<p class="translated">漏洞是在用于与基带固件通信的接口中发现的，基带固件是允许手机调制解调器与手机网络通信的软件，例如打电话或连接到互联网。鉴于其重要性，基带通常是设备其余部分的禁区，包括其应用程序，并且通常带有命令黑名单，以阻止非关键命令运行。但是研究人员发现，许多Android手机无意中允许蓝牙和USB配件(如耳机和头戴式耳机)访问基带。通过利用易受攻击的附件，攻击者可以在连接的Android手机上运行命令。</p>
+<p class="translated">“这些攻击的影响从敏感的用户信息暴露到完全的服务中断，”Syed Rafiul Hussain和Imtiaz Karim，这两位<a href="https://web.archive.org/web/20230306050601/https://www.documentcloud.org/documents/6543391-ATFuzzer.html">研究</a>的共同作者，在给TechCrunch的一封电子邮件中说。</p>
+<p class="translated">Hussain和他的同事，普渡大学的Imtiaz Karim、Fabrizio Cicala和Elisa Bertino以及爱荷华大学的Omar Chowdhury将于下个月在T2展示他们的发现。</p>
+<div class="article-block block--pullout block--right">
+<blockquote><p class="translated">"这些攻击的影响从敏感的用户信息暴露到完全的服务中断不等."<br/>T5【赛义德·拉菲尔·侯赛因】伊姆蒂亚兹·卡里姆</p></blockquote>
+</div>
+<p class="translated">基带固件接受被称为AT命令的特殊命令，这些命令控制设备的蜂窝功能。这些命令可以用来告诉调制解调器拨打哪个电话号码。但是研究人员发现这些命令是可以被操纵的。研究人员开发了一个名为ATFuzzer 的工具<a href="https://web.archive.org/web/20230306050601/https://github.com/Imtiazkarimik23/ATFuzzer/?=techcrunch">，它试图找到AT命令中潜在的问题。</a></p>
+<p class="translated">在他们的测试中，研究人员发现了14个命令，可以用来欺骗易受攻击的Android手机泄露敏感设备数据，并操纵电话呼叫。</p>
+<p class="translated">但是并不是所有的设备都容易受到相同命令的攻击，也不是所有的设备都能以相同的方式被操纵。例如，研究人员发现，某些命令可以欺骗Galaxy S8+手机泄露其IMEI号码，将电话呼叫重定向到另一部手机，并降低其手机连接的等级——所有这些都可以用来窥探和监听电话呼叫，例如被称为“黄貂鱼”的专业手机窥探硬件其他设备不易受到呼叫操纵的攻击，但容易受到可用于阻止互联网连接和电话呼叫的命令的影响。</p>
+<p class="translated">这些漏洞不难利用，但需要满足所有适当的条件。</p>
+<p class="translated">Hussain和Karim说:“对手可以通过廉价的蓝牙连接器或设置恶意的USB充电站轻松实施攻击。换句话说，如果一个配件可以通过互联网访问，比如一台电脑，就有可能操纵一部手机。或者，如果手机连接到蓝牙设备，攻击者必须在附近。(蓝牙攻击并不困难，鉴于<a href="https://web.archive.org/web/20230306050601/https://techcrunch.com/2018/11/01/bleedingbit-security-flaws-bluetooth-wireless-networks/">中的漏洞，一些设备如何实现蓝牙</a>使得一些设备比其他设备更容易受到攻击。)</p>
+<p class="translated">“如果你的智能手机与耳机或任何其他蓝牙设备相连，攻击者可以首先利用蓝牙连接的固有漏洞，然后注入那些畸形的AT命令，”研究人员说..</p>
+<p class="translated">三星认识到了其部分设备的漏洞，并正在推出补丁。截至发稿时，华为未予置评。谷歌表示:“报告的问题要么符合蓝牙规范，要么无法在安装了最新安全补丁的Pixel设备上重现。”</p>
+<p class="translated">侯赛因说，iPhones没有受到这些漏洞的影响。</p>
+<p class="translated">这项研究成为检查基带固件漏洞的最新成果。多年来，有几篇论文研究了各种具有基带漏洞的手机和设备。虽然这些报告很少，但安全研究人员长期以来一直警告说，情报机构和黑客都可能利用这些缺陷发动无声攻击。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

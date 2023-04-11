@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>A software bug let malware bypass macOS' security defenses • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">一个软件漏洞让恶意软件绕过macOS的安全防御TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2021/04/26/shlayer-mac-malware-macos-security/">https://web.archive.org/web/https://techcrunch.com/2021/04/26/shlayer-mac-malware-macos-security/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated"><span class="featured__span-first-words">苹果已经花了</span>年时间用新的安全功能来增强macOS，使恶意软件更难侵入。但是，一个新发现的漏洞通过双击一个恶意应用程序突破了macOS的大多数较新的安全保护，这一壮举在苹果的手表下是不允许的。</p>
+<p class="translated">更糟糕的是，有证据显示，一个臭名昭著的Mac恶意软件家族已经利用这个漏洞数月之久，随后在本周被苹果公司修补。</p>
+<p class="translated">多年来，MAC电脑通过设置技术障碍来适应捕捉最常见的恶意软件类型。事实上，macOS会标记伪装成从互联网下载的文档的潜在恶意应用程序。如果macOS没有审查该应用程序——苹果<a href="https://web.archive.org/web/20230221211440/https://techcrunch.com/2020/08/31/apple-notarized-mac-malware/">称之为公证</a>——或者如果它不承认其开发者，该应用程序将不会被允许在没有用户干预的情况下运行。</p>
+<p class="translated">但是安全研究员<a href="https://web.archive.org/web/20230221211440/https://twitter.com/cedowens">塞德里克·欧文斯</a>表示，他在三月中旬发现的漏洞绕过了这些检查，并允许恶意应用程序运行。</p>
+<p class="translated">Owens告诉TechCrunch，这个漏洞允许他建立一个潜在的恶意应用程序，看起来像一个无害的文件，当打开时，它会绕过macOS的内置防御。</p>
+<p class="translated">他告诉TechCrunch:“用户只需双击鼠标，macOS不会出现任何提示或警告。Owens构建了一个伪装成无害文档的概念验证应用程序，利用该漏洞推出了计算器应用程序，这是一种证明该漏洞在没有恶意软件的情况下工作的方式。但他解释说，恶意攻击者可以利用这一漏洞，通过诱骗受害者打开伪造的文档来远程访问用户的敏感数据。</p>
+<p/><div id="attachment_2140253" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2140253" decoding="async" class="breakout wp-image-2140253" src="../Images/374d5613f937c56f728c389100ee04e3.png" alt="GIF showing a proof of concept app opening uninhibited on an unpatched macOS computer." data-original-src="https://web.archive.org/web/20230221211440im_/https://techcrunch.com/wp-content/uploads/2021/04/popping-calc.gif"/><p id="caption-attachment-2140253" class="wp-caption-text translated">这款概念验证应用伪装成无害文档，运行在未打补丁的macOS机器上。(图片:已提供)</p></div>
+<p class="translated">由于担心攻击者滥用这一漏洞，欧文斯向苹果公司报告了这一漏洞。</p>
+<p class="translated">苹果告诉TechCrunch，它修复了macOS 11.3中的漏洞。苹果还为早期的macOS版本打了补丁以防止滥用，并推出了macOS内置反恶意软件引擎XProtect的更新规则，以阻止恶意软件利用该漏洞。</p>
+<p class="translated">欧文斯要求Mac安全研究员帕特里克·沃德尔调查这个漏洞是如何工作的，以及为什么会这样。在今天的一篇<a href="https://web.archive.org/web/20230221211440/https://objective-see.com/blog/blog_0x64.html">技术博客文章</a>中，沃德尔解释道，该漏洞是由macOS底层代码中的一个逻辑错误引发的。这个漏洞意味着macOS对某些应用程序捆绑包进行了错误分类，并跳过了安全检查，从而使Owens的概念验证应用程序可以不受阻碍地运行。</p>
+<p class="translated">简单来说，macOS应用程序不是单个文件，而是应用程序需要工作的不同文件的捆绑，包括一个属性列表文件，它告诉应用程序它所依赖的文件位于何处。但Owens发现，取出这个属性文件并构建具有特定结构的捆绑包可以欺骗macOS打开捆绑包并运行其中的代码，而不会触发任何警告。</p>
+<p class="translated">沃德尔称这个漏洞使得macOS的安全特性变得“毫无意义”他证实苹果的安全更新已经修复了这个漏洞。他告诉TechCrunch说:“这次更新将导致应用程序被正确分类为捆绑包，并确保不可信、未加密的应用程序将(再次)被阻止，从而保护用户。”</p>
+<p class="translated">了解了这个漏洞的工作原理后，沃德尔要求Mac安全公司Jamf查看是否有任何证据表明这个漏洞在欧文斯发现之前已经被利用了。Jamf检测负责人<a href="https://web.archive.org/web/20230221211440/https://twitter.com/jbradley89"> Jaron Bradley </a>证实，利用该漏洞的Shlayer恶意软件家族的样本在一月初被捕获，比Owens的发现早几个月。Jamf还发表了一篇关于该恶意软件的技术博客文章。</p>
+
+<p class="translated">“我们使用这种技术发现的恶意软件是Shlayer的更新版本，这是一个于2018年首次发现的恶意软件家族。布拉德利告诉TechCrunch:“shlayer是macOS上已知的最丰富的恶意软件之一，因此我们针对它的许多变种开发了各种检测方法，并密切跟踪它的演变。”“我们的一项检测提醒我们注意这种新变种，经过进一步检查，我们发现它使用这种旁路来允许它在没有最终用户提示的情况下安装。进一步的分析让我们相信，恶意软件的开发者在2021年初发现了零日，并调整了他们的恶意软件来使用它。”</p>
+<p class="translated">Shlayer是一款广告软件，它拦截加密的网络流量(包括支持HTTPS的网站),并注入自己的广告，为运营商赚取欺诈性的广告费。</p>
+<p class="translated">“它通常是通过欺骗用户下载假冒的应用程序安装程序或更新程序来安装的，”布拉德利说。“使用这种技术的Shlayer版本这样做是为了逃避内置的恶意软件扫描，并在启动时不向用户提供额外的‘你确定吗’提示，”他说。</p>
+<p class="translated">布拉德利说:“这个变种最有趣的地方在于，作者采用了它的旧版本，并对其进行了轻微修改，以绕过macOS上的安全功能。”</p>
+<p class="translated">沃德尔还<a href="https://web.archive.org/web/20230221211440/https://objective-see.com/blog/blog_0x64.html#detections">发布了一个Python脚本</a>，它将帮助用户检测任何过去的利用。</p>
+<p class="translated">Shlayer已经不是第一次躲避macOS的防御了。去年，沃德尔与安全研究员彼得·丹蒂尼(Peter Dantini)合作，发现了一份被苹果公司<a href="https://web.archive.org/web/20230221211440/https://techcrunch.com/2020/08/31/apple-notarized-mac-malware/">意外公证</a>的Shlayer样本，在这个过程中，开发者将他们的应用程序提交给苹果公司进行安全检查，这样这些应用程序就可以不受阻碍地在数百万台MAC电脑上运行。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

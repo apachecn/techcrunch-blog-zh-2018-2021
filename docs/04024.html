@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>The sinkhole that saved the internet</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">拯救互联网的天坑</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/07/08/the-wannacry-sinkhole/">https://web.archive.org/web/https://techcrunch.com/2019/07/08/the-wannacry-sinkhole/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated"><span class="featured__span-first-words">2017年5月12日晚</span>下午。两名精疲力竭的安全研究人员几乎无法解释刚刚发生的事件。</p>
+<p class="translated">马库斯·哈钦斯和杰米·汉金斯在英国的家中为总部位于洛杉矶的网络安全公司Kryptos Logic工作，他们刚刚阻止了一场全球网络攻击。几个小时前，WannaCry勒索软件开始像野火一样蔓延，加密系统，瘫痪欧洲各地的企业和交通枢纽。这是十年来第一次电脑蠕虫开始大规模攻击电脑。英国国家医疗服务系统(NHS)是受打击最大的组织之一，迫使医生拒绝病人，T2急诊室关闭。</p>
+<p class="translated">在广播新闻网开始中断几个小时后，哈钦斯——当时只知道他的网名<a href="https://web.archive.org/web/20230321045734/https://twitter.com/MalwareTechBlog">@ malware tech</a>——成为了一个“意外英雄”，因为他无意中注册了一个在恶意软件代码中找到的域名，从而阻止了网络攻击。</p>
+<p class="translated">仍在遭受损失的互联网却安然无恙。这两名研究人员当时都是20出头，他们利用西方开发的黑客工具，从一场强大的民族国家攻击中拯救了互联网。</p>
+<p class="translated">但攻击远未结束。</p>
+<p class="translated">哈钦斯和汉金斯知道，如果关闭开关，恶意软件会从它停止的地方继续运行，每分钟感染数千台计算机。眼睛浮肿，睡眠不足，他们知道这个领域必须不惜一切代价保持运转。研究人员击退了一个愤怒的僵尸网络运营商试图用垃圾互联网流量使该域离线的几次攻击。此外，执法部门一度从法国的一个数据中心查封了他们的两台服务器，因为他们感到困惑，认为该域名正在帮助传播WannaCry，而不是阻止它。</p>
+<p class="translated">压力不断，但毫无结果，汉金斯——他也只是化名为<a href="https://web.archive.org/web/20230321045734/https://twitter.com/2sec4u">@ 2 sec 4 u</a>——努力保持清醒，他会在沙发上睡着，每次工作几个小时，笔记本电脑仍然开着，只是被Slack或Skype上的消息惊醒，研究人员过去常常用Skype聊天。</p><p class="piano-inline-promo"/>
+<p class="translated">每次听到警报，他都担心切断开关已经离线。</p>
+<p class="translated">“为支撑国民保健服务的这件事负责？他妈的太可怕了，”汉金斯告诉TechCrunch。"你最不需要的就是整个NHS着火的想法."</p>
+<p class="translated">“这可能是发生在我身上最有压力的事情，”他说。</p>
+<h2 class="translated">我想我们可以阻止它</h2>
+<p class="translated">5月12日网络攻击开始几小时后，英国新闻网就开始滚动报道。汉金斯开着电视作为背景。</p>
+<p class="translated">chyrons报告了伦敦几家大医院的混乱情况。工作人员被锁在他们的计算机站之外，文件被加密，他们的屏幕上显示着索要赎金的倒计时。国民保健署宣布这是一起重大事故。电信巨头Telefonica也受到了冲击，航运巨头联邦快递、汽车制造商雷诺、德国铁路系统和几个俄罗斯政府部门也受到了冲击。</p>
+<p class="translated">英国首相特里萨·梅称之为“国际网络攻击”，政府似乎无力阻止。</p>
+<p class="translated">WannaCry正在从一台计算机传播到另一台计算机，这是以前勒索软件中没有的功能。几周前，由美国国家安全局开发的黑客工具被盗并发布在网上供任何人使用，这很快受到了指责。DoublePulsar就是这样一个漏洞，它为易受攻击的计算机提供了后门，而另一个名为EternalBlue的漏洞则被用来在网络内部传递和传播勒索软件。</p>
+<p class="translated">几个月前，微软发布了黑客工具的补丁。许多没有打补丁的人看到他们的系统一个接一个地崩溃。</p>
+<p class="translated">哈钦斯说:“这只是不加选择地抹去了一些东西。”。</p>
+<p/><div id="attachment_1852981" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1852981" decoding="async" class="breakout wp-image-1852981 size-full" title="wannacry-mid-image" src="../Images/1f6f3dbbd25259de18e93ee112b5a1a4.png" alt="wannacry mid image" data-original-src="https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/wannacry-mid-image.gif"/><p id="caption-attachment-1852981" class="wp-caption-text translated">(WannaCry感染电脑时的倒计时和赎金窗口。图片:文件照片)</p></div>
+<p class="translated">通过注册域名，Hutchins已经“击沉”了勒索软件，使他能够捕获和处理恶意的互联网流量。对于Hutchins来说，找到并注册恶意软件样本中的域名并不罕见。作为他的僵尸网络和<a href="https://web.archive.org/web/20230321045734/https://twitter.com/MalwareTechBlog/status/863054943632187392">恶意软件追踪工作的一部分</a>，他经常控制未注册的域名——假设它们是恶意软件控制服务器——以查看恶意软件传播的范围和速度。最终目标是将恶意流量导入一个空白区域，以识别受害者并防止进一步感染。</p>
+<p class="translated">随着一个域名的关闭，Hutchins怀疑恶意软件可能会跳到另一个域名，并要求Hankins查看。恶意软件生成新域以试图逃避检测的情况并不少见。</p>
+<p class="translated">“我靠，我想我们能阻止它，”汉金斯回应道。</p>
+<p class="translated">到下午6:30，在研究人员的休息室里有一场狂热的讨论，试图了解哈钦斯注册的域名实际上做了什么。但是，研究人员花了近一个小时才理解恶意软件代码中包含Hutchins陷入的域名的复杂而简短的片段。</p>
+<p class="translated">“我们非常关注一个if-else声明，”Hankins在谈到目前的压力时告诉TechCrunch。“这很难想象，因为如果我们搞砸了，情况会更糟。”</p>
+<p class="translated">有几分钟，研究人员感到恐慌，认为是域名注册导致了感染。他们来来回回地分析代码，不确定他们是否应该保持域名，担心他们使事情变得更糟。然后灵光一现。如果该域不存在，勒索软件只会引爆其有效载荷。</p>
+<p class="translated">“如果域名是可达的，它就不会感染——我认为，”汉金斯写道。</p>
+<p class="translated">“你让我有史以来最长的焦虑发作，”哈钦斯回答说。“我想我要吐了。”</p>
+<p class="translated">Hankins说，这种情况的压力使得分析代码变得更加困难。新闻在后台播放，增加了持续的压力。</p>
+<p class="translated">“我们花了45分钟来看这段代码，”他说。“从逆向工程的角度来看，这并不复杂。”</p>
+<p class="translated">他的Fitbit数据显示，当他坐在办公桌前时，他的心率一度平均约为每分钟140次——相当于剧烈运动。</p>
+<p class="translated">从kill switch收集的数据显示，它在短短两天内阻止了约100万次感染的勒索软件触发。这个数字可能要高得多，还不包括一台联网的中央服务器下数量庞大、未知的受影响电脑。自21世纪初的Blaster和Mydoom之类的病毒出现以来，世界上还没有见过一种电脑蠕虫如此顽强地传播。</p>
+<p class="translated">“直到我开始看到这些请求以及有多少组织被感染，我才觉得这没什么大不了的，”哈钦斯说。他描述了“认知失调”如何帮助他专注于这个问题，而不是WannaCry造成的损害或人类代价。</p>
+<p class="translated">哈钦斯只想深入了解恶意软件活动。他不知道提前几个小时注册域名会阻止勒索软件的传播和加密。</p>
+<p class="translated">哈钦斯很快以“意外英雄”的身份出名</p>
+<h2 class="translated">受到攻击</h2>
+<p class="translated">到了早上7点，两位研究人员又回到了Slack。一小时后，关闭开关遭到攻击。</p>
+<p class="translated">Mirai未来组合是一个强大的僵尸网络，由成千上万被劫持的物联网设备组成，并对“有史以来最大的”分布式拒绝服务攻击负责，开始用大量垃圾互联网流量打击kill switch域。几个月前，僵尸网络瞄准了一家重要的网络公司Dyn，通过使其过载过多的互联网流量，使其离线——以及依赖其服务的主要技术品牌。在另一起事件中，僵尸网络还通过向其唯一的海底光缆发送大量互联网流量，使非洲沿海小国利比里亚<a href="https://web.archive.org/web/20230321045734/https://www.bbc.co.uk/news/uk-46840461">离线</a>。</p>
+<p class="translated">在WannaCry之前，Mirai未来组合是研究人员监视下的众多僵尸网络之一。每次僵尸网络攻击时，一个专门的推特账户<a href="https://web.archive.org/web/20230321045734/https://twitter.com/miraiattacks">会发推特通知目标</a>。</p>
+<p class="translated">这次轮到他们成为僵尸网络的目标了。</p>
+<p class="translated">“我们非常公开地追踪Mirai未来组合，”汉金斯说。“他们不是我们的粉丝。”</p>
+<p class="translated">kill switch通过自动增加亚马逊托管服务器的数量来吸收尽可能多的流量，从而站稳了脚跟。Mirai未来组合正在用力击球，但是发球方没有停下来。</p>
+<p class="translated">“我们被打败了，”汉金斯说。</p>
+<p class="translated">Kryptos Logic的首席执行官萨利姆·内诺(Salim Neino)经常与研究人员联系，但在很大程度上让他们自己管理情况。傍晚时分，汉金斯向他的老板简要介绍了事情的经过。</p>
+<p class="translated">"你是说[如果]我们的天坑死了，那些设备会被感染？"内诺问道。</p>
+<p class="translated">“是的，”汉金斯回答道。</p>
+<p class="translated">“谁在看这个？”内诺问道。</p>
+<p class="translated">“整个世界，”汉金斯回答道。</p>
+<p class="translated">“马库斯和我从来没有处理过那么长时间的实时事件，”汉金斯说，他回头看了看WannaCry袭击后第二天结束时的松散信息。“我们没有任何人指导我们。你看所有这些非常资深的网络维护者和公司都有这方面的经验。与此同时，马库斯登陆了这个非常重要的领域，现在我们正处于这场全球灾难的中心。”</p>
+<p class="translated">当互联网松了一口气，认为危险已经过去时，大多数人都不知道任何停机都会导致灾难性的后果。即使勒索软件不再加密文件，如果kill switch离线，或者如果受感染的计算机或网络无法再与kill switch通信，现在处于休眠状态的恶意软件仍然会带来风险。其他攻击者很快重新设计了WannaCry，以改变kill switch域，但其他安全研究人员很快发现了新的变种，减少了勒索软件的传播。</p>
+<p class="translated">Hankins说，许多人认为研究人员“会搞砸的”。</p>
+<h2 class="translated">多克斯</h2>
+<p class="translated">在被袭击后30多个小时没有合眼后，哈钦斯终于睡了一会儿。第二天早上，他醒来发现自己的脸出现在英国小报周日版的头版。媒体找到了他。</p>
+<p class="translated">一些记者称哈钦斯为“英雄”，而其他人则肆无忌惮地揭露他的身份。鉴于他揭露和研究恶意软件和犯罪僵尸网络的工作，Hutchins只使用过他的在线账号MalwareTech。只有少数可信的人知道他的名字和身份。</p>
+<p class="translated">哈钦斯说，他不希望媒体蜂拥而至。</p>
+<p class="translated">他已经好几天没有离开自己的房间，低着头试图了解更多关于恶意软件的范围和影响。他说记者来过他家；他的父母告诉他，他们正在他家前的草坪上露营。</p>
+<p class="translated">他并不担心自己的安全，但受到关注让他感到沮丧。“我只是对试图帮助清理周五的混乱感到不满，门铃一直在响，”他在推特上写道。</p>
+<p class="translated">无人看守，哈钦斯呆在他的办公桌前继续工作。“我已经回复[直接消息]三个小时了，”哈钦斯在一条关于媒体询问和安全研究员同事支持的松散消息中告诉汉金斯。“还是看不到底。”</p>
+<p/><div id="attachment_1852979" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1852979" decoding="async" loading="lazy" class="breakout wp-image-1852979 size-full" title="2017-06-06-NHS" src="../Images/13b5b00286ed46589802b18aa90617e5.png" alt="2017 06 06 NHS" srcset="https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/2017-06-06-NHS.jpg 4096w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/2017-06-06-NHS.jpg?resize=150,100 150w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/2017-06-06-NHS.jpg?resize=300,200 300w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/2017-06-06-NHS.jpg?resize=768,511 768w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/2017-06-06-NHS.jpg?resize=680,453 680w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/2017-06-06-NHS.jpg?resize=1536,1022 1536w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/2017-06-06-NHS.jpg?resize=2048,1363 2048w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/2017-06-06-NHS.jpg?resize=1200,799 1200w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/2017-06-06-NHS.jpg?resize=50,33 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/2017-06-06-NHS.jpg"/><p id="caption-attachment-1852979" class="wp-caption-text translated">(几家英国国家医疗服务医院因WannaCry袭击而离线。图片:Getty Images)</p></div>
+<p class="translated">媒体对哈钦斯的痴迷并没有消失。尽管他的角色是注册kill switch，但他也是一名活跃的高音，很快成为WannaCry及其持续发展的公众形象。</p>
+<p class="translated">记者们决心了解这位神秘的22岁年轻人的更多情况，他们联系了他的朋友，出现在他们家，并向他们提供信息。</p>
+<p class="translated">安全社区非常愤怒。他的盟友在推特上谴责dox Hutchins的努力。安全研究人员使用假名或网名并不罕见。以至于，甚至英国国家网络安全中心在该组织的博客上的一篇文章中承认他是“恶意软件”,这是他的署名<a href="https://web.archive.org/web/20230321045734/https://www.ncsc.gov.uk/blog-post/finding-kill-switch-stop-spread-ransomware-0"/>。</p>
+<p class="translated">现在，随着他的身份暴露，哈钦斯知道犯罪集团会更容易将他作为目标，因为他之前不懈地揭露他们恶意的在线操作。但在击退众多针对死亡开关的威胁的过程中，他担心不必要的关注会分散他当前的工作。</p>
+<p class="translated">“这是一个巨大的问题，”他告诉TechCrunch。当媒体蜂拥而至他的朋友和家人时，研究人员仍在与攻击和关闭离线关闭开关的努力作斗争。</p>
+<p class="translated">“这种关注让我无法很好地工作，”哈钦斯说。“我可以应对压力，但我不太擅长集中注意力。”</p>
+<p class="translated">“连续几个星期有上百万的记者围着你？这不好玩，”他说。</p>
+<p class="translated">那天晚些时候，汉金斯出去为他买了所有的周日报纸作为纪念。</p>
+<p class="translated">哈钦斯吸引了大部分媒体的注意力。但是，在WannaCry袭击事件发生时，他的真实姓名也没有公开，只是在最近几个月才开始在自己的Twitter账户上使用真实姓名，他担心自己的身份也会被暴露。</p>
+<p class="translated">“我担心[记者]下一个会出现在我的住处，”汉金斯说。他说，万一记者也找到了他的家庭住址，他是如何想出一个计划的。</p>
+<p class="translated">“我的计划不是从前门出去，记者们会从我的侧门出去，然后从后门出去——这就像一条后街——一个朋友会开车来接我，我会去和他们住在一起，”他解释道。</p>
+<p class="translated">但即使受到关注，哈钦斯说他并不后悔自己在阻止WannaCry中的作用。“我可能会试着藏得更好一点，”他开玩笑说。“但是，是的，我真的不喜欢这些。”</p>
+<h2 class="translated">骑兵来了</h2>
+<p class="translated">第二天周一，英国自网络攻击以来首次重返工作岗位。</p>
+<p class="translated">许多企业成为WannaCry的受害者，他们的系统离线。其他系统没有被赎回的人不知道他们的系统也被感染了。死亡开关是唯一能阻止另一次爆发的东西。英国国家卫生服务系统处于高度戒备状态，预计在整个组织持续中断的情况下会出现“第二次高峰”。几天前，英国当局加入了全球搜捕袭击事件幕后主使的行动。</p>
+<p class="translated">但是当研究人员没有受到接二连三的攻击时，他们知道累积的压力、疲惫和睡眠不足是站不住脚的。</p>
+<p class="translated">“我并没有急于把它交出去，”哈钦斯承认。“我想保持对它的控制。”他担心，将它交出去，将使识别和通知受感染但尚未被WannaCry赎回的企业和政府组织变得更加困难。</p>
+<p class="translated">“但我意识到，我这样做有很大的个人风险，”他说。“这一周，每当有服务器宕机，我都会感到非常恐惧。更合理的做法是把它交给别人，然后睡一觉。”</p>
+<p class="translated">Hankins告诉TechCrunch，有几家公司提出要安装这个关闭开关，但是研究人员对相信任何人都很谨慎。“对我们来说，保持它的活力是至关重要的，但对其他人来说，这是一个进入这个巨大的新闻周期的机会，”他说。</p>
+<p class="translated">两人认识安全和网络巨头Cloudflare的人，并寻求帮助。这家互联网公司提供许多服务，如域名注册和防范分布式拒绝服务攻击。</p>
+<p class="translated">Cloudflare的信任和安全主管贾斯汀·潘恩(Justin Paine)说，在WannaCry袭击两天后，哈金斯和汉金斯接近了Cloudflare。首席执行官马修·普林斯(Matthew Prince)已经批准潘恩为研究人员提供他们需要的服务，并免费提供全套服务。</p>
+<p class="translated">潘恩说，Mirai未来组合继续竭尽全力攻击死亡开关。紧急情况是尽快安装并保护好断路开关。</p>
+<p class="translated">5月16日，交接完成时，英国刚过午夜。</p>
+<p class="translated">就Cloudflare而言，它对这一安排保持沉默。该公司没有发布新闻稿或博客帖子承认其支持kill switch。对于大多数人来说，这是一种无形的合作关系，唯一的泄露是域名解析为Cloudflare名称服务器，这对于互联网用户来说是不明显的。</p>
+<p class="translated">“没有他们，我们不可能成功，”汉金斯说。</p>
+<h2 class="translated">92小时工作制</h2>
+<p class="translated">两年过去了，断路开关一次也没关。</p>
+<p class="translated">勒索软件继续潜伏在世界各地成千上万的网络中，准备加密<a href="https://web.archive.org/web/20230321045734/https://techcrunch.com/2019/05/12/wannacry-two-years-on/">数百万台电脑</a>上的文件，尽管补丁在过去两年中已经推出。汉金斯表示，仅在2019年6月，kill switch就阻止了约6000万次勒索病毒爆炸。</p>
+<p class="translated">为朝鲜工作的黑客后来被T4指责为T5发动了网络攻击。</p>
+<p class="translated">哈钦斯说:“在确认它已经被阻止后，有一个‘神圣的狗屎’时刻，这是近年来网络史上最大的事情之一。”“这是第一例任何种类的勒索病毒。”</p>
+<p class="translated">根据他的Fitbit数据，汉金斯在五天内工作了大约92个小时，每晚只睡几个小时。有一次，英国政府官员私下向研究人员提供帮助，但也检查他们的健康状况，知道他们承受的压力。</p>
+<p class="translated">他告诉TechCrunch:“我认为我们努力了，但我们做了合理的工作。”</p>
+<p/><div id="attachment_1852978" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1852978" decoding="async" loading="lazy" class="breakout wp-image-1852978 size-full" title="GettyImages" src="../Images/e860e470596ff43662a2d4f0172888cf.png" alt="" srcset="https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-08-at-12.14.48-PM.jpg 2416w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-08-at-12.14.48-PM.jpg?resize=150,103 150w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-08-at-12.14.48-PM.jpg?resize=300,205 300w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-08-at-12.14.48-PM.jpg?resize=768,525 768w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-08-at-12.14.48-PM.jpg?resize=680,465 680w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-08-at-12.14.48-PM.jpg?resize=1536,1050 1536w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-08-at-12.14.48-PM.jpg?resize=2048,1400 2048w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-08-at-12.14.48-PM.jpg?resize=1200,821 1200w, https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-08-at-12.14.48-PM.jpg?resize=50,34 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230321045734im_/https://techcrunch.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-08-at-12.14.48-PM.jpg"/><p id="caption-attachment-1852978" class="wp-caption-text translated">(被指控发动WannaCry攻击的朝鲜黑客的面部照片之一。图片:Getty Images)</p></div>
+<p class="translated">一切看起来都很好，直到上个月，一次Cloudflare故障导致部分互联网离线几个小时。原因被归咎于威瑞森(拥有TechCrunch)对互联网流量的不当处理。Cloudflare的王子<a href="https://web.archive.org/web/20230321045734/https://twitter.com/eastdakota/status/1143182575680143361">愤怒地发推文</a>指责电信巨头。</p>
+<p class="translated">但是关闭开关没有扣上。汉金斯在推特上说，停电没有影响WannaCry kill switch。他告诉TechCrunch，在中断期间有220，000次WannaCry执行尝试。</p>
+<p class="translated">“这不是Cloudflare的错，我们对此也无能为力，”Hankins <a href="https://web.archive.org/web/20230321045734/https://twitter.com/2sec4u/status/1143151153758330880">发推文</a>。“停机和问题一直都在发生，有时它们非常局限，难以察觉。”</p>
+<p class="translated">只要计算机感染了WannaCry，并且没有打补丁，数据就仍然处于危险之中——并且处于死亡开关的支配之下。</p>
+<p class="translated">“请把这些垃圾从你的网络上删除，”他<a href="https://web.archive.org/web/20230321045734/https://twitter.com/2sec4u/status/1143151153758330880">在推特上写道</a>。</p>
+<p class="translated">潘恩说，Cloudflare每年仍然会收到一些关闭该域名的请求，认为该域名正在传播WannaCry而不是阻止它。</p>
+<p class="translated">“我们必须教育人们，这与你真正想要的恰恰相反，”潘恩说。"如果我们拿下那个域名，对你来说将是更糟糕的一天."</p>
+<h2 class="translated">第二轮:蓝调</h2>
+<p class="translated">2017年8月，WannaCry袭击事件发生三个月后，Hutchins在拉斯维加斯McCarren国际机场被美国当局逮捕，当时他正登上一架返回英国的飞机，罪名是在青少年时期创作恶意软件——与WannaCry无关。何<a href="https://web.archive.org/web/20230321045734/https://techcrunch.com/2019/04/19/malwaretech-legal-case-over/">认罪</a>，将于7月下旬宣判。鉴于哈钦斯最近协同努力保护用户免受安全威胁，他的支持者呼吁宽大处理。</p>
+<p class="translated">现在担任Kryptos Logic安全和威胁情报主管的Hankins保留了对kill switch的控制权，并为企业和政府提供了对本地化感染数据的访问。</p>
+<p class="translated">在WannaCry首次攻击几乎整整两年后，一个新的漏洞出现了。安全研究员凯文·博蒙特(Kevin Beaumont)将该漏洞昵称为“blue keep ”( T8 ),它也具有类似WannaCry的蠕虫属性，允许它在计算机之间传播。</p>
+<p class="translated">“我当时很恐慌，”汉金斯说。他说，BlueKeep的出现带回了WannaCry袭击的那一周的许多情绪。</p>
+<p class="translated">微软<a href="https://web.archive.org/web/20230321045734/https://techcrunch.com/2019/05/31/microsoft-bluekeep-worm-exploits/">发布了补丁</a>,但是仅仅几周后，当国家安全局<a href="https://web.archive.org/web/20230321045734/https://techcrunch.com/2019/06/05/nsa-advisory-bluekeep-patch/">发布其罕见的公告</a>时，大约一百万台电脑仍然易受攻击。BlueKeep被视为自WannaCry以来易受攻击的计算机面临的最大威胁之一。尽管还没有公开利用漏洞的代码，但国土安全部已经警告说，黑客找到如何滥用漏洞发动攻击的方法<a href="https://web.archive.org/web/20230321045734/https://techcrunch.com/2019/06/17/cisa-bluekeep-working-exploit/">只是时间问题</a>。</p>
+<p class="translated">“我们以前见过一次，”他说。“我们需要阻止这一切——但显然我们已经无能为力了，”他说。</p>
+<p class="translated">"这次我们不会得到一个终止开关."</p>
+<hr/>
+<p class="translated"><i> <a href="https://web.archive.org/web/20230321045734/https://medium.com/@zackwhittaker/how-to-contact-me-securely-38dc5c5bc756">得到了提示？</a>您可以通过Signal和WhatsApp向+1 646-755–8849安全发送提示。也可以发PGP邮件，指纹:4d 0e 92 F2 E36A EC51 DAAE 5d 97 CB8C 15 fa EB6C ee a5。</i></p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

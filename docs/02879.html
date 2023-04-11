@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Security lapse at contract startup Evisort exposed sensitive data </title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">合同启动时的安全漏洞暴露了敏感数据</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/http://techcrunch.com/2019/04/22/evisort-data-exposed/">https://web.archive.org/web/http://techcrunch.com/2019/04/22/evisort-data-exposed/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">文件和合同管理公司Evisort将其一个文件数据库置于不安全状态，暴露了客户数据。</p>
+<p class="translated">这家初创公司由前哈佛大学和麻省理工学院的学生在2016年创立，自称是一家人工智能合同管理公司，称其有助于更好地组织客户的法律文件和合同。在其声明中，该公司可以在几秒钟内评估并提取30页合同中最相关的信息。到目前为止，投资者喜欢这个项目，获得了由Village Global和Amity Ventures牵头的450万美元种子资金，埃森哲和SAP也参与其中。</p>
+<p class="translated">根据发给TechCrunch的匿名消息，该公司在没有密码的情况下打开了一个Elasticsearch数据库，允许任何人搜索里面的文件。当达成协议时，Evisort的首席执行官Jerry Ting表示，该数据库“仅用于测试和开发目的”，审计工作正在进行中。</p>
+<p class="translated">虽然一些文件被标记为“虚拟”和“测试”文件，但TechCrunch看到的许多文件都包含客户数据。</p>
+<p class="translated">“这些是许多知名大公司之间的保密协议，放在互联网上，任何人都可以看到，”匿名线人说，他提供了数据库中几个文件的链接。</p>
+<p class="translated">该公司将Stack Overflow和TravelZoo列为客户。该数据库还包含Evisort和三星之间的保密协议。在数据库中找到的与Squarespace的类似协议是由Ting签署的。</p>
+<p class="translated">许多文件包括员工合同、贷款协议(其中一份价值2亿美元)和简历。我们联系了几个人，他们的信息可以在数据库中找到。我们采访的一个人说，他们不知道自己的简历是如何进入Evisort的数据库的。其他文件似乎是Evisort客户提交的合同和协议。</p>
+<p class="translated">我们看到的许多文件都有机密信息。</p>
+<p class="translated">另一份文件包含Evisort和一家第三方安全公司在2月21日达成的协议细节，该协议旨在对其网络进行渗透测试，这是一种在安全漏洞被利用之前发现并修复它们的方法。</p>
+<p class="translated">在TechCrunch伸出援手后的一小时内，Evisort关闭了数据库。</p>
+<p class="translated">在随后的一封电子邮件中，Ting承认部分客户数据遭到了泄露。(Ting宣布他的电子邮件“不记录在案”，这要求双方事先同意这些条款，但我们正在打印回复，因为我们没有拒绝的机会。)</p>
+<p class="translated">“数据库不是我们生产环境的一部分，而是我们工程师使用的内部开发环境的一部分，”他说。</p>
+<p class="translated">“虽然我们的调查正在进行中，但开发数据库中包含的绝大多数信息都是占位符或用于测试目的的良性信息，”他在电子邮件中说。"但是，在这种环境下，似乎只有少量的合法文档."</p>
+<p class="translated">“作为我们调查的一部分，我们将审查环境中的整个数据集，以及任何可用的日志记录数据，以确定哪些信息可能受到了影响，我们将与任何可能受到影响的客户直接沟通，”他补充道。</p>
+<p class="translated">Ting补充说，该公司“正在聘请”一家外部法律事务所来评估对客户的影响。</p>
+<p class="translated">Evisort没有说数据暴露了多久。数据搜索引擎Binary Edge于3月22日首次检测到该系统。</p>
+<p class="translated">这是最近几个月一系列大规模数据曝光中的最新一起，包括<a href="https://web.archive.org/web/20230404070910/https://techcrunch.com/2018/11/15/millions-sms-text-messages-leaked-two-factor-codes/">短信</a>、<a href="https://web.archive.org/web/20230404070910/https://techcrunch.com/2019/03/17/medical-health-data-leak/">病历</a>、一份<a href="https://web.archive.org/web/20230404070910/https://techcrunch.com/2019/02/27/dow-jones-watchlist-leak/">高风险个人观察名单</a>、一家<a href="https://web.archive.org/web/20230404070910/https://techcrunch.com/2019/04/11/stratics-data-leak/">自动呼叫公司</a>、<a href="https://web.archive.org/web/20230404070910/https://techcrunch.com/2019/01/24/mortgage-loan-leak-gets-worse/">数百万份抵押和贷款文件</a>，甚至<a href="https://web.archive.org/web/20230404070910/https://techcrunch.com/2019/04/02/inside-a-spam-operation/">一次垃圾邮件操作</a>。</p>
+<p class="translated"><strong>阅读更多:</strong></p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

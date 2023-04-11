@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Cloudflare and Apple design a new privacy-friendly internet protocol </title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">Cloudflare和苹果公司设计了一种新的隐私友好的互联网协议</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2020/12/08/cloudflare-and-apple-design-a-new-privacy-friendly-internet-protocol/">https://web.archive.org/web/https://techcrunch.com/2020/12/08/cloudflare-and-apple-design-a-new-privacy-friendly-internet-protocol/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">Cloudflare和苹果的工程师表示，他们开发了一种新的互联网协议，将支撑互联网隐私中最大的漏洞之一，许多人甚至不知道它的存在。这种新协议被称为HTTPS上的不经意DNS，简称ODoH，它使得互联网提供商更难知道你访问了哪些网站。</p>
+<p class="translated">但首先，我想了解一下互联网是如何运作的。</p>
+<p class="translated">每次访问网站时，您的浏览器都会使用DNS解析器将网址转换为机器可读的IP地址，以定位网页在互联网上的位置。但是这个过程是不加密的，这意味着每次你加载一个网站时，DNS查询都是明文发送的。这意味着DNS解析器——它可能是你的互联网提供商，除非你改变了它——知道你访问了哪些网站。这对你的隐私不利，尤其是你的网络提供商也可以向广告商出售你的浏览历史记录(T3)。</p>
+<p class="translated">像HTTPS域名系统(或DoH)这样的最新发展已经<a href="https://web.archive.org/web/20230225041520/https://techcrunch.com/2019/07/05/isp-group-mozilla-internet-villain-dns-privacy/">为域名系统查询</a>增加了加密功能，使得攻击者更难劫持域名系统查询并将受害者指向恶意网站，而不是你想要访问的真实网站。但这仍然不能阻止DNS解析器看到你试图访问的网站。</p>
+<p class="translated">进入ODoH，它建立在普林斯顿大学学者之前的工作基础上。简单地说，ODoH将DNS查询与互联网用户分离，防止DNS解析器知道你访问了哪些网站。</p>
+<p class="translated">它是这样工作的:ODoH在DNS查询周围包裹了一层加密，并通过代理服务器传递，代理服务器充当互联网用户和他们想要访问的网站之间的中间人。因为DNS查询是加密的，所以代理看不到里面的内容，而是充当一个屏障，防止DNS解析器看到是谁发送了查询。</p>
+<p class="translated">Cloudflare的研究负责人尼克·沙利文(Nick Sullivan)说:“ODoH的目的是将谁在进行查询以及查询是什么的信息分开。</p>
+<p class="translated">换句话说，ODoH确保只有代理知道互联网用户的身份，DNS解析器只知道被请求的网站。沙利文说，ODoH的页面加载时间与DoH“几乎没有区别”,不应该对浏览速度产生任何重大影响。</p>
+<p class="translated">Sullivan说，ODoH正常工作的一个关键因素是确保代理和DNS解析器永远不会“勾结”，因为这两者永远不会由同一个实体控制，否则“知识的分离就会被打破”。这意味着必须依赖提供代理服务的公司。</p>
+<p class="translated">Sullivan表示，一些合作伙伴组织已经在运行代理，允许早期采用者通过Cloudflare现有的1.1.1.1 DNS解析器开始使用该技术。但是大多数人必须等到ODoH被植入浏览器和操作系统后才能使用。这可能需要几个月或几年的时间，取决于ODoH被互联网工程任务组认证为标准需要多长时间。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

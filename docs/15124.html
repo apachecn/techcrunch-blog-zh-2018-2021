@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Peloton's leaky API let anyone grab riders' private account data • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">Peloton漏洞百出的API让任何人都可以窃取骑手的私人账户数据TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2021/05/05/peloton-bug-account-data-leak/">https://web.archive.org/web/https://techcrunch.com/2021/05/05/peloton-bug-account-data-leak/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">上周，在我周一下午的锻炼进行到一半时，我收到了一条来自安全研究员的消息，上面有我的Peloton帐户数据的截图。</p>
+<p class="translated">我的Peloton个人资料设置为私人，我的朋友列表故意为零，所以没有人可以查看我的个人资料、年龄、城市或锻炼历史。但一个漏洞允许任何人直接从Peloton的服务器上获取用户的私人账户数据，即使他们的个人资料设置为私人。</p>
+<p class="translated">Peloton是家用健身品牌，其室内固定自行车和<a href="https://web.archive.org/web/20221127070649/https://techcrunch.com/2021/05/05/peloton-apologizes-agrees-to-treadmill-recall/">四面楚歌的跑步机</a>的代名词，拥有超过300万用户。就连拜登总统也被<a href="https://web.archive.org/web/20221127070649/https://www.nytimes.com/2021/01/19/us/politics/biden-peloton.html">说成拥有一台</a>。仅健身车一项就要花费1800多美元，但任何人都可以按月订阅，参加各种各样的课程。</p>
+<p class="translated">随着拜登宣誓就职(他的Peloton搬到了白宫——假设特勤局允许他这么做)，Pen Test Partners的安全研究员Jan Masters发现，他可以向Peloton的API发出未经认证的用户帐户数据请求，而无需it部门检查以确保该人被允许请求。(API允许两个东西通过互联网相互对话，比如Peloton自行车和该公司存储用户数据的服务器。)</p>
+<p class="translated">但公开的API让他——以及互联网上的任何人——可以访问Peloton用户的年龄、性别、城市、体重、锻炼统计数据，如果是用户的生日，还可以访问当用户的个人资料页面设置为私人时隐藏的详细信息。</p>
+<p class="translated">马斯特斯在1月20日向Peloton报告了漏洞API，并规定了90天的期限来修复漏洞，这是安全研究人员在细节公开之前给公司修复漏洞的标准时间。</p>
+
+<p class="translated">但是最后期限来了又去，错误没有被修复，马斯特斯没有收到公司的回复，除了一封确认收到错误报告的电子邮件。相反，Peloton只限制其成员访问其API。但这仅仅意味着任何人都可以注册一个月会员，并再次访问API。</p>
+<p class="translated">TechCrunch在截止日期过后联系了Peloton，询问为什么该漏洞报告被忽略，Peloton昨天证实已经修复了该漏洞。(为了防止误用，TechCrunch将这个故事保留到bug修复之后。)</p>
+<p class="translated">Peloton发言人Amelise Lane提供了以下声明:</p>
+<blockquote><p class="translated">确保我们平台的安全是Peloton的首要任务，我们一直在寻求改进与外部安全社区合作的方法和流程。通过我们的协调漏洞披露计划，一名安全研究人员告诉我们，他能够访问我们的API并查看Peloton配置文件中的可用信息。我们采取了行动，并根据他最初提交的材料解决了问题，但我们在向研究人员更新我们的补救工作方面进展缓慢。展望未来，我们将更好地与安全研究社区合作，并在报告漏洞时做出更迅速的响应。我们要感谢Ken Munro通过我们的CVD计划提交报告，并愿意与我们合作解决这些问题。</p></blockquote>
+<p class="translated">此后，马斯特斯发布了一篇博文,更详细地解释了这些漏洞。</p>
+<p class="translated">创建Pen Test Partners的Munro告诉TechCrunch:“Peloton在回应漏洞报告方面有点失败，但在朝着正确的方向推动后，采取了适当的行动。漏洞披露程序不仅仅是网站上的一个页面；这需要整个组织采取协调一致的行动。”</p>
+<p class="translated">但是对于Peloton来说问题依然存在。当被反复询问时，该公司拒绝说明为什么没有对Masters的漏洞报告做出回应。也不知道是否有人恶意利用这些漏洞，如大量收集账户数据。</p>
+<p class="translated">脸书、LinkedIn和Clubhouse都成为了<a href="https://web.archive.org/web/20221127070649/https://www.pentestpartners.com/security-blog/tour-de-peloton-exposed-user-data/?=050420210000">抓取攻击的受害者</a>，这些攻击滥用API获取他们平台上的用户数据。但Peloton拒绝证实它是否有日志来排除任何恶意利用其泄漏API的行为。</p>
+
+
+			</div>
+
+			</div>    
+</body>
+</html>

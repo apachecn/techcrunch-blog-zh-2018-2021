@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>A local government payments provider exposed years of transactions</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">一家地方政府支付提供商披露了数年的交易</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2020/04/07/ncourt-bills-fines-exposed/">https://web.archive.org/web/https://techcrunch.com/2020/04/07/ncourt-bills-fines-exposed/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">地方政府用来从阿肯色州和俄克拉荷马州的居民那里收集法院罚款和公用事业账单付款的支付处理器错误地在其网站上暴露了一个缓存数据，代表多年的交易。</p>
+<p class="translated">安全研究人员Ashot Oganesyan在支付处理器nCourt的网站上的一个公共和不受保护的网络目录中发现了一个数据库文件缓存，该支付处理器运营着两个支付网站<a href="https://web.archive.org/web/20230116040739/http://courtpay.org/">courtpay.org</a>和<a href="https://web.archive.org/web/20230116040739/http://utilitypay.org/">utilitypay.org</a>。该目录包含备份数据库文件，存储截至2019年11月(含11月)至少三年的交易。</p>
+<p class="translated">根据BinaryEdge的数据，该目录被暴露了至少五个月，binary edge扫描互联网上被暴露的系统和数据库。</p>
+<p class="translated">Oganesyan向支付处理器报告了这一风险，open directory于周一关闭。</p>
+<p class="translated">但TechCrunch周二获悉，这些数据库文件已被发布到一个广为人知的黑客论坛上。虽然我们没有从论坛下载数据，但这篇文章之前发表的帖子列出了每个数据库中的正确记录数，表明帖子是真实的。</p>
+<p class="translated">TechCrunch查看了被曝光的数据库，发现courtpay.org的<a href="https://web.archive.org/web/20230116040739/http://courtpay.org/">有79000条交易记录，utilitypay.org</a><a href="https://web.archive.org/web/20230116040739/http://utilitypay.org/">有64000条交易记录。我们通过将姓名和地址与公共记录进行交叉比对来核实数据。</a></p>
+<p class="translated">两套数据库都包含收款人的姓名、邮政地址、电子邮件地址和电话号码。每条记录还包含支付卡类型、收款人卡号的前四位和后四位数字以及卡的有效期。</p>
+<p class="translated">一些记录还包含出生日期，以及使用支票账户时的部分银行账号。</p>
+<p class="translated">虽然支付数据被部分掩盖，但数据没有加密。</p>
+<p class="translated">当联系到nCourt的首席信息官Terry Chism时，他说该公司正在“积极收集”有关安全漏洞的事实。</p>
+<p class="translated">Chism表示，受影响的数据是在一个名为GovPSA的“遗留”系统下收集的，nCourt获得了其中的一些数据。nCourt表示，通过自己的nCourt系统收集的数据没有受到影响，它自己的政策是使用加密技术“在每次交易开始时保护持卡人的数据”</p>
+<p class="translated">在得知遗留的GovPSA数据可能被访问后，我们将数据转移到离线状态。我们还聘请了第三方法医调查公司，该公司目前正在进行法医调查，以验证这一可疑数据安全事件对遗留GovPSA数据的范围和影响，以及它是如何发生的。如果我们确认发生了违规行为，我们将评估对个人信息可能受到影响的个人的法律通知义务，并将根据我们的法律义务通知所有受影响的人和监管机构。"</p>
+<p class="translated"><em>更新了额外的上下文并澄清了数据的原始来源。</em></p>
+			</div>
+
+			</div>    
+</body>
+</html>

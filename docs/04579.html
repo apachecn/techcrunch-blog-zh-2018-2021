@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Google details AI work behind Project Euphonia's more inclusive speech recognition • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">谷歌详述Project Euphonia更具包容性的语音识别背后的人工智能工作TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/08/13/google-details-ai-work-behind-project-euphonias-more-inclusive-speech-recognition/">https://web.archive.org/web/https://techcrunch.com/2019/08/13/google-details-ai-work-behind-project-euphonias-more-inclusive-speech-recognition/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">作为无障碍新努力的一部分，谷歌在5月的I/O大会上宣布了T2项目Euphonia T3:试图让语音识别能够理解说话声音不标准或有障碍的人。该公司刚刚<a href="https://web.archive.org/web/20221025222150/https://ai.googleblog.com/2019/08/project-euphonias-personalized-speech.html">发表了一篇帖子</a>及其论文，解释了一些支持新功能的人工智能工作。</p>
+<p class="translated">这个问题很容易观察到:那些有运动障碍的人的说话声音，比如那些由肌萎缩侧索硬化(ALS)等退行性疾病产生的声音，根本无法被现有的自然语言处理系统理解。</p>
+<p class="translated">你可以在下面的谷歌研究科学家Dimitri Kanevsky的视频中看到这一点，他自己也有语言障碍，试图与该公司自己的产品进行交互(最终在相关工作Parrotron 的帮助下做到了这一点):</p>
+<p class="embed breakout embed--video embed--youtube translated"><iframe title="Parrotron Demo I" src="https://web.archive.org/web/20221025222150if_/https://www.youtube.com/embed/KtKGWSpppz4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">视频</iframe></p>
+<p class="translated">研究小组是这样描述的:</p>
+<blockquote><p class="translated">ASR[自动语音识别]系统通常是从“典型”语音中训练出来的，这意味着代表性不足的群体，如有语言障碍或口音重的人，不会体验到同样程度的效用。</p>
+<p class="translated">…当前最先进的ASR模型可能会对ALS轻度言语障碍的说话者产生较高的单词错误率(WER ),从而有效地阻止了ASR相关技术的使用。</p></blockquote>
+<p class="translated">值得注意的是，他们至少部分归咎于训练设置。这是我们在人工智能模型中发现的隐性偏见之一，可能导致其他地方的高错误率，如面部识别或甚至注意到有人在场。虽然未能包括像深色皮肤的人这样的主要群体在规模上与建立一个不包括那些受影响的人的系统相比不是一个错误，但它们都可以通过更具包容性的源数据来解决。</p>
+<p class="translated">对于谷歌的研究人员来说，这意味着从ALS患者那里收集几十个小时的语音音频。如你所料，每个人受自身状况的影响不同，所以适应疾病的影响与适应，比如说，仅仅是不常见的口音，不是同一个过程。</p>
+
+<p class="translated">一个标准的语音识别模型被用作基线，然后以一些实验性的方式进行调整，在新的音频上训练它。仅这一点就大大降低了单词错误率，而且对原始模型的改变相对较小，这意味着在适应新的声音时不需要太多的计算。</p>
+<p class="translated">研究人员发现，当模型仍然被给定的音素(即像“e”或“f”这样的个人语音)混淆时，它有两种错误。首先，它没有识别出想要表达的音素，因此没有识别出单词。第二，模型必须猜测说话者<em>想要的是哪个音素，并且在两个或更多单词听起来大致相似的情况下可能会选择错误的音素。</em></p>
+<p class="translated">特别是第二个错误，它可以被智能地处理。也许你说，“我要回到房子里面去”，而系统不能识别back中的“b”和house中的“h”；你不太可能想说“我要钻进老鼠的肚子里。”人工智能系统可能能够使用它所知道的人类语言——以及你自己的声音或你说话的背景——来智能地填补空白。</p>
+<p class="translated">但那是留给以后研究的。目前，你可以在论文“用有限的数据为构音障碍和带口音的语音个性化语音识别”中读到该团队迄今为止的工作<a href="https://web.archive.org/web/20221025222150/https://arxiv.org/abs/1907.13511">，</a>该论文将于下月在奥地利<a href="https://web.archive.org/web/20221025222150/https://www.interspeech2019.org/"> Interspeech </a>会议上发表。</p>
+			</div>
+
+			</div>    
+</body>
+</html>

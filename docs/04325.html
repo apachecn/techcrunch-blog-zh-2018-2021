@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Researchers spotlight the lie of 'anonymous' data </title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">研究人员关注“匿名”数据的谎言</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/07/24/researchers-spotlight-the-lie-of-anonymous-data/">https://web.archive.org/web/https://techcrunch.com/2019/07/24/researchers-spotlight-the-lie-of-anonymous-data/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">欧洲两所大学的研究人员发表了一种方法，他们说这种方法能够在只有15个人口统计属性的匿名数据集中正确地重新识别99.98%的人。</p>
+<p class="translated">他们的模型表明，复杂的个人信息数据集无法通过当前的“匿名”数据方法(如发布信息样本(子集))来防止被再次识别。</p>
+<p class="translated">事实上，这个建议是，任何“匿名”和发布的大数据集都不能被认为是安全的，不会被重新识别——除非有严格的访问控制。</p>
+<p class="translated">“我们的结果表明，即使是大量采样的匿名数据集也不太可能满足GDPR[欧洲一般数据保护条例]规定的现代匿名标准，并严重挑战去识别释放和遗忘模型的技术和法律充分性，”伦敦帝国学院和比利时卢万天主教大学的研究人员在他们的论文<a href="https://web.archive.org/web/20230327015547/https://www.nature.com/articles/s41467-019-10933-3/"/>的摘要中写道，该论文已发表在《自然通信》杂志上。</p>
+<p class="translated">当然，这绝不是第一次数据匿名化被证明是可逆的。该论文背后的研究人员之一，帝国理工学院的伊夫-亚历山大·德·蒙特乔伊(Yves-Alexandre de Montjoye)在<a href="https://web.archive.org/web/20230327015547/http://science.sciencemag.org/content/347/6221/536.full?ijkey=4rZ2eFPUrlLGw&amp;keytype=ref&amp;siteid=sci" target="_blank" rel="noopener noreferrer">先前的研究</a>中通过查看信用卡元数据证明，例如，仅仅四条随机信息就足以将90%的购物者重新识别为独特的人物。</p>
+<p class="translated">在另一项由de Montjoye合著的研究中，该研究调查了<a href="https://web.archive.org/web/20230327015547/https://www.nature.com/articles/srep01376" target="_blank" rel="noopener noreferrer">智能手机位置数据</a>的隐私侵蚀情况，研究人员仅用四个时空点就能够唯一识别出数据集中95%的个体。</p>
+<p class="translated">与此同时，尽管此类研究表明从数据集中挑选个人有多容易，但“匿名”消费者数据集(如经纪人为营销目的交易的数据集)可能包含比每个人更多的属性。</p>
+<p class="translated">研究人员援引数据经纪人Experian的话说，Alteryx出售了对一个去识别数据集的访问权，该数据集包含例如1.2亿美国人每个家庭248个属性。</p>
+<p class="translated">根据他们模型的衡量，本质上这些家庭中没有一个不会被重新识别。然而，大量的数据集继续被交易，用“匿名”的有力主张润滑…</p>
+<p class="translated">(如果你想进一步了解个人数据是如何被广泛用于商业目的的，那么声名狼藉、现已倒闭的政治数据公司剑桥分析公司(Cambridge Analytica)去年——在脸书数据滥用丑闻最严重的时候——表示，其用于美国秘密选民锁定工作的基础数据集已获得Acxiom、Experian和Infogroup等知名数据经纪商的许可。具体来说，它声称已经从“非常大的知名数据聚合商和数据供应商”那里合法地获得了“T0”数百万个关于美国个人的数据点)</p>
+<p class="translated">虽然多年来的研究表明，在匿名数据集中重新识别个人是多么容易，但这里的新奇之处在于，研究人员建立了一个统计模型，估计对任何数据集进行这样的操作有多容易。</p>
+<p class="translated">他们通过计算潜在匹配正确的概率来做到这一点，所以本质上他们是在评估匹配的唯一性。他们还发现，小样本分数未能保护数据不被再次识别。</p>
+<p class="translated"><span>“我们在来自人口统计和调查数据的210个数据集上验证了我们的方法，并表明即使极小的采样分数也不足以防止重复识别和保护你的数据，”他们写道。“我们的方法获得了从0.84到0.97的AUC准确度分数，用于预测个体的独特性，具有低的错误发现率。我们发现，在任何可用的“匿名”数据集中，只要使用15个特征，包括年龄、性别和婚姻状况，就能正确地重新识别出99.98%的美国人。”</span></p>
+<p class="translated">他们采取了也许不同寻常的步骤，发布了他们为实验编写的<a href="https://web.archive.org/web/20230327015547/https://cpg.doc.ic.ac.uk/individual-risk/">代码</a>，以便其他人可以复制他们的发现。他们还创建了一个<a href="https://web.archive.org/web/20230327015547/https://cpg.doc.ic.ac.uk/individual-risk/"> web界面</a>，任何人都可以在这里输入属性，根据这些特定的数据点，获得他们在数据集中被重新识别的可能性。</p>
+<p class="translated">在一项基于向该界面输入三个随机属性(性别、出生数据、邮政编码)的测试中，通过再添加一个属性(婚姻状况)，模型对理论上的个人进行重新识别的可能性从54%上升到了整整95%——这突显出属性远少于15个的数据集仍可能对大多数人构成巨大的隐私风险。</p>
+<p class="translated">经验法则是，数据集中的属性越多，匹配越有可能是正确的，因此数据受“匿名化”保护的可能性就越小。</p>
+<p class="translated">例如，当谷歌旗下的人工智能公司DeepMind作为与英国国民健康服务(National Health Service)的研究伙伴关系的一部分，被授权使用<a href="https://web.archive.org/web/20230327015547/https://techcrunch.com/2016/07/05/deepmind-partners-with-nhs-eye-hospital-to-conduct-ai-research/">100万次“匿名化”眼部扫描</a>时，这提供了许多思考的素材。</p>
+<p class="translated">当然，生物特征数据本质上充满了独特的数据点。因此，任何眼睛扫描——包含超过(字面上)几个像素的视觉数据——真的可以被视为“匿名”的概念是不合理的。</p>
+<p class="translated">欧洲目前的数据保护框架确实允许自由使用和共享真正匿名的数据，而法律对处理和使用个人数据提出了严格的监管要求。</p>
+<p class="translated">尽管该框架也谨慎地认识到重新识别的风险，并使用假名数据而不是匿名数据的分类(前者保留了大量个人数据，并受到相同的保护)。根据GDPR，只有当一个数据集被去除了足够的元素以确保个人不再能够被识别时，它才能被认为是“匿名的”。</p>
+<p class="translated">这项研究强调了任何数据集要达到真正、可靠匿名的标准是多么困难——即使只有几个可用属性，重复识别的风险也会明显增加。</p>
+<p class="translated">“我们的结果拒绝了这样的说法，首先，重新鉴定没有实际风险，其次，采样或发布部分数据集提供了可信的否认，”研究人员断言。</p>
+<p class="translated">“首先，我们的结果表明，很少的属性通常足以在严重不完整的数据集中以高置信度重新识别个体；其次，我们拒绝了采样或发布部分数据集(例如，来自一个医院网络或单个在线服务)会提供可信的可否认性的说法。最后，他们表明，第三，即使群体唯一性很低——这是一个经常用来证明数据充分去识别以被认为是匿名的论点——许多个体仍然有被攻击者使用我们的模型成功重新识别的风险。”</p>
+<p class="translated">他们继续呼吁监管机构和立法者认识到数据重新识别带来的威胁，并从法律上关注“可证明的隐私增强系统和安全措施”，他们说这些系统和措施可以允许以保护隐私的方式处理数据——包括他们引用的2015年<a href="https://web.archive.org/web/20230327015547/https://arxiv.org/abs/1512.06000">的一篇论文</a>，该论文讨论了加密搜索和隐私保护计算等方法；粒度访问控制机制；政策执行和问责制；和数据来源。</p>
+<p class="translated">“随着匿名化标准的重新定义，包括欧盟国家和地区数据保护机构的重新定义，这些标准必须强大，并能应对我们在本文中提出的新威胁。他们需要考虑到重新识别的个人风险和缺乏可信的可否认性——即使数据集不完整——以及在法律上承认广泛的可证明的隐私增强系统和安全措施，这些系统和措施将允许数据在有效保护人们隐私的同时被使用，”他们补充说。</p>
+<p class="translated">“展望未来，他们质疑当前的去身份化做法是否符合现代数据保护法(如GDPR和CCPA[加州消费者隐私法案])的匿名化标准，并强调从法律和监管角度来看，有必要超越去身份化的发布和遗忘模式。”</p>
+			</div>
+
+			</div>    
+</body>
+</html>

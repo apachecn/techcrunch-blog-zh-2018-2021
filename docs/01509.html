@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Massive mortgage and loan data leak gets worse as original documents also exposed • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">随着原始文件也被曝光，大量抵押和贷款数据泄露变得更糟TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/01/24/mortgage-loan-leak-gets-worse/">https://web.archive.org/web/https://techcrunch.com/2019/01/24/mortgage-loan-leak-gets-worse/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">还记得我们周三报道的<a href="https://web.archive.org/web/20221127165943/https://techcrunch.com/2019/01/23/financial-files/">抵押和贷款数据</a>的大规模数据泄露吗？</p>
+<p class="translated">如果你错过了，在一个暴露的Elasticsearch服务器被发现没有密码后，数百万份文件被发现泄露。这些文件包含了数万名个人的高度敏感的财务数据，这些个人在过去十年里从美国金融机构获得了贷款或抵押贷款。这些文件使用一种叫做OCR的技术从原始纸质文件转换成计算机可读格式，并存储在数据库中，但它们不容易阅读。也就是说，任何知道在哪里可以找到服务器的人都有可能识别出姓名、地址、出生日期、社会安全号码和其他私人财务数据。</p>
+<p class="translated">独立安全研究人员鲍勃·迪亚琴科和TechCrunch <a href="https://web.archive.org/web/20221127165943/https://techcrunch.com/2019/01/23/financial-files/">追踪泄露数据库的源头</a>到德克萨斯的数据和分析公司阿森松岛。当联系到该公司时，该公司表示，其供应商之一，总部位于纽约的文件管理初创公司<a href="https://web.archive.org/web/20221127165943/https://web.archive.org/web/20180824215739/http://opticsml.com"> OpticsML </a>，对数据处理不当，应对数据泄露负责。</p>
+<p class="translated">原来数据又被曝光了——但这一次，是原始文档。</p>
+<p class="translated">迪亚琴科在一个单独的暴露的亚马逊S3存储服务器中发现了第二批数据，该服务器也没有密码保护。任何人在他们的网络浏览器中访问一个容易猜测的网址，都可以访问存储服务器来查看和下载存储在其中的文件。</p>
+<p class="translated">在给TechCrunch的一份说明中，迪亚琴科表示，他首先对找到服务器感到“非常惊讶”，更不用说开放和可访问了。因为Amazon存储服务器在默认情况下是私有的，不能通过网络访问，所以有人会有意识地决定将其权限设置为公共的。</p>
+<p class="translated">这个桶包含21个文件，包含23，000页拼接在一起的PDF文档，大小约为1.3千兆字节。迪亚琴科表示，周三曝光的Elasticsearch数据库中的部分数据与亚马逊S3桶中发现的数据相匹配，证实了部分或全部数据与之前发现的数据相同。与周三的报告一样，该服务器包含美国各地银行和金融机构的文件，包括贷款和抵押贷款协议。我们还发现了美国住房和城市发展部的文件，如<a href="https://web.archive.org/web/20221127165943/https://techcrunch.com/2019/01/05/file-your-taxes-before-scammers-do/">以及W-2税单</a>，贷款偿还时间表和其他敏感的财务信息。</p>
+<p/><div id="attachment_1774296" class="wp-caption alignnone"><img aria-describedby="caption-attachment-1774296" decoding="async" loading="lazy" class="wp-image-1774296 size-full" src="../Images/0070f4efb5a3194b192f640061784319.png" alt="" srcset="https://web.archive.org/web/20221127165943im_/https://techcrunch.com/wp-content/uploads/2019/01/final-doc-redacted.jpg 2003w, https://web.archive.org/web/20221127165943im_/https://techcrunch.com/wp-content/uploads/2019/01/final-doc-redacted.jpg?resize=150,97 150w, https://web.archive.org/web/20221127165943im_/https://techcrunch.com/wp-content/uploads/2019/01/final-doc-redacted.jpg?resize=300,194 300w, https://web.archive.org/web/20221127165943im_/https://techcrunch.com/wp-content/uploads/2019/01/final-doc-redacted.jpg?resize=768,498 768w, https://web.archive.org/web/20221127165943im_/https://techcrunch.com/wp-content/uploads/2019/01/final-doc-redacted.jpg?resize=680,441 680w, https://web.archive.org/web/20221127165943im_/https://techcrunch.com/wp-content/uploads/2019/01/final-doc-redacted.jpg?resize=1536,995 1536w, https://web.archive.org/web/20221127165943im_/https://techcrunch.com/wp-content/uploads/2019/01/final-doc-redacted.jpg?resize=1200,778 1200w, https://web.archive.org/web/20221127165943im_/https://techcrunch.com/wp-content/uploads/2019/01/final-doc-redacted.jpg?resize=50,32 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20221127165943im_/https://techcrunch.com/wp-content/uploads/2019/01/final-doc-redacted.jpg"/><p id="caption-attachment-1774296" class="wp-caption-text translated">在暴露的存储服务器上发现了其中的两个文件(图片:TechCrunch)</p></div>
+<p class="translated">许多文件还包含姓名、地址、电话号码、社会保险号等等。</p>
+<p class="translated">当我们周三试图联系OpticsML时，它的网站已经被下线，所列的电话号码也无法接通。在搜索了该网站的旧缓存版本后，我们找到了一个电子邮件地址。</p>
+<p class="translated">TechCrunch向首席执行官肖恩·兰宁(Sean Lanning)发了电子邮件，水桶在一小时内就被固定了。</p>
+<p class="translated">朗宁收到了我们的邮件，但没有发表评论。相反，OpticsML首席技术官约翰·布罗泽纳(John Brozena)在另一封电子邮件中证实了这次入侵，但拒绝回答有关暴露数据的几个问题——包括bucket打开了多长时间以及为什么要公开。</p>
+<p class="translated">“我们正在与有关当局和一个法医小组合作，分析关于暴露的Elasticsearch服务器的全部情况，”Brozena说。“作为此次调查的一部分，我们了解到，用于测试的21份文件因之前讨论的Elasticsearch泄露而变得可识别。这些文件很快就被下线了。”</p>
+<p class="translated">他补充说，根据州数据泄露通知法，当被问及通知客户和州监管机构时，OpticsML“正在努力通知所有受影响的各方”。</p>
+<p class="translated">但是Diachenko说，在这个桶被发现之前，不知道它被使用了多少次。</p>
+<p class="translated">“我想，在这些家伙这样的宣传之后，你要做的第一件事就是检查你的云存储是否关闭了，或者至少有密码保护，”他说。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

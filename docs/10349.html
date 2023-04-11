@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Apple mistakenly approved a widely used malware to run on Macs • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">苹果错误地批准了一个广泛使用的恶意软件在MAC电脑上运行</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2020/08/31/apple-notarized-mac-malware/">https://web.archive.org/web/https://techcrunch.com/2020/08/31/apple-notarized-mac-malware/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">苹果有一些最严格的规则来防止恶意软件登陆其应用程序商店，即使有时一个坏应用程序<a href="https://web.archive.org/web/20230207090646/https://techcrunch.com/2018/09/07/a-top-tier-app-in-apples-mac-app-store-will-steal-your-browser-history/">漏网</a>。但去年，苹果采取了迄今为止最强硬的方式，要求开发者提交他们的应用程序进行安全检查，以便在数百万台MAC电脑上不受阻碍地运行。</p>
+<p class="translated">苹果称之为“公证”的过程是扫描应用程序的安全问题和恶意内容。如果获得批准，Mac的内置安全筛选软件Gatekeeper将允许该应用程序运行。没有通过安全嗅探测试的应用程序将被拒绝，并被阻止运行。</p>
+<p class="translated">但安全研究人员表示，他们发现了第一个由苹果无意中公证的Mac恶意软件。</p>
+<p class="translated">Peter Dantini与著名Mac安全研究员Patrick Wardle合作，发现了一个伪装成Adobe Flash安装程序的恶意软件活动。这些活动<a href="https://web.archive.org/web/20230207090646/https://techcrunch.com/2018/10/11/fake-flash-installer-cryptocurrency-malware/">很常见</a>，已经存在多年了——即使现在很少使用Flash而且大多数运行未加密的代码，当打开时MAC会立即阻止。</p>
+<p class="translated">但是Dantini和Wardle发现一个恶意的Flash安装程序有经过苹果公证的代码，可以在MAC上运行。</p>
+<p/><div id="attachment_2037964" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2037964" decoding="async" class="wp-image-2037964 size-full" src="../Images/de74026324a5854ee7f3393a6492f052.png" alt="" srcset="https://web.archive.org/web/20230207090646im_/https://techcrunch.com/wp-content/uploads/2020/08/big-sur-wardle.png 978w, https://web.archive.org/web/20230207090646im_/https://techcrunch.com/wp-content/uploads/2020/08/big-sur-wardle.png?resize=150,113 150w, https://web.archive.org/web/20230207090646im_/https://techcrunch.com/wp-content/uploads/2020/08/big-sur-wardle.png?resize=300,226 300w, https://web.archive.org/web/20230207090646im_/https://techcrunch.com/wp-content/uploads/2020/08/big-sur-wardle.png?resize=768,578 768w, https://web.archive.org/web/20230207090646im_/https://techcrunch.com/wp-content/uploads/2020/08/big-sur-wardle.png?resize=680,512 680w, https://web.archive.org/web/20230207090646im_/https://techcrunch.com/wp-content/uploads/2020/08/big-sur-wardle.png?resize=50,38 50w" sizes="(max-width: 978px) 100vw, 978px" data-original-src="https://web.archive.org/web/20230207090646im_/https://techcrunch.com/wp-content/uploads/2020/08/big-sur-wardle.png"/><p id="caption-attachment-2037964" class="wp-caption-text translated">该恶意安装程序经过了苹果公司的公证，可以在最新版本的macOS上运行。(图片:帕特里克·沃德尔/提供)</p></div>
+<p class="translated">沃德尔证实，苹果已经批准了<a href="https://web.archive.org/web/20230207090646/https://objective-see.com/blog/blog_0x3C.html#Shlayer">流行的Shlayer恶意软件</a>使用的代码，安全公司卡巴斯基<a href="https://web.archive.org/web/20230207090646/https://securelist.com/shlayer-for-macos/95724/">称</a>是MAC在2019年面临的“最常见的威胁”。Shlayer是一种广告软件，它拦截加密的网络流量，甚至来自HTTPS网站，并用自己的广告取代网站和搜索结果，为运营商赚取欺诈性的广告收入。</p>
+<p class="translated">“据我所知，这是第一次，”沃德尔在与TechCrunch分享的博客文章中写道。</p>
+<p class="translated">沃德尔说，这意味着苹果在提交恶意代码时没有检测到它，并批准它在MAC电脑上运行——即使是在预计今年晚些时候发布的macOS Big Sur的未发布测试版上。</p>
+<p class="translated">在沃德尔伸出援手后，苹果撤销了经过公证的有效载荷，防止该恶意软件未来在MAC电脑上运行。</p>
+<p class="translated">在一份声明中，苹果发言人告诉TechCrunch:“恶意软件不断变化，苹果的公证系统有助于我们将恶意软件挡在Mac电脑之外，并允许我们在发现恶意软件时快速做出反应。得知此广告软件后，我们撤销了已识别的变体，禁用了开发者帐户，并撤销了相关证书。我们感谢研究人员帮助我们保护用户的安全。”</p>
+<p class="translated">但沃德尔说，攻击者很快就带着一个新的、经过公证的有效载荷回来了，能够再次绕过Mac的安全性。苹果向TechCrunch证实，它也屏蔽了该有效载荷。猫捉老鼠的游戏还在继续。</p>
+<p class="translated"><em>更新了苹果公司的评论。</em></p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

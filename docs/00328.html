@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>The tools, they are a-changing • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">这些工具正在改变TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2018/10/28/the-tools-they-are-a-changing/">https://web.archive.org/web/https://techcrunch.com/2018/10/28/the-tools-they-are-a-changing/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">构建网络服务和智能手机应用程序，这是我在过去十年左右的时间里一直在HappyFunCorp  <sup> 1 </sup>专业从事的大部分工作，过去非常简单。不容易，但很简单，特别是当客户是消费者创业公司时，他们中的许多人都是消费者创业公司。</p>
+<p class="translated">我们做得越多，就做得越好。设计编写两个原生app，一般是iOS第一，Android第二。不要在设计上吝啬。将它们连接到一个JSON API，通常是用Ruby on Rails编写的，它也为网站提供了动力。总会有一个网站。消费者可能只会看到应用程序的一个小广告牌，但本质上总是有一个管理网站，来控制应用程序的功能和方面。</p>
+<p class="translated">设计对于管理站点来说并不重要，所以你可以用一些粗糙但有效的东西来构建它，比如ActiveAdmin为什么要自己卷？同样，认证也很棘手，很容易出错，所以使用像Devise这样的东西，它内置了脸书和Twitter登录的挂钩。仔细设计您的数据库。使用jQuery进行动态浏览器内操作，因为原始Javascript是一场噩梦。争论你的服务器测试是用Rspec还是Minitest。</p>
+<p class="translated">都在吗？好了，将它推广到Heroku扩展环境中，这样您就可以简单地“git push”以推进到暂存和生产环境中，并提供各种级别的Postgres支持、自动扩展、管道、Redis缓存、Resque worker作业等等。如果是一家初创公司，让他们呆在Heroku上，看看他们是否能跟上潮流，是否能找到传说中的产品市场契合度，尤其是因为这有助于你更快地迭代。如果是这样，在某个时候你必须让他们升级到AWS，因为Heroku只能扩展到这个程度，而且代价非常昂贵。如果没有，好吧，“快速失败”，对不对？</p>
+<p class="translated">那是五年前的日子，我的朋友们，那些宁静的、逝去已久的日子。当然，有很多悲伤的日子，但是很少有复杂的决定。智能手机热潮开始了，网络热潮正在平息，每个人都还在这两次浪潮中冲浪。</p>
+<p class="translated">今天吗？嗯，今天我们仍然是，这两个浪潮都没有打破，本质上，软件仍然在吃世界，但事情是…不同的。世界上更多的地方正在被吃掉，但速度也更慢，比如从10亿美元开始每年增长50%，而不是从100万美元开始增长500%。很少有异想天开的创始人有一个肯定会改变世界的应用创意，并有足够的资金来尝试一下。这些仍然存在，当然，他们有更多的权力，但现在情况更复杂了。</p>
+<p class="translated">相反，我们看到更多的大型企业，媒体、工业和零售业，意识到他们必须适应并被吞噬，带着兴奋和恐惧尝试新的技术项目。或者为非常具体但非常有用的目的征用定制应用程序，并要求它们与笨拙的预先存在的定制中间件接口。或者科技公司，甚至是家喻户晓的大公司，外包辅助工具和项目，以便让他们的内部团队专注于他们的核心能力和商业模式。在过去的几年里，我们的客户组合无疑更多地转向了企业。</p>
+<p class="translated">这并不是说创业公司不再经常带着好主意和鼓舞人心的幻灯片走进我们的大门。就像超级异想天开的区块链创始人(当然，<a href="https://web.archive.org/web/20230107053325/https://techcrunch.com/2018/10/07/im-very-sorry-but-youre-going-to-have-to-learn-to-love-the-blockchain/">我有时也对区块链有点异想天开</a>)取代了昔日的消费者应用创始人。我怀疑我们并不是唯一一个在去年年底和今年年初拥有大量区块链创业项目的公司，目前这些项目已经减少到只有几个。(尤其是因为工具仍然如此粗糙，这让我想起了90年代的命令行黑客。)但我强烈怀疑球体正在消失。</p>
+<p class="translated">到目前为止，我们处理的人工智能项目没有我预期的那么多，可能部分是因为人工智能人才仍然如此稀缺和受到高度重视，部分是因为事实证明，许多看似“人工智能”的工作可以通过简单的线性回归来完成，而不是通过建立、训练和调整深度学习神经网络来完成……尽管如果你用TensorFlow进行这些线性回归，它仍然符合“人工智能”的流行词，对吗？对吗？</p>
+<p class="translated">然而，最重要的是，我们使用的工具已经改变了。如今当你想建一个app的时候，你要问自己:真的是原生的吗？(Java还是Kotlin？Objective-C还是Swift？)还是反应原生？还是Xamarin？还是谷歌新的Flutter的东西？当你想建立一个网站时，你必须考虑:传统？还是单页，用React还是Angular还是Vue？至于服务器——Go比Rails快得多，你知道，哦，那优雅的并发处理，但是，哦，我的map/filter/reduce在哪里？Javascript仍然是一种笨拙的语言，但是跨栈使用一种语言有一定的优势，并且Node现在功能强大，包丰富。当然，您会希望全部容器化，因为虽然Docker肯定会增加一两层配置复杂性，但这通常是值得的。</p>
+<p class="translated">除非你想用Amazon Lambda或Google Firebase完全“无服务器”，至少在方面是这样。即使您不使用Firebase作为数据存储库，身份验证又如何呢？如果你们都是容器化的，如果/如果合适的话，Kubernetized，虽然也许我们不要走多微服务的路线，直到你确定你的产品市场适合它，然后你想在哪里推出它，AWS或Azure或Google Cloud或Digital Ocean？或者你想使用他们的PaaS服务，像App Engine或Beanstalk，像Heroku一样，有点像生活在“无服务器”和“裸机虚拟机”之间？</p>
+<p class="translated">我过于简单化了，但你明白我的意思。作为开发人员，我们从未有过更多的选择，我们从未有过更多的可用工具……我们也从未不得不与分析瘫痪做更多的斗争，因为很难确定哪一个可能的工具集对于任何特定的情况是最好的。有时候——通常——我们不得不满足于仅仅选择一个好的。恐怕这个选择问题不会很快变得容易。对于一个程序员来说，这是一个奇怪的时代。我们生活和工作都纠结在财富的尴尬中。</p>
+<hr/>
+<p class="translated"><small> <sup> 1 </sup>是的，那确实是我们的名字。不，这个TC专栏不是一份全职工作。(这是人们经常假设的事情，因为它更容易被看到，对一些人来说，每周写一篇专栏文章听起来工作量很大，但不，我真的是一名CTO。)</small></p>
+			</div>
+
+			</div>    
+</body>
+</html>

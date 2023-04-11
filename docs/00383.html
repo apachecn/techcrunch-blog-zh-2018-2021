@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>A pair of new Bluetooth security flaws expose wireless access points to attack </title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">一对新的蓝牙安全缺陷使无线接入点暴露于攻击之下</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2018/11/01/bleedingbit-security-flaws-bluetooth-wireless-networks/">https://web.archive.org/web/https://techcrunch.com/2018/11/01/bleedingbit-security-flaws-bluetooth-wireless-networks/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">安全研究人员发现了影响几个流行的无线接入点的两个严重漏洞，如果被利用，攻击者可能会危及企业网络。</p>
+<p class="translated">这两个错误是在德州仪器(Texas Instruments)制造的蓝牙低能耗芯片中发现的，网络设备制造商——如Aruba、Cisco和Meraki——在他们的企业无线接入点系列中使用这些芯片。尽管这两种错误截然不同，并且针对一系列模型，但这些漏洞可以允许攻击者接管接入点，闯入企业网络或跳过分隔网络的虚拟墙。</p>
+<p class="translated">安全公司Armis将这些漏洞称为“出血位”，因为第一个错误涉及翻转蓝牙数据包中的最高位，这将导致其内存溢出或出血，然后攻击者可以利用这些漏洞在受影响的思科或Meraki硬件上运行恶意代码。</p>
+<p class="translated">第二个缺陷允许攻击者在Aruba的设备上安装恶意固件版本，因为该软件不会正确检查它是否是可信的更新。</p>
+<p class="translated">尽管安全研究人员表示，这些漏洞允许远程执行代码，但从技术上讲，这些攻击是本地的——因为潜在的攻击者无法通过互联网利用这些漏洞，必须在蓝牙范围内。在大多数情况下，这大约是100米左右——如果有定向天线，这个距离会更长——因此坐在办公楼外的任何人都有可能瞄准受影响的设备。</p>
+<p class="translated">“就接入点而言，一旦攻击者获得了控制权，他就可以到达它所服务的所有网络，而不管任何网络分段，”Armis在一份技术报告中说。</p>
+<p class="translated">Armis的研究副总裁Ben Seri表示，利用过程“相对简单”。虽然该公司没有公布漏洞利用代码，但Seri表示，攻击者需要的只是“任何内置蓝牙的笔记本电脑或智能手机。”</p>
+<p class="translated">但他警告说，基于蓝牙的攻击可能只是更广泛的利用过程的一部分。</p>
+<p class="translated">“一旦攻击者通过这些漏洞之一获得了对接入点的控制，他就可以通过互联网与他控制的命令和控制服务器建立出站连接，并从更远程的位置继续攻击，”他说。这将使攻击者在网络上持续存在，一旦攻击者离开，就更容易进行监控或窃取数据。</p>
+<p/><div id="attachment_1740354" class="wp-caption alignnone"><img aria-describedby="caption-attachment-1740354" decoding="async" class="size-full wp-image-1740354" src="../Images/99b20716f2e75ba9b9c7c4c235345f3a.png" alt="" srcset="https://web.archive.org/web/20230306050623im_/https://techcrunch.com/wp-content/uploads/2018/11/bleedingbit.jpg 2572w, https://web.archive.org/web/20230306050623im_/https://techcrunch.com/wp-content/uploads/2018/11/bleedingbit.jpg?resize=150,74 150w, https://web.archive.org/web/20230306050623im_/https://techcrunch.com/wp-content/uploads/2018/11/bleedingbit.jpg?resize=300,149 300w, https://web.archive.org/web/20230306050623im_/https://techcrunch.com/wp-content/uploads/2018/11/bleedingbit.jpg?resize=768,381 768w, https://web.archive.org/web/20230306050623im_/https://techcrunch.com/wp-content/uploads/2018/11/bleedingbit.jpg?resize=680,337 680w, https://web.archive.org/web/20230306050623im_/https://techcrunch.com/wp-content/uploads/2018/11/bleedingbit.jpg?resize=1536,762 1536w, https://web.archive.org/web/20230306050623im_/https://techcrunch.com/wp-content/uploads/2018/11/bleedingbit.jpg?resize=2048,1016 2048w, https://web.archive.org/web/20230306050623im_/https://techcrunch.com/wp-content/uploads/2018/11/bleedingbit.jpg?resize=1200,595 1200w, https://web.archive.org/web/20230306050623im_/https://techcrunch.com/wp-content/uploads/2018/11/bleedingbit.jpg?resize=50,25 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230306050623im_/https://techcrunch.com/wp-content/uploads/2018/11/bleedingbit.jpg"/><p id="caption-attachment-1740354" class="wp-caption-text translated">“出血位”允许未经身份验证的攻击者在不被发现的情况下闯入企业网络，接管接入点，传播恶意软件并跨网段横向移动。(图片:Armis/提供)</p></div>
+<p class="translated">Armis不知道有多少设备受到影响，但警告说，这些漏洞是在一系列其他带有蓝牙低能耗芯片的设备中发现的。</p>
+<p class="translated">“这种暴露不仅仅局限于接入点，因为这些芯片被用于许多其他类型的装置和设备，”Seri说。"它们被用于各种行业，如医疗保健、工业、汽车、零售等."</p>
+<p class="translated">Seri说，漏洞不在蓝牙协议中，而是在制造商身上——在这种情况下，是蓝牙芯片本身。作为一个开放标准，设备制造商很大程度上可以自行决定如何实现该协议。批评者一直认为，蓝牙规范留下了太多的解释空间，这可能会导致安全问题。</p>
+<p class="translated">就其本身而言，德州仪器证实了这些漏洞，并发布了几个补丁，但攻击了Armis的发现，称其报告“缺乏事实依据，可能会误导”，发言人Nicole Bernard说。</p>
+<p class="translated">在Armis于7月份私下披露这些漏洞后，这三家受影响的设备制造商也发布了补丁。</p>
+<p class="translated">Aruba表示，它“意识到”这一漏洞，并在10月18日的咨询中警告客户<a href="https://web.archive.org/web/20230306050623/https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2018-006.txt">，但指出，只有当用户启用蓝牙时，其设备才会受到影响——Aruba表示，蓝牙在默认情况下是禁用的。思科也拥有</a><a href="https://web.archive.org/web/20230306050623/https://meraki.cisco.com/blog/cisco-meraki-customer-advisories/">的Meraki品牌</a>，称其部分设备易受攻击，但默认情况下也禁用蓝牙。修补程序已经可用，该公司在<a href="https://web.archive.org/web/20230306050623/https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20181101-ap">的支持公告</a>中列出了易受攻击的设备列表。思科发言人表示，该公司“不知道”有人恶意利用该漏洞。</p>
+<p class="translated">卡耐基梅隆大学的公共漏洞数据库CERT也为任何其他可能受到影响的设备提供了建议。</p>
+<p class="translated">苹果、Check Point、D-Link和Netgear设备不受影响。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

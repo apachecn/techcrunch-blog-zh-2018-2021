@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Facebook is creating photorealistic homes for AIs to work and learn in </title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">脸书正在为人工智能创造逼真的家园，供其工作和学习</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/06/14/facebook-is-creating-photorealistic-homes-for-ais-to-work-and-learn-in/">https://web.archive.org/web/https://techcrunch.com/2019/06/14/facebook-is-creating-photorealistic-homes-for-ais-to-work-and-learn-in/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">如果人工智能机器人能够帮助我们做家务，它们将需要大量在人类环境中导航的经验。模拟器，看起来和行为都像真实生活的虚拟世界，是他们学习的最佳场所，脸书已经创造了一个迄今为止最先进的此类系统。</p>
+<p class="translated">名为<a href="https://web.archive.org/web/20230227151052/https://aihabitat.org/"> Habitat </a>的脸书新的<a href="https://web.archive.org/web/20230227151052/https://ai.facebook.com/blog/open-sourcing-ai-habitat-an-simulation-platform-for-embodied-ai-research/">开源</a>模拟器在几个月前被简要提及，但今天得到了完整的解释处理，伴随着一篇关于系统<a href="https://web.archive.org/web/20230227151052/https://arxiv.org/abs/1904.01201">的论文在CVPR </a>发表。</p>
+<p class="translated">教机器人在现实世界中导航并完成简单的任务是一个需要相当长时间的过程，因此在实际的物理空间中用真实的机器人来做这件事是不切实际的。可能需要数百小时，甚至数年的时间，反复学习如何最好地从一个地方到另一个地方，或者如何抓住和拉抽屉。</p>
+
+<p class="translated">相反，机器人的人工智能可以被放置在一个接近真实环境的虚拟环境中，基础知识可以像计算机运行管理3D世界的计算一样快地被计算出来。这意味着您可以在几分钟的密集计算时间内完成数百或数千小时的训练。</p>
+<p class="translated">Habitat本身并不是一个虚拟世界，而是一个可以运行这种模拟环境的平台。它与几个现有的系统和环境(SUNCG、MatterPort3D、Gibson等)兼容，并针对效率进行了优化，因此研究人员可以以现实世界速度的几百倍运行它。</p>
+<p class="translated">但脸书也想推进虚拟世界的艺术水平，因此创建了Replica，这是一个用于栖息地的数据库，包括许多组织成一个完整房子的照片级房间:厨房，浴室，门，带沙发的客厅，一切。它是由脸书的现实实验室创造的，是对真实环境进行艰苦摄影和深度绘图的结果。</p>
+<p class="translated">[gallery ids="1843686，1843683，1843682"]</p>
+<p class="translated">这些被重新创建的细节是高的，但你可能会注意到一些人工制品，尤其是沿着天花板和难以接近的边缘。这些区域不是重点，可能是因为AI视觉代理不依赖天花板和远处角落的细节来导航——椅子和桌子等形状，或者墙壁定义走廊的方式，要重要得多。</p>
+<p class="translated">然而，更重要的是团队对3D数据所做的无数注解。仅仅捕捉3D环境是不够的——物体和表面必须被一致且详尽地标记。那不仅仅是一张沙发——那是一张灰色的沙发，有蓝色的枕头。根据代理的逻辑，它可能知道也可能不知道沙发是“软的”，它是“在地毯上”，它是“在电视旁边”，等等。</p>
+<p/><div id="attachment_1843687" class="wp-caption aligncenter"><a href="https://web.archive.org/web/20230227151052/https://techcrunch.com/wp-content/uploads/2019/06/habitat-semantic.png"><img aria-describedby="caption-attachment-1843687" decoding="async" class="size-full wp-image-1843687" src="../Images/956f952ff11fbf8cb0428e8f82305fa4.png" alt="" srcset="https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat-semantic.png 1723w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat-semantic.png?resize=150,94 150w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat-semantic.png?resize=300,187 300w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat-semantic.png?resize=768,480 768w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat-semantic.png?resize=680,425 680w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat-semantic.png?resize=1536,959 1536w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat-semantic.png?resize=1200,749 1200w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat-semantic.png?resize=50,31 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat-semantic.png"/></a><p id="caption-attachment-1843687" class="wp-caption-text translated">每个语义标签用一种颜色表示栖息地和副本</p></div>
+<p class="translated">但是包括这样的标签增加了环境的灵活性，一个全面的API和任务语言允许代理执行复杂的多步骤问题，如“去厨房，告诉我桌子上的花瓶是什么颜色。”</p>
+<p class="translated">毕竟，如果这些助手是为了帮助，比如说，一个不能在家里方便走动的残疾人，他们将需要一定程度的悟性。“栖息地”和“复制品”意在帮助创造悟性，并给代理提供他们需要的实践。</p>
+<p class="translated">尽管有所进步，Habitat只是通往真正真实的模拟器环境的一小步。首先，代理本身没有被真实地渲染——机器人可能高或小，有轮子或腿，使用深度相机或RGB。有些逻辑不会改变——你的尺寸不会影响沙发到厨房的距离——但有些会；一个小机器人可能能够在桌子下面行走，或者看不到桌子上面有什么。</p>
+<p/><div id="attachment_1843681" class="wp-caption aligncenter"><a href="https://web.archive.org/web/20230227151052/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg"><img aria-describedby="caption-attachment-1843681" decoding="async" loading="lazy" class="size-full wp-image-1843681" src="../Images/69a8068ecbb45dbfcf8def9cb10852bc.png" alt="" srcset="https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg 1244w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=150,111 150w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=300,223 300w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=768,570 768w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=680,505 680w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=1200,891 1200w, https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=50,37 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230227151052im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg"/></a><p id="caption-attachment-1843681" class="wp-caption-text translated">通过各种虚拟视觉系统看到的栖息地</p></div>
+<p class="translated">此外，尽管Replica和许多其他类似的3D世界在视觉上被逼真地渲染，但它们在物理和交互性方面几乎完全没有功能。你可以告诉代理人去卧室找到衣柜的第二个抽屉，但是根本没有办法打开它。事实上没有抽屉——只有一片被贴上标签的风景，不能移动或触摸。</p>
+<p class="translated">其他模拟器更关注物理方面而不是视觉，如THOR，这是一个旨在让人工智能练习打开抽屉等事情的模拟器，这是一个从头开始学习的非常困难的任务。我问了两个THOR的开发者关于Habitat的问题。他们都称赞该平台为人工智能学习导航和观察任务提供了一个强大的实现场所，但强调由于缺乏交互性，Habitat在教学方面受到限制。</p>
+<p class="translated">然而，很明显，两者都是需要的，似乎现在一个不能成为另一个——模拟器可以是物理上的或视觉上的真实，而不是两者都是。毫无疑问，脸书和人工智能研究领域的其他人正在努力创造一个可以做到这一点的机器人。</p>
+			</div>
+
+			</div>    
+</body>
+</html>

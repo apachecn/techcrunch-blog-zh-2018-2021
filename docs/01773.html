@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Google open sources ClusterFuzz • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">谷歌开源集群fuzz TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/02/07/google-open-sources-clusterfuzz/">https://web.archive.org/web/https://techcrunch.com/2019/02/07/google-open-sources-clusterfuzz/</a></blockquote><div><header class="article__header ">
+	<p class="article__title-wrapper">
+						</p><h1 class="article__title translated">谷歌开源集群模糊</h1>
+		
+
+			
+	
+			
+	</header>
+
+			<div class="article-content">
+				<p id="speakable-summary" class="translated">Google today <a href="https://web.archive.org/web/20221006094939/https://opensource.googleblog.com/2019/02/open-sourcing-clusterfuzz.html">宣布</a>开源<a href="https://web.archive.org/web/20221006094939/https://github.com/google/clusterfuzz"> ClusterFuzz </a>，一个可扩展的模糊工具，可以在超过25000台机器的集群上运行。</p>
+<p class="translated">该公司长期以来一直在内部使用该工具，如果你特别关注谷歌的模糊化工作(你有，对吗？)，那么这一切可能看起来有点熟悉。这是因为谷歌几年前推出了<a href="https://web.archive.org/web/20221006094939/https://github.com/google/oss-fuzz">OSS-模糊</a>服务，而且这项服务实际上使用了ClusterFuzz。不过，OSS-Fuzz只对开源项目可用，而ClusterFuzz现在任何人都可以使用。</p>
+<p class="translated"><a href="https://web.archive.org/web/20221006094939/https://en.wikipedia.org/wiki/Fuzzing"> fuzzing </a>背后的总体概念非常简单:你基本上向你的应用程序抛出大量数据(包括随机输入),然后观察它如何反应。通常，它会崩溃，但有时您能够发现内存泄漏和安全缺陷。然而，一旦你开始大规模地做任何事情，它就会变得更加复杂，你将需要像ClusterFuzz这样的工具来管理这种复杂性。</p>
+<p class="translated"><img loading="lazy" class="aligncenter size-full wp-image-1780006" src="../Images/ff9e9307af43489476a406e2904a8ec4.png" alt="" srcset="https://web.archive.org/web/20221006094939im_/https://techcrunch.com/wp-content/uploads/2019/02/image1.png 690w, https://web.archive.org/web/20221006094939im_/https://techcrunch.com/wp-content/uploads/2019/02/image1.png?resize=150,76 150w, https://web.archive.org/web/20221006094939im_/https://techcrunch.com/wp-content/uploads/2019/02/image1.png?resize=300,152 300w, https://web.archive.org/web/20221006094939im_/https://techcrunch.com/wp-content/uploads/2019/02/image1.png?resize=680,344 680w, https://web.archive.org/web/20221006094939im_/https://techcrunch.com/wp-content/uploads/2019/02/image1.png?resize=50,25 50w" sizes="(max-width: 690px) 100vw, 690px" data-original-src="https://web.archive.org/web/20221006094939im_/https://techcrunch.com/wp-content/uploads/2019/02/image1.png"/></p>
+<p class="translated">ClusterFuzz自动执行从缺陷检测到报告的模糊化过程，然后重新测试修复。该工具本身也使用开源库，如<a href="https://web.archive.org/web/20221006094939/https://llvm.org/docs/LibFuzzer.html"> libFuzzer </a> fuzzing引擎和<a href="https://web.archive.org/web/20221006094939/http://lcamtuf.coredump.cx/afl/"> AFL fuzzer </a>来支持一些核心fuzzing特性，这些特性为该工具生成测试用例。</p>
+<p class="translated">谷歌表示，它已经使用该工具在Chrome中发现了超过16，000个bug，在使用OSS-Fuzz的160多个开源项目中发现了11，000个bug。既然如此多的软件测试和部署工具链现在通常都是自动化的，那么模糊化也成为最近的热门话题也就不足为奇了(最近我看到很多人提到“持续模糊化”)。</p>
+			</div>
+
+			</div>    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Cloud flaws expose millions of child-tracking smartwatches</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">云缺陷暴露数百万儿童追踪智能手表</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/12/18/cloud-flaws-millions-child-watch-trackers/">https://web.archive.org/web/https://techcrunch.com/2019/12/18/cloud-flaws-millions-child-watch-trackers/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">父母为他们的孩子购买带GPS功能的智能手表来跟踪他们，但安全缺陷意味着他们不是唯一可以这样做的人。</p>
+<p class="translated">仅在今年，研究人员就在许多<a href="https://web.archive.org/web/20230128171740/https://blog.avast.com/unsecure-child-trackers">儿童追踪智能手表</a>中发现了<a href="https://web.archive.org/web/20230128171740/https://blog.rapid7.com/2019/12/11/iot-vuln-disclosure-childrens-gps-smart-watches-r7-2019-57/">几个漏洞</a>。但今天的新发现表明，几乎所有人都在一个共同的共享云平台上隐藏着一个更大、更具破坏性的缺陷，该平台用于支持数百万手机功能的智能手表。</p>
+<p class="translated">该云平台由中国白牌电子产品制造商Thinkrace开发，think race是全球最大的位置跟踪设备制造商之一。该平台作为Thinkrace制造的设备的后端系统，存储和检索位置和其他设备数据。Thinkrace不仅向希望跟踪自己孩子的父母出售自己的儿童跟踪手表，还向第三方企业出售自己的跟踪设备，然后第三方企业将这些设备重新包装，贴上自己的品牌标签，出售给消费者。</p>
+<p class="translated">所有制造或转售的设备都使用相同的云平台，这保证了任何由Thinkrace制造并由其客户之一销售的白标设备都容易受到攻击。</p>
+<p class="translated">Pen Test Partners的创始人肯·芒罗向TechCrunch独家分享了<a href="https://web.archive.org/web/20230128171740/https://www.pentestpartners.com/security-blog/kids-tracker-watches-cloudpets-exploiting-athletes-and-hijacking-reality-tv/?=pen-test-partners">的发现</a>。他们的研究发现了至少4700万个易受攻击的设备。</p>
+<p class="translated">“这只是冰山一角，”他告诉TechCrunch。</p>
+<h2 id="smartwatchesleakinglocationdata" class="translated">智能手表泄露位置数据</h2>
+<p class="translated">芒罗和他的团队发现，Thinkrace制造了360多种设备，大多数是手表和其他追踪器。由于重新标记和转售，许多Thinkrace设备的品牌都不同</p>
+<p class="translated">“通常品牌所有者甚至没有意识到他们正在销售的设备是在Thinkrace平台上，”Munro说。</p>
+<p class="translated">每台售出的跟踪设备都与云平台进行交互，或者直接交互，或者通过经销商运营的网络域上的一个端点进行交互。研究人员将这些命令一直追溯到Thinkrace的云平台，研究人员将其描述为一个常见的故障点。</p>
+<p class="translated">研究人员表示，控制设备的大多数命令都不需要授权，这些命令都有很好的记录，允许任何具有基本知识的人访问和跟踪设备。由于账号没有随机化，研究人员发现他们可以通过简单地将每个账号加1来批量访问设备。</p>
+<p class="translated">这些缺陷不仅将儿童置于危险之中，也将使用这些设备的其他人置于危险之中。</p>
+<p class="translated">在一个案例中，Thinkrace向参加特奥会的运动员提供了1万块智能手表。但是研究人员说，这些漏洞意味着每个运动员都可以被监控他们的位置。</p>
+<h2 id="childvoicerecordingsfoundexposed" class="translated">儿童录音被发现暴露</h2>
+<p class="translated">一家设备制造商购买了Thinkrace一款智能手表的转售权。像许多其他经销商一样，这个品牌所有者允许父母跟踪他们孩子的下落，如果他们离开父母设定的地理区域，就发出警报。</p>
+<p class="translated">研究人员表示，他们可以通过列举容易猜测的账号来追踪任何戴着这种手表的孩子的位置。</p>
+<p class="translated">智能手表还允许父母和孩子相互交谈，就像对讲机一样。但研究人员发现，语音信息被记录并存储在不安全的云中，任何人都可以下载文件。</p>
+<p/><div id="attachment_1925239" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1925239" decoding="async" loading="lazy" class="wp-image-1925239" src="../Images/45db8fda9bd0828c940f59c89b7cdf59.png" alt="" data-original-src="https://web.archive.org/web/20230128171740im_/https://techcrunch.com/wp-content/uploads/2019/12/audio-recording.gif"/><p id="caption-attachment-1925239" class="wp-caption-text translated">来自智能手表经销商易受攻击的服务器的儿童声音录音。(为了保护孩子的隐私，我们删除了该音频。)</p></div>
+<p class="translated">TechCrunch听了几段随机挑选的录音，可以听到孩子通过应用程序与父母交谈。</p>
+<p class="translated">研究人员将这些发现比作CloudPets，一种联网的泰迪熊样玩具，它在2017年让他们的云服务器不受保护，暴露了<a href="https://web.archive.org/web/20230128171740/https://www.vice.com/en_us/article/pgwean/internet-of-things-teddy-bear-leaked-2-million-parent-and-kids-message-recordings">两百万</a>儿童语音记录。</p>
+<p class="translated">大约500万儿童和父母使用该经销商销售的智能手表。</p>
+<h2 id="disclosurewhackamole" class="translated">揭露打地鼠</h2>
+<p class="translated">研究人员在2015年和2017年向几家白牌电子制造商披露了这些漏洞，其中包括Thinkrace。</p>
+<p class="translated">一些经销商修复了他们易受攻击的端点。在某些情况下，为保护易受攻击的端点而实施的修复<a href="https://web.archive.org/web/20230128171740/https://0x0.li/trackmageddon/">后来被撤销</a>。但是许多公司根本无视这些警告，促使研究人员公开他们的发现。</p>
+<p class="translated">Thinkrace的发言人Rick Tang没有回应置评请求。</p>
+<p class="translated">芒罗说，虽然这些漏洞据信没有被广泛利用，但像Thinkrace这样的设备制造商“需要在建立更安全的系统方面做得更好”。芒罗说，在那之前，主人应该停止使用这些设备。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

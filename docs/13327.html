@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>A webcam app left thousands of user accounts exposed online • TechCrunch</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">一个网络摄像头应用程序让数千个用户账户暴露在网上TechCrunch</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2021/02/11/a-webcam-app-left-thousands-of-user-accounts-exposed-online/">https://web.archive.org/web/https://techcrunch.com/2021/02/11/a-webcam-app-left-thousands-of-user-accounts-exposed-online/</a></blockquote><div><header class="article__header ">
+	<p class="article__title-wrapper">
+						</p><h1 class="article__title translated">一个网络摄像头应用程序让数千个用户账户暴露在网上</h1>
+		
+
+			
+	
+			
+	</header>
+
+			<div class="article-content">
+				<p id="speakable-summary" class="translated">成千上万的用户安装了一个摄像头应用程序，在没有密码的情况下，在互联网上留下了一个充满用户数据的暴露数据库。</p>
+<p class="translated">Elasticsearch数据库属于<a href="https://web.archive.org/web/20221006203249/https://play.google.com/store/apps/details?id=com.xm.adorcam"> Adorcam </a>，这是一款用于查看和控制包括Zeeporte和Umino相机在内的几种网络摄像头模型的应用程序。安全研究员贾斯汀·潘恩发现了数据泄露，并联系了Adorcam，后者保护了数据库。</p>
+<p class="translated">潘恩说<a href="https://web.archive.org/web/20221006203249/https://rainbowtabl.es/2021/02/11/adorcam-leaks-124-million-rows-data/">在与TechCrunch分享的一篇博客文章</a>中称，该数据库包含数千名用户的约1.24亿行数据，包括网络摄像头的实时细节——如其位置、麦克风是否处于活动状态以及摄像头连接的WiFi网络名称——以及网络摄像头所有者的信息，如电子邮件地址。</p>
+<p>	</p>
+	
+<p class="translated">潘恩还发现了摄像头将捕捉到的照片上传到应用程序云端的证据，尽管他无法证实，因为链接已经过期。</p>
+<p class="translated">他还在该应用的MQTT服务器的数据库中发现了硬编码的凭证，这是一种轻量级的<a href="https://web.archive.org/web/20221006203249/https://techcrunch.com/2017/05/16/google-launches-cloud-service-to-manage-internet-of-things-data/">消息协议</a>，常用于互联网连接设备。潘恩没有测试凭证(因为这样做在美国是非法的)，但也提醒了应用程序开发者这个漏洞，然后他更改了密码。</p>
+<p class="translated">Paine通过注册一个新帐户并在数据库中搜索他的信息，验证了数据库正在实时更新。虽然这些数据的敏感性有限，但潘恩警告说，恶意黑客可以制作令人信服的钓鱼电子邮件，或利用这些信息进行勒索。</p>
+<p class="translated">Adorcam没有回复我们带有问题的电子邮件，包括该公司是否计划通知用户这一事件。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

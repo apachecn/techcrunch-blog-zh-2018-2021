@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Three ways to avoid bias in machine learning </title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">机器学习中避免偏差的三种方法</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/http://techcrunch.com/2018/11/06/3-ways-to-avoid-bias-in-machine-learning/">https://web.archive.org/web/http://techcrunch.com/2018/11/06/3-ways-to-avoid-bias-in-machine-learning/</a></blockquote><div><div class="article-content">
+				<div class="article__contributor-byline-wrapper">
+<div class="article__contributor-byline">
+	
+
+		<div class="contributor-byline__bio">
+		<a href="https://web.archive.org/web/20230403214445/https://www.linkedin.com/in/vincelynch/">Vince Lynch</a><p class="translated">是的首席执行官</p><a href="https://web.archive.org/web/20230403214445/https://iv.ai/">IV.AI</a><p class="translated">，这是一家人工智能公司，教机器如何理解人类语言，以便公司能够更好地参与、理解和服务他们的客户。</p></div>
+	
+	</div>
+</div><p id="speakable-summary" class="translated">在这个历史时刻，人们不可能看不到由人类偏见引起的问题。现在通过计算机放大它，你开始感觉到通过机器学习人类<span class="il">偏见</span>有多危险。损害可能是双重的:</p>
+<ul>
+<li class="translated"><em>影响</em>。如果<span class="il">人工智能</span>这么说，那肯定是真的……人们信任<span class="il">人工智能</span>的输出，所以如果人类<span class="il">偏差</span>在训练中被遗漏，它可能会通过感染更多人而使问题复杂化；</li>
+<li class="translated"><em>自动化</em>。有时<span class="il"> AI </span>模型被插入到一个编程函数中，这可能导致<span class="il">偏差</span>的自动化。<span class="m_1215470749810199106m_2883558546912999211m_5564684681185720665gmail-m_-7250788874192661527gmail-Apple-converted-space">T19】</span></li>
+</ul>
+<p class="translated">但是机器学习也有潜在的好处。因为<span class="il">人工智能</span>可以帮助揭露混乱数据集中的真相，算法有可能帮助我们更好地理解我们尚未隔离的<span class="il">偏见</span>，并发现人类数据中道德上有问题的涟漪，以便我们可以检查自己。将人类数据暴露给算法会暴露<span class="il">偏差，</span>如果我们理性地考虑输出，我们可以利用机器学习的能力来发现异常。</p>
+<p class="translated">但是机器不能自己完成。即使是无监督学习也是半监督的，因为它需要数据科学家选择进入模型的训练数据。如果一个人是选择者，那么<span class="il">偏差</span>就会出现。我们究竟如何对付这样一只<span class="il">偏见</span>的野兽？我们会试着把它拆开。</p>
+<h2 class="translated">与<span class="il">艾</span>的伦理关系</h2>
+<p class="m_1215470749810199106m_2883558546912999211m_5564684681185720665gmail-m_-7250788874192661527gmail-p8 translated"><span class="m_1215470749810199106m_2883558546912999211m_5564684681185720665gmail-m_-7250788874192661527gmail-s1"> <span>恶劣的例子比比皆是。想想卡耐基梅隆大学的<a href="https://web.archive.org/web/20230403214445/https://www.cmu.edu/news/stories/archives/2015/july/online-ads-research.html" target="_blank" rel="noopener noreferrer" data-saferedirecturl="https://www.google.com/url?q=https://www.cmu.edu/news/stories/archives/2015/july/online-ads-research.html&amp;source=gmail&amp;ust=1541257130930000&amp;usg=AFQjCNEmLb-uqmRRhRs4H89mzDnjB76U6Q"> <span class="m_1215470749810199106m_2883558546912999211m_5564684681185720665gmail-m_-7250788874192661527gmail-s2">发现</span> </a>显示，女性比男性更少看到高薪工作的在线广告。或者<a href="https://web.archive.org/web/20230403214445/https://gizmodo.com/here-are-the-microsoft-twitter-bot-s-craziest-racist-ra-1766820160" target="_blank" rel="noopener noreferrer" data-saferedirecturl="https://www.google.com/url?q=https://gizmodo.com/here-are-the-microsoft-twitter-bot-s-craziest-racist-ra-1766820160&amp;source=gmail&amp;ust=1541257130930000&amp;usg=AFQjCNFrp3Um1xfJPm08ddhTUZXcHd-Uag"> <span class="m_1215470749810199106m_2883558546912999211m_5564684681185720665gmail-m_-7250788874192661527gmail-s2">回忆一下Tay </span> </a>的悲惨案例，这是微软的青少年俚语Twitter机器人，在发布种族主义帖子后不得不被下架。</span>T11】</span></p>
+<p class="translated">在不久的将来，这种错误可能会导致巨额罚款或合规调查，这种对话已经在英国议会<a href="https://web.archive.org/web/20230403214445/https://publications.parliament.uk/pa/ld201719/ldselect/ldai/100/10012.htm" target="_blank" rel="noopener noreferrer" data-saferedirecturl="https://www.google.com/url?q=https://publications.parliament.uk/pa/ld201719/ldselect/ldai/100/10012.htm%2523_idTextAnchor119&amp;source=gmail&amp;ust=1541257130930000&amp;usg=AFQjCNElKSlbNbrQbcOUE3oICL5jS8ZN7w"> <span class="m_1215470749810199106m_2883558546912999211m_5564684681185720665gmail-m_-7250788874192661527gmail-s2">发生。所有数学家和机器学习工程师都应该在某种程度上考虑<span class="il">偏差</span>，但这个程度因情况而异。资源有限的小公司，只要快速修复算法漏洞，偶然的<span class="il">偏差</span>往往会被原谅；一家财富500强公司，大概有资源来确保一个公正的算法，将被要求更严格的标准。</span></a></p>
+<p class="translated">当然，推荐新奇t恤的算法不需要像决定给癌症患者多大剂量辐射的算法那样多的监督。当法律责任进入讨论时，这些高风险的决定将变得最明显。</p>
+<p class="translated">对于建筑商和商业领袖来说，建立一个监控他们的人工智能系统的道德行为的程序是很重要的。</p>
+<h2 class="translated">构建人工智能时管理偏见的三个关键</h2>
+<p class="translated">有迹象表明，<span class="il">人工智能</span>行业中存在自我修正:研究人员正在<a href="https://web.archive.org/web/20230403214445/https://arxiv.org/pdf/1804.02969.pdf" target="_blank" rel="noopener noreferrer" data-saferedirecturl="https://www.google.com/url?q=https://arxiv.org/pdf/1804.02969.pdf&amp;source=gmail&amp;ust=1541257130930000&amp;usg=AFQjCNFb3wuAZQptEOUQ01zE6xEraTWJwA"> <span class="m_1215470749810199106m_2883558546912999211m_5564684681185720665gmail-m_-7250788874192661527gmail-s2">寻找方法</span> </a>减少<span class="il">偏差</span>并加强基于规则的人工系统中的道德，例如通过考虑人类偏差。</p>
+<p class="translated">这些都是可以遵循的良好做法；不管监管环境如何，积极主动地思考道德规范是非常重要的。让我们来看看当你在你的<span class="il"> AI上工作时需要记住的几点。</span></p>
+<p class="translated"><strong> 1。针对问题选择正确的学习模式。</strong></p>
+<p class="translated">所有的人工智能模型都是独一无二的，这是有原因的:每个问题都需要不同的解决方案，并提供不同的数据资源。没有一个单一的模型可以避免<span class="il">偏差</span>，但是有一些参数可以在你的团队建立的时候通知他们。</p>
+<p class="translated">比如有监督和无监督的学习模型，各有利弊。聚类或降维的无监督模型可以从其数据集学习<span class="il">偏差</span>。如果属于A组与行为B高度相关，模型可以将两者混为一谈。虽然监督模型允许对数据选择中的<span class="il">偏差</span>进行更多控制，但这种控制可能会将人为<span class="il">偏差</span>引入到过程中。</p>
+<p>	</p><div class="article-block block--pullout block--center">
+		<blockquote class="translated">最好现在就找到并修复漏洞，而不是让监管机构在以后找到它们。</blockquote>
+	</div>
+	
+<p class="translated">因无知而产生的非偏见——从模型中排除敏感信息——似乎是一个可行的解决方案，但它仍然存在漏洞。在大学招生中，根据ACT分数对申请人进行分类是标准做法，但将他们的邮政编码考虑在内可能会显得有歧视性。但是因为考试分数可能会受到特定地区预备资源的影响，在模型中包含邮政编码实际上可以减少偏差。</p>
+<p class="translated">您必须要求您的数据科学家为给定的情况确定最佳模型。坐下来和他们讨论建立模型时可以采取的不同策略。在提出想法之前，先解决问题。最好现在就找到并修复漏洞——即使这意味着要花更长的时间——而不是让监管机构在以后找到它们。</p>
+<p class="translated"><strong> 2。选择一个有代表性的训练数据集。</strong></p>
+<p class="translated">你的数据科学家可能会做很多跑腿的工作，但积极防范数据选择中的<span class="il">偏差</span>取决于参与<span class="il">人工智能</span>项目的每个人。你必须走一条很好的线。确保训练数据是多样化的并且包括不同的组是至关重要的，但是模型中的分段可能是有问题的，除非真实数据被类似地分段。</p>
+<p class="translated">对不同的群体采用不同的模型是不明智的——从计算和公共关系的角度来看都是如此。当一个组的数据不足时，您可以使用加权来增加其在训练中的重要性，但这应该非常谨慎。它会导致意想不到的新偏见。</p>
+<p class="translated">例如，如果数据集中只有40名来自辛辛那提的人，并且您试图强制模型考虑他们的趋势，您可能需要使用一个大的权重乘数。然后，你的模型将有更高的风险拾取随机噪声作为趋势——你可能最终得到类似“叫布莱恩的人有犯罪历史”的结果这就是为什么你需要小心重量，尤其是大的重量。</p>
+<p class="translated"><strong> 3。使用真实数据监控性能。</strong></p>
+<p class="translated">当然，没有一家公司会故意创造有偏见的人工智能——所有这些歧视性的模型可能在受控环境中起到预期的作用。不幸的是，监管者(和公众)在分配道德违规责任时通常不会考虑最佳意图。这就是为什么在构建算法时，您应该尽可能地模拟真实世界的应用程序。</p>
+<p class="translated">例如，在已经生产的算法上使用测试组是不明智的。相反，尽可能用真实数据来运行你的统计方法。请数据团队检查简单的测试问题，如“高个子比矮个子拖欠<span class="il"> AI </span>批准的贷款多吗？”如果有，确定原因。</p>
+<p class="translated">当你检查数据时，你可能在寻找两种平等<a href="https://web.archive.org/web/20230403214445/https://books.google.com/books?id=C3WF8anbYsIC&amp;pg=PA36&amp;dq=equality+of+outcome+vs+equality+of+opportunity%23v=onepage&amp;q&amp;f=false" target="_blank" rel="noopener noreferrer" data-saferedirecturl="https://www.google.com/url?q=https://books.google.com/books?id%3DC3WF8anbYsIC%26pg%3DPA36%26dq%3Dequality%2Bof%2Boutcome%2Bvs%2Bequality%2Bof%2Bopportunity%2523v%3Donepage%26q%26f%3Dfalse&amp;source=gmail&amp;ust=1541257130930000&amp;usg=AFQjCNFgeWtWJeh8TAiP3ZHxLcZ3Hu3d3Q"><span class="m_1215470749810199106m_2883558546912999211m_5564684681185720665gmail-m_-7250788874192661527gmail-s2"/></a>:结果平等和机会平等。如果你在用<span class="il">人工智能</span>来审批贷款，结果平等意味着所有城市的人以相同的利率获得贷款；机会平等意味着，无论在哪个城市，有机会还贷的人都会得到相同的利率。如果没有后者，如果一个城市的文化让拖欠贷款司空见惯，前者仍有可能藏身。</p>
+<p class="translated">结果相等更容易证明，但这也意味着您会有意接受潜在的有偏差的数据。虽然很难证明机会平等，但至少在道德上是有效的。实际上通常不可能确保两种类型的平等，但是监督和对模型的真实测试应该给你最好的机会。</p>
+<p class="translated">最终，这些道德原则将通过法律惩罚来实施。如果纽约市早期监管算法的尝试有任何迹象的话，这些法律可能会涉及政府对开发过程的参与，以及对人工智能现实世界后果的严格监控。好消息是，通过使用适当的建模原则，<span class="il">偏见</span>可以大大减少或消除，而那些研究<span class="il"> AI </span>的人可以帮助揭露公认的偏见，创建对棘手问题的更道德的理解，并保持在法律的正确一边——无论它最终是什么。</p>
+			</div>
+
+			</div>    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Tailscale raises $12 million for its WireGuard-based corporate VPN </title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">Tailscale为其基于WireGuard的企业VPN筹集了1200万美元</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2020/11/10/tailscale-raises-12-million-for-its-wireguard-based-corporate-vpn/">https://web.archive.org/web/https://techcrunch.com/2020/11/10/tailscale-raises-12-million-for-its-wireguard-based-corporate-vpn/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">Tailscale已经筹集了1200万美元的资金。Accel领投，Heavybit和Uncork Capital参与。该公司正在通过利用现代协议并注重实施的简便性来构建一个更好的企业VPN。</p>
+<p class="translated">VPN或虚拟专用网络是两台设备之间的加密隧道。许多公司依靠VPN为远程员工、多办公室设置和内部服务提供服务，而这些服务应该只对员工可见。例如，如果您正在远程工作，那么您可以通过从公司的笔记本电脑连接到VPN服务器来连接到公司的内部网和内部服务。</p>
+
+<p class="translated">在过去的几年中，访问公司内部网络有多种趋势。一些公司依赖复杂的访问策略。谷歌已经通过其<a href="https://web.archive.org/web/20230325042913/https://cloud.google.com/beyondcorp/"> BeyondCorp </a>零信任系统走上了这条路。</p>
+<p class="translated">其他公司仍然依赖企业VPN和防火墙，因为它们易于实施。他们通常使用带有VPN网关的IPsec协议来处理与内部网络的连接。</p>
+<p class="translated">如果你最近一直在远程工作，你可能已经注意到这种传统的VPN设置不能很好地扩展。网关是一个瓶颈，当有很多人同时连接时，你会经历很长的加载时间。</p>
+<p class="translated">回到Tailscale，这家初创公司正试图实现企业VPN的现代化。它从不同的VPN协议开始。Tailscale选择了<a href="https://web.archive.org/web/20230325042913/https://techcrunch.com/2018/07/28/how-i-made-my-own-wireguard-vpn-server/"> WireGuard </a>，这是一种轻量级的VPN协议，它依靠公钥和私钥的组合在两个客户端之间建立加密隧道。</p><p class="piano-inline-promo"/>
+<p class="translated">但是Wireguard本身只是一个协议。它没有告诉你应该如何处理公钥，如何向网络添加新设备等等。Tailscale就像胶水一样把所有的碎片粘在一起。</p>
+<p class="translated">“在架构上，我将Tailscale描述为控制平面，WireGuard是数据平面，”联合创始人兼首席执行官Avery Pennarun告诉我。</p>
+<p/><div id="attachment_2071369" class="wp-caption alignnone"><img aria-describedby="caption-attachment-2071369" decoding="async" class="size-full wp-image-2071369" src="../Images/2b3711c2a5122ed4990f313933fe300e.png" alt="" srcset="https://web.archive.org/web/20230325042913im_/https://techcrunch.com/wp-content/uploads/2020/11/all-devices-3.jpg 1600w, https://web.archive.org/web/20230325042913im_/https://techcrunch.com/wp-content/uploads/2020/11/all-devices-3.jpg?resize=150,87 150w, https://web.archive.org/web/20230325042913im_/https://techcrunch.com/wp-content/uploads/2020/11/all-devices-3.jpg?resize=300,174 300w, https://web.archive.org/web/20230325042913im_/https://techcrunch.com/wp-content/uploads/2020/11/all-devices-3.jpg?resize=768,445 768w, https://web.archive.org/web/20230325042913im_/https://techcrunch.com/wp-content/uploads/2020/11/all-devices-3.jpg?resize=680,394 680w, https://web.archive.org/web/20230325042913im_/https://techcrunch.com/wp-content/uploads/2020/11/all-devices-3.jpg?resize=1536,891 1536w, https://web.archive.org/web/20230325042913im_/https://techcrunch.com/wp-content/uploads/2020/11/all-devices-3.jpg?resize=1200,696 1200w, https://web.archive.org/web/20230325042913im_/https://techcrunch.com/wp-content/uploads/2020/11/all-devices-3.jpg?resize=50,29 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230325042913im_/https://techcrunch.com/wp-content/uploads/2020/11/all-devices-3.jpg"/><p id="caption-attachment-2071369" class="wp-caption-text translated"><strong>图片来源:</strong> Tailscale</p></div>
+<p class="translated">我们举个例子。您的公司有一个内部Git服务器和一个内部文档wiki。您有一台公司笔记本电脑，并且想要访问这两项服务。您可以在三台不同的机器上安装Tailscale客户端——您的笔记本电脑、Git服务器和wiki服务器。</p>
+<p class="translated">当你想连接内部服务时，Tailscale要求你使用你公司的身份提供者登录，如G Suite、Okta、Active Directory等。</p>
+<p class="translated">所有Tailscale客户端检查一个协调服务器，以查看连接是否得到授权。“这是一个公共密钥的投件箱，”Pennarun说。当有人离开公司时，公钥会从协调服务器中删除，Tailscale不再工作。为了提高安全性，密钥会定期轮换。</p>
+<p class="translated">然后在您的笔记本电脑和Git服务器或者您的笔记本电脑和wiki服务器之间建立连接。由于VPN网关没有瓶颈，因为Git服务器和wiki服务器充当它们自己的VPN网关。没有必要将你的文档wiki暴露在互联网上，因为员工首先使用Tailscale访问服务器。</p>
+<p class="translated">您不必打开服务器上的SSH端口，因为Tailscale可以找到一种方法来通过防火墙建立连接。</p>
+<p class="translated">这家公司仍然很小，但效率很高。Tailscale拥有大约20名员工，每月安装数万台客户端。</p>
+<p class="translated">您可以通过单个用户和多个设备免费开始使用。一些用户已经在家里用树莓派尝试过，这样他们就可以在旅途中连接到他们的本地网络。他们后来把它带到工作中。</p>
+<p class="translated">通过保持非常低的客户获取成本，Tailscale成功筹集了1200万美元。<a href="https://web.archive.org/web/20230325042913/https://www.twingate.com/"> Twingate </a>是另一家试图解决同样问题的公司，但它做出了不同的技术选择——他们依赖于TLS隧道和中继。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>
