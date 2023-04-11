@@ -4,16 +4,16 @@
 <link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<h1 class="translated">Qubole推出Quantum，它的无服务器数据库引擎TechCrunch</h1>
+<h1 class="translated">Qubole 推出 Quantum，它的无服务器数据库引擎 TechCrunch</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/06/10/qubole-launches-quantum-its-serverless-database-engine/">https://web.archive.org/web/https://techcrunch.com/2019/06/10/qubole-launches-quantum-its-serverless-database-engine/</a></blockquote><div><div class="article-content">
-				<p id="speakable-summary" class="translated">由Apache Hive创建者和脸书数据基础设施团队前负责人Ashish Thusoo创建的数据平台Qubole 今天宣布推出其首款无服务器产品Quantum。</p>
-<p class="translated">Qubole可能不一定是一个家喻户晓的名字，但它的客户包括Autodesk、Comcast、Lyft、Nextdoor和Zillow等公司。对于这些用户，Qubole长期以来一直提供一个自助服务平台，允许他们的数据科学家和工程师在他们选择的公共云上构建他们的人工智能、机器学习和分析工作流。例如，该平台基于Apache Spark、Presto和Kafka等开源技术。</p>
+				<p id="speakable-summary" class="translated">由 Apache Hive 创建者和脸书数据基础设施团队前负责人 Ashish Thusoo 创建的数据平台 Qubole 今天宣布推出其首款无服务器产品 Quantum。</p>
+<p class="translated">Qubole 可能不一定是一个家喻户晓的名字，但它的客户包括 Autodesk、Comcast、Lyft、Nextdoor 和 Zillow 等公司。对于这些用户，Qubole 长期以来一直提供一个自助服务平台，允许他们的数据科学家和工程师在他们选择的公共云上构建他们的人工智能、机器学习和分析工作流。例如，该平台基于 Apache Spark、Presto 和 Kafka 等开源技术。</p>
 <p class="translated">通常，企业必须提供大量的资源来为这些平台提供它们需要的资源。这些资源经常得不到利用，基础架构会很快变得复杂。</p>
-<p class="translated">Qubole已经将大部分内容抽象化，提供了一个本质上无服务器的平台。然而，Quantum更进一步，推出了一个高性能的无服务器SQL引擎，允许用户只使用ANSI-SQL查询数Pb的数据，例如，让他们可以选择使用Presto集群或无服务器SQL引擎来运行查询。</p>
+<p class="translated">Qubole 已经将大部分内容抽象化，提供了一个本质上无服务器的平台。然而，Quantum 更进一步，推出了一个高性能的无服务器 SQL 引擎，允许用户只使用 ANSI-SQL 查询数 Pb 的数据，例如，让他们可以选择使用 Presto 集群或无服务器 SQL 引擎来运行查询。</p>
 <p class="translated">【T2<img decoding="async" loading="lazy" class="aligncenter size-full wp-image-1839514" src="../Images/b333439cf47d8148325e5e90b04d3c02.png" alt="" srcset="https://web.archive.org/web/20221218012829im_/https://techcrunch.com/wp-content/uploads/2019/06/quantum_diagram_v4.png 1000w, https://web.archive.org/web/20221218012829im_/https://techcrunch.com/wp-content/uploads/2019/06/quantum_diagram_v4.png?resize=140,150 140w, https://web.archive.org/web/20221218012829im_/https://techcrunch.com/wp-content/uploads/2019/06/quantum_diagram_v4.png?resize=280,300 280w, https://web.archive.org/web/20221218012829im_/https://techcrunch.com/wp-content/uploads/2019/06/quantum_diagram_v4.png?resize=768,823 768w, https://web.archive.org/web/20221218012829im_/https://techcrunch.com/wp-content/uploads/2019/06/quantum_diagram_v4.png?resize=634,680 634w, https://web.archive.org/web/20221218012829im_/https://techcrunch.com/wp-content/uploads/2019/06/quantum_diagram_v4.png?resize=47,50 47w" sizes="(max-width: 1000px) 100vw, 1000px" data-original-src="https://web.archive.org/web/20221218012829im_/https://techcrunch.com/wp-content/uploads/2019/06/quantum_diagram_v4.png"/></p>
-<p class="translated">数据可以存储在AWS上，用户不必建立第二个数据湖或将数据转移到另一个平台来使用SQL引擎。当然，Quantum会根据需要自动扩展或缩小，无论用户选择集群还是无服务器选项，他们仍然可以使用相同的metastore存储数据。事实上，Quantum本质上只是另一个没有Qubole整体引擎套件的SQL引擎。</p>
-<p class="translated">通常，Qubole按计算分钟向企业收费。当使用Quantum时，公司使用相同的度量，但是企业为查询的执行时间付费。“因此，Qubole计算单元不是与集群启动和运行的分钟数相关联，而是与特定查询或特定工作负载消耗的Qubole计算单元相关联，这甚至更细粒度，”Thusoo解释道。“当您必须处理交互式工作负载时，这非常有用。”</p>
-<p class="translated">Thusoo指出，Quantum的目标是那些经常需要对存储在对象存储中的数据执行交互式查询的分析师。Qubole整合了Tableau和Looker等服务(谷歌现在正处于收购的<a href="https://web.archive.org/web/20221218012829/https://techcrunch.com/2019/06/06/google-to-acquire-analytics-startup-looker-for-2-6-billion/">过程中)。“他们突然获得非常灵活的计算能力，但他们能够通过非常熟悉的用户界面，”Thusoo指出。</a></p>
+<p class="translated">数据可以存储在 AWS 上，用户不必建立第二个数据湖或将数据转移到另一个平台来使用 SQL 引擎。当然，Quantum 会根据需要自动扩展或缩小，无论用户选择集群还是无服务器选项，他们仍然可以使用相同的 metastore 存储数据。事实上，Quantum 本质上只是另一个没有 Qubole 整体引擎套件的 SQL 引擎。</p>
+<p class="translated">通常，Qubole 按计算分钟向企业收费。当使用 Quantum 时，公司使用相同的度量，但是企业为查询的执行时间付费。“因此，Qubole 计算单元不是与集群启动和运行的分钟数相关联，而是与特定查询或特定工作负载消耗的 Qubole 计算单元相关联，这甚至更细粒度，”Thusoo 解释道。“当您必须处理交互式工作负载时，这非常有用。”</p>
+<p class="translated">Thusoo 指出，Quantum 的目标是那些经常需要对存储在对象存储中的数据执行交互式查询的分析师。Qubole 整合了 Tableau 和 Looker 等服务(谷歌现在正处于收购的<a href="https://web.archive.org/web/20221218012829/https://techcrunch.com/2019/06/06/google-to-acquire-analytics-startup-looker-for-2-6-billion/">过程中)。“他们突然获得非常灵活的计算能力，但他们能够通过非常熟悉的用户界面，”Thusoo 指出。</a></p>
 <p> </p>
 			</div>
 

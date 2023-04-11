@@ -6,27 +6,27 @@
 <body>
 <h1 class="translated">在政府关闭期间，这些联邦网站域名将很快到期</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/01/17/federal-https-domains-expire-government-shutdown/">https://web.archive.org/web/https://techcrunch.com/2019/01/17/federal-https-domains-expire-government-shutdown/</a></blockquote><div><div class="article-content">
-				<p id="speakable-summary" class="translated">在TechCrunch，我们喜欢把自己当成书呆子，这就是为什么我们给你带来这个。</p>
-<p class="translated">在政府关闭期间，安全专家<a href="https://web.archive.org/web/20230212095539/https://news.netcraft.com/archives/2019/01/16/manufacturing-gov-and-white-house-security-suffer-under-u-s-shutdown.html">注意到几个联邦网站</a>正在返回浏览器错误，因为TLS证书在许多域上已经过期，该证书会用“HTTPS”照亮你的浏览器或闪烁挂锁。因为如此多的联邦工作人员被无薪休假送回家——或者更糟，无薪工作，但试图填补他们的大部分休假部门——过期的证书没有得到更新。续订证书不需要太多时间或精力，有时只需点击一下鼠标。但有些确实要花钱，而在政府关门期间，一分钱也没有。</p>
+				<p id="speakable-summary" class="translated">在 TechCrunch，我们喜欢把自己当成书呆子，这就是为什么我们给你带来这个。</p>
+<p class="translated">在政府关闭期间，安全专家<a href="https://web.archive.org/web/20230212095539/https://news.netcraft.com/archives/2019/01/16/manufacturing-gov-and-white-house-security-suffer-under-u-s-shutdown.html">注意到几个联邦网站</a>正在返回浏览器错误，因为 TLS 证书在许多域上已经过期，该证书会用“HTTPS”照亮你的浏览器或闪烁挂锁。因为如此多的联邦工作人员被无薪休假送回家——或者更糟，无薪工作，但试图填补他们的大部分休假部门——过期的证书没有得到更新。续订证书不需要太多时间或精力，有时只需点击一下鼠标。但有些确实要花钱，而在政府关门期间，一分钱也没有。</p>
 <p class="translated">根据不同的安全级别，大多数网站会踢回浏览器错误。有些根本不让你进去，直到过期的证书更新。</p>
-<p class="translated">我们开始思考:有多少主要部门和机构处于危险之中？我们查看了政府数字服务部门18F的<a href="https://web.archive.org/web/20230212095539/https://18f.gsa.gov/2014/12/18/a-complete-list-of-gov-domains/">政府域名列表</a>(不包括子域名)，该部门在政府关闭前更新了该列表。然后我们过滤掉所有的州域，只留下所有联邦机构和行政部门的域。我们让所有这些域通过<a href="https://web.archive.org/web/20230212095539/https://github.com/Matty9191/ssl-cert-check">一个bash脚本</a>，该脚本从每个域的TLS证书中提取信息并返回其到期值。在另一个bash脚本中运行几个小时，我们返回了几千个结果。</p>
+<p class="translated">我们开始思考:有多少主要部门和机构处于危险之中？我们查看了政府数字服务部门 18F 的<a href="https://web.archive.org/web/20230212095539/https://18f.gsa.gov/2014/12/18/a-complete-list-of-gov-domains/">政府域名列表</a>(不包括子域名)，该部门在政府关闭前更新了该列表。然后我们过滤掉所有的州域，只留下所有联邦机构和行政部门的域。我们让所有这些域通过<a href="https://web.archive.org/web/20230212095539/https://github.com/Matty9191/ssl-cert-check">一个 bash 脚本</a>，该脚本从每个域的 TLS 证书中提取信息并返回其到期值。在另一个 bash 脚本中运行几个小时，我们返回了几千个结果。</p>
 <p class="translated">换句话说，我们检查了每一个证书，看看它是否已经过期，如果没有，它将在什么时候停止工作。</p>
-<p class="translated">为什么重要？最重要的是，这很不方便。根据这次关闭持续时间的长短，用不了多久，一些大型联邦网站就可能开始抛出错误，将用户拒之门外。这也可能影响依赖这些联邦网站获取数据的第三方网站和应用程序，比如通过开发者API。</p>
-<p class="translated">然而，安全不是一个重要因素，尽管<a href="https://web.archive.org/web/20230212095539/https://www.cnet.com/news/shutdown-government-sites-with-lapsed-security-certificates-pose-risk/">声称</a>与此相反。最近离开政府数字机构18F 的安全专家Eric Mill 说，对过期证书的担心被夸大了。</p>
+<p class="translated">为什么重要？最重要的是，这很不方便。根据这次关闭持续时间的长短，用不了多久，一些大型联邦网站就可能开始抛出错误，将用户拒之门外。这也可能影响依赖这些联邦网站获取数据的第三方网站和应用程序，比如通过开发者 API。</p>
+<p class="translated">然而，安全不是一个重要因素，尽管<a href="https://web.archive.org/web/20230212095539/https://www.cnet.com/news/shutdown-government-sites-with-lapsed-security-certificates-pose-risk/">声称</a>与此相反。最近离开政府数字机构 18F 的安全专家 Eric Mill 说，对过期证书的担心被夸大了。</p>
 <p class="translated">“用户的安全风险实际上非常低，因为信任最近过期的证书本身不会允许流量被拦截，”他在最近的一条推文中说。米尔<a href="https://web.archive.org/web/20230212095539/https://twitter.com/konklone/status/1084196598689812481">还指出</a>各个机构之间几乎没有自动化，导致证书过期和最终停机——尤其是当网站和部门人手不足时，尤其是考虑到每个联邦机构和部门都要负责自己的网站。</p>
-<p class="translated">还有一线希望。任何托管在cloud.gov、<a href="https://web.archive.org/web/20230212095539/https://search.gov/">search.gov</a>或<a href="https://web.archive.org/web/20230212095539/https://federalist.18f.gov/">federalist.18f.gov</a>的网站都不会关闭，因为它们依赖于让我们加密每三个月自动更新一次的证书。</p>
-<p class="translated">从12月22日起，我们编制了以下在关闭期间已经过期和将要过期的域名列表，同时删除不再加载的死链接和失效域名。一些域重定向到其他域，这些域的证书可能会在明年到期，但第一个域仍会在到期日失效。</p>
+<p class="translated">还有一线希望。任何托管在 cloud.gov、<a href="https://web.archive.org/web/20230212095539/https://search.gov/">search.gov</a>或<a href="https://web.archive.org/web/20230212095539/https://federalist.18f.gov/">federalist.18f.gov</a>的网站都不会关闭，因为它们依赖于让我们加密每三个月自动更新一次的证书。</p>
+<p class="translated">从 12 月 22 日起，我们编制了以下在关闭期间已经过期和将要过期的域名列表，同时删除不再加载的死链接和失效域名。一些域重定向到其他域，这些域的证书可能会在明年到期，但第一个域仍会在到期日失效。</p>
 <p class="translated">记住，如果你看到一个域名已经过期，检查一下证书，它可能已经被更新了。如果你看到任何错误，请随时给我发电子邮件。</p>
-<p class="translated">总之，我们已经计算出五个过期的联邦域名，13个域名将在本月底过期，另外58个域名将在2月底过期。</p>
+<p class="translated">总之，我们已经计算出五个过期的联邦域名，13 个域名将在本月底过期，另外 58 个域名将在 2 月底过期。</p>
 <h3 class="translated">过期时间:</h3>
 
 <h3 class="translated">一月到期:</h3>
 
-<h3 class="translated">将于2月中旬到期的联邦域名</h3>
+<h3 class="translated">将于 2 月中旬到期的联邦域名</h3>
 
 <h3 class="translated">将于二月底到期的联邦域名</h3>
 
-<p class="translated"><em>截至1月17日，所有信息均准确无误。在美国东部时间下午3:30编辑，删除citizenscience.gov和everykidinapark.gov，因为这些是已知的自动更新证书的域。</em></p>
+<p class="translated"><em>截至 1 月 17 日，所有信息均准确无误。在美国东部时间下午 3:30 编辑，删除 citizenscience.gov 和 everykidinapark.gov，因为这些是已知的自动更新证书的域。</em></p>
 
 			</div>
 

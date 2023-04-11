@@ -4,27 +4,27 @@
 <link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<h1 class="translated">广泛使用的企业VPN中的缺陷将公司机密置于风险之中TechCrunch</h1>
+<h1 class="translated">广泛使用的企业 VPN 中的缺陷将公司机密置于风险之中 TechCrunch</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/07/23/corporate-vpn-flaws-risk/">https://web.archive.org/web/https://techcrunch.com/2019/07/23/corporate-vpn-flaws-risk/</a></blockquote><div><div class="article-content">
-				<p id="speakable-summary" class="translated">研究人员在流行的企业VPN中发现了几个安全漏洞，他们说这些漏洞可以被用来悄悄地闯入公司网络，窃取商业机密。</p>
-<p class="translated">Devcore的研究人员Orange Tsai和Meh Chang在他们即将到来的Def Con talk之前与TechCrunch分享了他们的发现，他们表示，在三家企业VPN提供商——Palo Alto Networks、Pulse Secure和Fortinet——中发现的缺陷“很容易”被远程利用。</p>
-<p class="translated">这些VPN(或虚拟专用网络)不是传统的消费者VPN应用程序，这些应用程序旨在掩盖你的位置和隐藏你的身份，而是由远程工作的员工用来访问公司网络上的资源。通常，员工必须输入他们的公司用户名和密码，通常还有一个双因素代码。通过HTTPS (SSL)连接，这些提供商在用户计算机和公司网络之间创建了一个安全的隧道。</p>
-<p class="translated">但是Tsai和Chang说，他们发现的漏洞允许任何人不需要有效的用户名或密码就可以秘密地进入公司的网络。</p>
-<p class="translated">“我们可以在不需要认证的情况下入侵VPN服务器和企业内部网，入侵所有VPN客户端，窃取受害者的所有秘密，”Tsai在一封电子邮件中告诉TechCrunch。</p>
-<p class="translated">“SSL VPN是连接到公司网络的最便捷的方式，”Tsai说。“另一方面，对于黑客来说，SSL VPN必须暴露在互联网上，所以这也是破坏他们内部网的最短路径。”</p>
-<p class="translated">“一些SSL VPN供应商主导着市场——因此，如果我们发现这些供应商有任何漏洞，影响是巨大的，”他说。</p>
-<p class="translated">在<a href="https://web.archive.org/web/20230207090937/https://devco.re/blog/2019/07/17/attacking-ssl-vpn-part-1-PreAuth-RCE-on-Palo-Alto-GlobalProtect-with-Uber-as-case-study/">他们的第一篇详述帕洛阿尔托漏洞的文章</a>中，研究人员表示，一个简单的格式字符串缺陷——如输入的文本不能被服务器正确理解——足以使服务完全崩溃。他们说，包括优步在内的几家大公司都在使用帕洛阿尔托的GlobalProtect VPN。</p>
-<p class="translated">他们说，研究人员在优步的一个内部Palo Alto-run服务器上测试了这个bug。优步很快修复了漏洞，但表示其内部基础设施是安全的。</p>
-<p/><div id="attachment_1858668" class="wp-caption alignnone"><img aria-describedby="caption-attachment-1858668" decoding="async" class="wp-image-1858668 size-full" title="1" src="../Images/ff2e82b1c2c5c3bc596fc734a4bed6b5.png" alt="1" srcset="https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png 1076w, https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png?resize=150,41 150w, https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png?resize=300,81 300w, https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png?resize=768,208 768w, https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png?resize=680,185 680w, https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png?resize=50,14 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png"/><p id="caption-attachment-1858668" class="wp-caption-text translated">显示研究人员破坏优步VPN服务器的截图(图片:提供)</p></div>
-<p class="translated">Tsai说，研究人员还利用这些漏洞来暴露Twitter系统的缺陷。“我们成功获得了Twitter最重要的VPN服务器的root权限，并从他们的赏金计划中获得了最高的严重性和最高的赏金，”他说。</p>
+				<p id="speakable-summary" class="translated">研究人员在流行的企业 VPN 中发现了几个安全漏洞，他们说这些漏洞可以被用来悄悄地闯入公司网络，窃取商业机密。</p>
+<p class="translated">Devcore 的研究人员 Orange Tsai 和 Meh Chang 在他们即将到来的 Def Con talk 之前与 TechCrunch 分享了他们的发现，他们表示，在三家企业 VPN 提供商——Palo Alto Networks、Pulse Secure 和 Fortinet——中发现的缺陷“很容易”被远程利用。</p>
+<p class="translated">这些 VPN(或虚拟专用网络)不是传统的消费者 VPN 应用程序，这些应用程序旨在掩盖你的位置和隐藏你的身份，而是由远程工作的员工用来访问公司网络上的资源。通常，员工必须输入他们的公司用户名和密码，通常还有一个双因素代码。通过 HTTPS (SSL)连接，这些提供商在用户计算机和公司网络之间创建了一个安全的隧道。</p>
+<p class="translated">但是 Tsai 和 Chang 说，他们发现的漏洞允许任何人不需要有效的用户名或密码就可以秘密地进入公司的网络。</p>
+<p class="translated">“我们可以在不需要认证的情况下入侵 VPN 服务器和企业内部网，入侵所有 VPN 客户端，窃取受害者的所有秘密，”Tsai 在一封电子邮件中告诉 TechCrunch。</p>
+<p class="translated">“SSL VPN 是连接到公司网络的最便捷的方式，”Tsai 说。“另一方面，对于黑客来说，SSL VPN 必须暴露在互联网上，所以这也是破坏他们内部网的最短路径。”</p>
+<p class="translated">“一些 SSL VPN 供应商主导着市场——因此，如果我们发现这些供应商有任何漏洞，影响是巨大的，”他说。</p>
+<p class="translated">在<a href="https://web.archive.org/web/20230207090937/https://devco.re/blog/2019/07/17/attacking-ssl-vpn-part-1-PreAuth-RCE-on-Palo-Alto-GlobalProtect-with-Uber-as-case-study/">他们的第一篇详述帕洛阿尔托漏洞的文章</a>中，研究人员表示，一个简单的格式字符串缺陷——如输入的文本不能被服务器正确理解——足以使服务完全崩溃。他们说，包括优步在内的几家大公司都在使用帕洛阿尔托的 GlobalProtect VPN。</p>
+<p class="translated">他们说，研究人员在优步的一个内部 Palo Alto-run 服务器上测试了这个 bug。优步很快修复了漏洞，但表示其内部基础设施是安全的。</p>
+<p/><div id="attachment_1858668" class="wp-caption alignnone"><img aria-describedby="caption-attachment-1858668" decoding="async" class="wp-image-1858668 size-full" title="1" src="../Images/ff2e82b1c2c5c3bc596fc734a4bed6b5.png" alt="1" srcset="https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png 1076w, https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png?resize=150,41 150w, https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png?resize=300,81 300w, https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png?resize=768,208 768w, https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png?resize=680,185 680w, https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png?resize=50,14 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/07/1.png"/><p id="caption-attachment-1858668" class="wp-caption-text translated">显示研究人员破坏优步 VPN 服务器的截图(图片:提供)</p></div>
+<p class="translated">Tsai 说，研究人员还利用这些漏洞来暴露 Twitter 系统的缺陷。“我们成功获得了 Twitter 最重要的 VPN 服务器的 root 权限，并从他们的赏金计划中获得了最高的严重性和最高的赏金，”他说。</p>
 <p class="translated">当研究人员就这些漏洞私下联系帕洛阿尔托时，该公司表示，这些漏洞已经“在内部发现”，并且没有发布相应的公共安全咨询。在蔡和昌的文章发表后，一些人对帕洛阿尔托的回应提出了批评。安全研究员凯文·博蒙特在一条推特中说<a href="https://web.archive.org/web/20230207090937/https://twitter.com/GossiTheDog/status/1151864622825254913">看起来这个安全巨头在没有通知任何人的情况下发布了一个针对这个“真正严重的漏洞”的“无声修复”。他在推特上写道</a><a href="https://web.archive.org/web/20230207090937/https://twitter.com/GossiTheDog/status/1152700881428799490"/>，截至上周，他测试的联网盒子中约有三分之一存在漏洞。</p>
 <p class="translated">在蔡和常发布详细描述这些漏洞的博客后一天，帕洛阿尔托终于发布了一条建议。</p>
 <p class="translated">Fortinet 也发布了他们各自错误的建议，并更新了新的固件来修复漏洞。建议系统管理员将其易受攻击的网关更新到最新版本。</p>
-<p class="translated">Pulse Secure的首席营销官斯科特·戈登(Scott Gordon)表示，该公司<a href="https://web.archive.org/web/20230207090937/https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44101">在4月下旬向</a>客户通报了该漏洞以及可用的补丁。戈登表示，该公司“不知道”有任何漏洞。</p>
+<p class="translated">Pulse Secure 的首席营销官斯科特·戈登(Scott Gordon)表示，该公司<a href="https://web.archive.org/web/20230207090937/https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44101">在 4 月下旬向</a>客户通报了该漏洞以及可用的补丁。戈登表示，该公司“不知道”有任何漏洞。</p>
 <p class="translated">帕洛阿尔托承认它修复了漏洞，但没有回应来自安全社区的批评。</p>
-<p class="translated">出版前，Fortinet的一位发言人没有发表评论。</p>
-<p class="translated">是今年最新一轮的VPN相关bug。4月，国土安全部就许多主要企业VPN提供商的一系列漏洞向企业发出警告，这些漏洞也影响了帕洛阿尔托和Pulse Secure，以及思科和F5网络。</p>
-<p class="translated">蔡和昌将在未来几天公布Pulse Secure和Fortinet漏洞的细节。</p>
+<p class="translated">出版前，Fortinet 的一位发言人没有发表评论。</p>
+<p class="translated">是今年最新一轮的 VPN 相关 bug。4 月，国土安全部就许多主要企业 VPN 提供商的一系列漏洞向企业发出警告，这些漏洞也影响了帕洛阿尔托和 Pulse Secure，以及思科和 F5 网络。</p>
+<p class="translated">蔡和昌将在未来几天公布 Pulse Secure 和 Fortinet 漏洞的细节。</p>
 <p class="translated"><a href="https://web.archive.org/web/20230207090937/https://techcrunch.com/tag/def-con-2019"> <img decoding="async" src="../Images/cd5397ce1ddf1c5b020ca7ffff9db3db.png" data-original-src="https://web.archive.org/web/20230207090937im_/https://techcrunch.com/wp-content/uploads/2019/08/def-con-2019-banner.png"/> </a></p>
 			</div>
 

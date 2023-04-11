@@ -4,19 +4,19 @@
 <link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<h1 class="translated">这种手部追踪算法可以实现手语识别TechCrunch</h1>
+<h1 class="translated">这种手部追踪算法可以实现手语识别 TechCrunch</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/08/19/this-hand-tracking-algorithm-could-lead-to-sign-language-recognition/">https://web.archive.org/web/https://techcrunch.com/2019/08/19/this-hand-tracking-algorithm-could-lead-to-sign-language-recognition/</a></blockquote><div><div class="article-content">
 				<p id="speakable-summary" class="translated">数百万人使用手语交流，但迄今为止，捕捉其复杂手势并将其转化为言语的项目取得的成功有限。<a href="https://web.archive.org/web/20230109072542/https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html">谷歌人工智能实验室在实时手部追踪方面的新进展</a>可能是一些人一直期待的突破。</p>
 <p class="translated">这项新技术使用了一些聪明的快捷方式，当然，还使用了机器学习系统日益提高的总体效率，来实时生成手及其所有手指的高度精确的地图，只需使用智能手机和相机。</p>
 <p class="translated">“当前最先进的方法主要依赖于强大的桌面环境进行推理，而我们的方法在手机上实现了实时性能，甚至可以扩展到多只手，”谷歌研究人员瓦伦丁·巴扎列夫斯基和张帆在博客中写道。“鲁棒的实时手部感知无疑是一项具有挑战性的计算机视觉任务，因为手部经常遮挡自己或相互遮挡(例如手指/手掌遮挡和手抖)，并且缺乏高对比度模式。”</p>
-<p class="translated">不仅如此，手部动作通常很快，很微妙或者两者兼而有之——不一定是计算机擅长实时捕捉的那种东西。基本上就是超级难做对，做对很难做快。即使有了多摄像头，像SignAll使用的深度传感设备也很难跟踪每个动作。(但这并没有阻止他们。)</p>
+<p class="translated">不仅如此，手部动作通常很快，很微妙或者两者兼而有之——不一定是计算机擅长实时捕捉的那种东西。基本上就是超级难做对，做对很难做快。即使有了多摄像头，像 SignAll 使用的深度传感设备也很难跟踪每个动作。(但这并没有阻止他们。)</p>
 
 <p class="translated">在这种情况下，研究人员的目标至少部分是减少算法需要筛选的数据量。更少的数据意味着更快的周转。</p>
 <p class="translated"><img decoding="async" loading="lazy" class="size-full wp-image-1870898 alignright" title="handgestures" src="../Images/3dbf41ec8e34314c908ccccf382e9002.png" alt="handgestures" data-original-src="https://web.archive.org/web/20230109072542im_/https://techcrunch.com/wp-content/uploads/2019/08/handgestures.gif"/>首先，他们放弃了用系统检测整只手的位置和大小的想法。相反，他们只让系统找到手掌，这不仅是手最独特和形状最可靠的部分，而且是方形的，这意味着他们不必担心系统能够处理高矩形图像，矮图像等等。</p>
-<p class="translated">当然，一旦手掌被识别出来，手指就会从它的一端长出来，可以单独进行分析。一种独立的算法查看图像，并为其分配21个坐标，大致与指关节和指尖相协调，包括它们可能有多远(它可以根据手掌的大小和角度等进行猜测)。</p>
-<p class="translated">为了完成手指识别部分，他们首先必须手动将这21个点添加到大约30，000张各种姿势和照明情况下的手部图像中，以便机器学习系统摄取和学习。像往常一样，人工智能依赖于人类的辛勤工作。</p>
+<p class="translated">当然，一旦手掌被识别出来，手指就会从它的一端长出来，可以单独进行分析。一种独立的算法查看图像，并为其分配 21 个坐标，大致与指关节和指尖相协调，包括它们可能有多远(它可以根据手掌的大小和角度等进行猜测)。</p>
+<p class="translated">为了完成手指识别部分，他们首先必须手动将这 21 个点添加到大约 30，000 张各种姿势和照明情况下的手部图像中，以便机器学习系统摄取和学习。像往常一样，人工智能依赖于人类的辛勤工作。</p>
 <p class="translated">一旦确定了手的姿势，这个姿势就会与一系列已知的手势进行比较，从字母和数字的手语符号到“和平”和“金属”之类的东西。</p>
-<p class="translated">其结果是一种既快速又准确的手部跟踪算法，可以在普通的智能手机上运行，而不是在一个精心设计的桌面或云(即其他人精心设计的桌面)上运行。这一切都在MediaPipe框架内运行，多媒体技术人员可能已经了解了一些。</p>
+<p class="translated">其结果是一种既快速又准确的手部跟踪算法，可以在普通的智能手机上运行，而不是在一个精心设计的桌面或云(即其他人精心设计的桌面)上运行。这一切都在 MediaPipe 框架内运行，多媒体技术人员可能已经了解了一些。</p>
 <p class="translated">幸运的话，其他研究人员将能够利用这一点并运行它，也许可以改进现有的系统，这些系统需要更强大的硬件来进行识别手势所需的手识别。然而，要真正理解手语还有很长的路要走，手语使用双手、面部表情和其他线索来产生一种与众不同的丰富的交流模式。</p>
 <p class="translated">这还没有用于任何谷歌产品，所以研究人员能够免费分发他们的工作。源代码就在这里，任何人都可以获取并在此基础上进行开发。</p>
 <p class="translated">他们写道:“我们希望向更广泛的研发社区提供这种手感功能，将导致创造性用例的出现，刺激新的应用和新的研究途径。”</p>

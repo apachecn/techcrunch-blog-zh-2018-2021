@@ -7,19 +7,19 @@
 <h1 class="translated">无服务器和容器:两种很好的技术可以更好地合作</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/05/23/serverless-and-containers-two-great-technologies-that-work-great-together/">https://web.archive.org/web/https://techcrunch.com/2019/05/23/serverless-and-containers-two-great-technologies-that-work-great-together/</a></blockquote><div><div class="article-content">
 				<p id="speakable-summary" class="translated">在连续交付方法中使用容器化软件的云原生模型可以从无服务器计算中受益，在无服务器计算中，云供应商生成运行工作负载所需的确切资源量。虽然主要的云供应商已经认识到了这一点，并且已经在创造产品来抽象基础设施，但是尽管有好处，它可能并不适用于每种情况。</p>
-<p class="translated">简单地说，Cloud native涉及使用容器化的应用程序和Kubernetes来交付被称为微服务的小软件包中的软件。这使得开发人员能够在连续交付模型中更快、更有效地构建和交付软件。在云原生世界中，您应该能够开发一次代码，并在任何地方运行它，在本地或任何公共云上，或者至少这是理想的情况。</p>
+<p class="translated">简单地说，Cloud native 涉及使用容器化的应用程序和 Kubernetes 来交付被称为微服务的小软件包中的软件。这使得开发人员能够在连续交付模型中更快、更有效地构建和交付软件。在云原生世界中，您应该能够开发一次代码，并在任何地方运行它，在本地或任何公共云上，或者至少这是理想的情况。</p>
 <p class="translated">无服务器实际上有点用词不当。该模式下有服务器，但云供应商提供的不是专用虚拟机，而是数量正好合适的资源，以在合适的时间内运行特定的工作负载，仅此而已。</p>
 <h2 class="translated">没有什么是完美的</h2>
 <p class="translated">这种安排似乎非常适合连续交付模式，尽管供应商已经认识到这种方法的优点，但正如一位工程师指出的那样，在如此复杂的流程中，从来没有免费的午餐，它也不会是适用于所有情况的完美解决方案。</p>
-<p class="translated">谷歌产品管理总监阿帕娜·辛哈(Arpana Sinha)表示，Kubernetes社区确实接受了无服务器的想法，但她表示，这种想法在当前的实施中是有限的，是以功能的形式提供的，如AWS Lambda、谷歌云功能和Azure功能。</p>
+<p class="translated">谷歌产品管理总监阿帕娜·辛哈(Arpana Sinha)表示，Kubernetes 社区确实接受了无服务器的想法，但她表示，这种想法在当前的实施中是有限的，是以功能的形式提供的，如 AWS Lambda、谷歌云功能和 Azure 功能。</p>
 <p class="translated">“实际上，我认为功能概念是一个有限的概念。不幸的是，这是人们唯一会联想到无服务器的东西，”她说。</p>
 <p class="translated">她说，谷歌试图在定义上更加宽泛。“这基本上是开发人员的一个概念，你可以无缝地从编写代码到部署，基础设施会处理所有其他事情，确保你的代码以适当的方式部署在基础设施的适当、最具弹性的部分，随着你的应用程序需要额外的资源而扩展，随着你的流量下降而缩减，并只对你消耗的资源收费，”她解释道。</p>
-<p class="translated">但是Atlassian的Kubernetes团队的高级工程师Matt Whittington说，虽然这在理论上听起来不错，但在实践中，完全自动化的基础设施在某些情况下可能是不现实的。“对于某些工作负载，无服务器可能是有前途的，因为它确实允许开发人员专注于代码，但它不是一个完美的解决方案。仍有一些潜在的调整。”</p>
+<p class="translated">但是 Atlassian 的 Kubernetes 团队的高级工程师 Matt Whittington 说，虽然这在理论上听起来不错，但在实践中，完全自动化的基础设施在某些情况下可能是不现实的。“对于某些工作负载，无服务器可能是有前途的，因为它确实允许开发人员专注于代码，但它不是一个完美的解决方案。仍有一些潜在的调整。”</p>
 <p class="translated">他说，除非有办法规定每个集装箱的要求，比如告诉他们你需要一个最小的集装箱装载时间，一个特定的集装箱停止时间，或者也许你需要把它送到一个特定的位置，否则你可能不能完全让供应商决定。他说，实际上这不会是完全自动化的，至少当开发人员摆弄设置以确保他们得到他们需要的资源而没有过度供应和支付超过他们需要的费用时。</p>
 <h2 class="translated">带来解决方案的供应商</h2>
-<p class="translated">供应商们投入了他们的两分钱，试图创造出将这一理想结合在一起的工具。例如，谷歌上个月在<a href="https://web.archive.org/web/20221005150754/https://techcrunch.com/2019/04/11/google-cloud-makes-some-strong-moves-to-differentiate-itself-from-aws-and-microsoft/">谷歌云Next </a>发布了一项名为的服务。它基于开源的Knative项目，本质上为运行容器的开发者结合了无服务器的优点。其他类似的服务包括<a href="https://web.archive.org/web/20221005150754/https://techcrunch.com/2018/04/11/with-fargate-aws-wants-to-make-containers-more-cloud-native/"> AWS Fargate </a>和<a href="https://web.archive.org/web/20221005150754/https://techcrunch.com/2017/07/26/microsofts-new-azure-container-instances-make-using-containers-fast-and-easy/"> Azure Container Instances </a>，两者都试图将这两种技术结合在一个类似的包中。</p>
-<p class="translated">事实上，微软的合作伙伴项目经理Gabe Monroy表示，Azure Container Instances旨在解决这个问题，而不依赖于功能驱动的编程方法。“Azure Container Instances允许您直接在Azure compute fabric上运行容器，没有虚拟机，虚拟机管理程序独立，按秒付费。我们称之为无服务器容器，”他说。</p>
-<p class="translated">正如Monroy指出的那样，虽然无服务器和容器看起来很合适，但对于云原生技术，没有一种放之四海而皆准的方法，不管是什么方法。一些人将继续使用像AWS Lambda或Azure Functions这样的函数驱动的无服务器方法，而另一些人将转向容器并寻找其他方法将这些技术结合在一起。无论发生什么，随着开发人员需求的变化，很明显开源社区和供应商会用工具来帮助他们。将无服务器和容器结合在一起只是其中的一个例子。</p>
+<p class="translated">供应商们投入了他们的两分钱，试图创造出将这一理想结合在一起的工具。例如，谷歌上个月在<a href="https://web.archive.org/web/20221005150754/https://techcrunch.com/2019/04/11/google-cloud-makes-some-strong-moves-to-differentiate-itself-from-aws-and-microsoft/">谷歌云 Next </a>发布了一项名为的服务。它基于开源的 Knative 项目，本质上为运行容器的开发者结合了无服务器的优点。其他类似的服务包括<a href="https://web.archive.org/web/20221005150754/https://techcrunch.com/2018/04/11/with-fargate-aws-wants-to-make-containers-more-cloud-native/"> AWS Fargate </a>和<a href="https://web.archive.org/web/20221005150754/https://techcrunch.com/2017/07/26/microsofts-new-azure-container-instances-make-using-containers-fast-and-easy/"> Azure Container Instances </a>，两者都试图将这两种技术结合在一个类似的包中。</p>
+<p class="translated">事实上，微软的合作伙伴项目经理 Gabe Monroy 表示，Azure Container Instances 旨在解决这个问题，而不依赖于功能驱动的编程方法。“Azure Container Instances 允许您直接在 Azure compute fabric 上运行容器，没有虚拟机，虚拟机管理程序独立，按秒付费。我们称之为无服务器容器，”他说。</p>
+<p class="translated">正如 Monroy 指出的那样，虽然无服务器和容器看起来很合适，但对于云原生技术，没有一种放之四海而皆准的方法，不管是什么方法。一些人将继续使用像 AWS Lambda 或 Azure Functions 这样的函数驱动的无服务器方法，而另一些人将转向容器并寻找其他方法将这些技术结合在一起。无论发生什么，随着开发人员需求的变化，很明显开源社区和供应商会用工具来帮助他们。将无服务器和容器结合在一起只是其中的一个例子。</p>
 
 			</div>
 

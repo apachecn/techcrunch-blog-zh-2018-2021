@@ -7,19 +7,19 @@
 <h1 class="translated">一个泄漏的短信数据库暴露了密码重置和双因素代码</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2018/11/15/millions-sms-text-messages-leaked-two-factor-codes/">https://web.archive.org/web/https://techcrunch.com/2018/11/15/millions-sms-text-messages-leaked-two-factor-codes/</a></blockquote><div><div class="article-content">
 				<p id="speakable-summary" class="translated">一个安全漏洞暴露了一个包含数千万条短信的大规模数据库，包括密码重置链接、双因素代码、发货通知等。</p>
-<p class="translated">被曝光的服务器属于Voxox(前身为<a href="https://web.archive.org/web/20230306222615/https://techcrunch.com/2013/01/17/telcentris-voxox-funding/"> Telcentris </a>)，一家总部位于加州圣地亚哥的通信公司。该服务器没有密码保护，任何知道在哪里寻找的人都可以窥视和窥探近乎实时的短信流。</p>
+<p class="translated">被曝光的服务器属于 Voxox(前身为<a href="https://web.archive.org/web/20230306222615/https://techcrunch.com/2013/01/17/telcentris-voxox-funding/"> Telcentris </a>)，一家总部位于加州圣地亚哥的通信公司。该服务器没有密码保护，任何知道在哪里寻找的人都可以窥视和窥探近乎实时的短信流。</p>
 <p class="translated">对于柏林的安全研究员塞巴斯蒂安·考尔来说，很快就能发现。</p>
-<p class="translated">尽管Kaul在Shodan上发现了暴露的服务器，shod an是一个公开可用设备和数据库的搜索引擎，但它也附属于Voxox自己的一个子域。更糟糕的是，运行在亚马逊Elasticsearch上的数据库配置了Kibana前端，使数据易于阅读、浏览和搜索姓名、手机号码和短信本身的内容。</p>
-<p/><div id="attachment_1747606" class="wp-caption alignnone"><img aria-describedby="caption-attachment-1747606" decoding="async" class="wp-image-1747606 size-full" src="../Images/ef3b22e5f43070099db671a7605e0c33.png" alt="" srcset="https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png 1724w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=150,103 150w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=300,206 300w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=768,528 768w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=680,468 680w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=1536,1057 1536w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=1200,826 1200w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=50,34 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png"/><p id="caption-attachment-1747606" class="wp-caption-text translated">包含用户电话号码及其Microsoft帐户重置代码的文本消息示例。(图片:TechCrunch)</p></div>
-<p class="translated">大多数人不会考虑当你收到一家公司的短信时，幕后会发生什么，无论是亚马逊的发货通知还是你登录的双因素代码。通常，像HQ Trivia和Viber这样的应用程序开发者会采用像<a href="https://web.archive.org/web/20230306222615/https://www.telesign.com/use-cases/add-two-factor-authentication/"> Telesign </a>和<a href="https://web.archive.org/web/20230306222615/https://www.nexmo.com/use-cases/two-factor-authentication"> Nexmo </a>这样的公司提供的技术，例如，要么验证用户的电话号码，要么发送双因素认证码。但是像Voxox这样的公司<a href="https://web.archive.org/web/20230306222615/https://archive.li/esfis">作为网关</a>将这些代码转换成文本信息，通过手机网络传递到用户的手机上。</p>
-<p class="translated">在TechCrunch进行调查后，Voxox关闭了数据库。在关闭时，该数据库年初至今似乎有2600多万条短信。但是每分钟通过该平台处理的消息的绝对数量——通过数据库的可视前端看到的——表明这个数字可能更高。</p>
-<p class="translated">每条记录都被细致地标记和详细记录，包括收件人的手机号码、信息、发送信息的Voxox客户以及他们使用的短代码。</p>
+<p class="translated">尽管 Kaul 在 Shodan 上发现了暴露的服务器，shod an 是一个公开可用设备和数据库的搜索引擎，但它也附属于 Voxox 自己的一个子域。更糟糕的是，运行在亚马逊 Elasticsearch 上的数据库配置了 Kibana 前端，使数据易于阅读、浏览和搜索姓名、手机号码和短信本身的内容。</p>
+<p/><div id="attachment_1747606" class="wp-caption alignnone"><img aria-describedby="caption-attachment-1747606" decoding="async" class="wp-image-1747606 size-full" src="../Images/ef3b22e5f43070099db671a7605e0c33.png" alt="" srcset="https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png 1724w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=150,103 150w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=300,206 300w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=768,528 768w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=680,468 680w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=1536,1057 1536w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=1200,826 1200w, https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png?resize=50,34 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230306222615im_/https://techcrunch.com/wp-content/uploads/2018/11/voxox-pic.png"/><p id="caption-attachment-1747606" class="wp-caption-text translated">包含用户电话号码及其 Microsoft 帐户重置代码的文本消息示例。(图片:TechCrunch)</p></div>
+<p class="translated">大多数人不会考虑当你收到一家公司的短信时，幕后会发生什么，无论是亚马逊的发货通知还是你登录的双因素代码。通常，像 HQ Trivia 和 Viber 这样的应用程序开发者会采用像<a href="https://web.archive.org/web/20230306222615/https://www.telesign.com/use-cases/add-two-factor-authentication/"> Telesign </a>和<a href="https://web.archive.org/web/20230306222615/https://www.nexmo.com/use-cases/two-factor-authentication"> Nexmo </a>这样的公司提供的技术，例如，要么验证用户的电话号码，要么发送双因素认证码。但是像 Voxox 这样的公司<a href="https://web.archive.org/web/20230306222615/https://archive.li/esfis">作为网关</a>将这些代码转换成文本信息，通过手机网络传递到用户的手机上。</p>
+<p class="translated">在 TechCrunch 进行调查后，Voxox 关闭了数据库。在关闭时，该数据库年初至今似乎有 2600 多万条短信。但是每分钟通过该平台处理的消息的绝对数量——通过数据库的可视前端看到的——表明这个数字可能更高。</p>
+<p class="translated">每条记录都被细致地标记和详细记录，包括收件人的手机号码、信息、发送信息的 Voxox 客户以及他们使用的短代码。</p>
 <p class="translated">粗略查看数据后，我们发现:</p>
 <ul>
-<li class="translated">我们发现约会应用Badoo以明文形式向一个洛杉矶电话号码发送了一个密码；</li>
+<li class="translated">我们发现约会应用 Badoo 以明文形式向一个洛杉矶电话号码发送了一个密码；</li>
 </ul>
 <ul>
-<li class="translated">几个Booking.com合伙人被发送了他们的六位双因素代码，以登录该公司的外联网公司网络；</li>
+<li class="translated">几个 Booking.com 合伙人被发送了他们的六位双因素代码，以登录该公司的外联网公司网络；</li>
 </ul>
 <ul>
 <li class="translated">富达投资公司还向一个芝加哥环路区号发送了六位数字的安全码；</li>
@@ -31,13 +31,13 @@
 <li class="translated">加州山景城的一个信用合作社，第一个高科技联邦信用合作社，也以明文形式向内布拉斯加州的一个号码发送了一个临时银行密码；</li>
 </ul>
 <ul>
-<li class="translated">我们发现了一个由亚马逊发送的带有链接的运输通知文本，该链接打开了亚马逊的递送跟踪页面，包括UPS跟踪号，正在前往其位于佛罗里达州的目的地的途中；</li>
+<li class="translated">我们发现了一个由亚马逊发送的带有链接的运输通知文本，该链接打开了亚马逊的递送跟踪页面，包括 UPS 跟踪号，正在前往其位于佛罗里达州的目的地的途中；</li>
 </ul>
 <ul>
-<li class="translated">信使应用程序KakaoTalk和Viber，以及问答应用程序HQ Trivia使用该服务来验证用户电话号码；</li>
+<li class="translated">信使应用程序 KakaoTalk 和 Viber，以及问答应用程序 HQ Trivia 使用该服务来验证用户电话号码；</li>
 </ul>
 <ul>
-<li class="translated">我们还发现了包含微软账户密码重置码和华为ID验证码的消息；</li>
+<li class="translated">我们还发现了包含微软账户密码重置码和华为 ID 验证码的消息；</li>
 </ul>
 <ul>
 <li class="translated">雅虎也使用该服务通过短信发送一些账户密钥；</li>
@@ -48,8 +48,8 @@
 <p class="translated">“是的，这非常糟糕，”安全研究员迪伦·卡茨(Dylan Katz)说，他回顾了一些调查结果。</p>
 <p class="translated">尽管暴露了个人信息和电话号码，但近实时访问双因素代码的能力可能会使无数账户面临被劫持的风险。在某些情况下，网站只需要一个电话号码来重置帐户。通过暴露的数据库访问文本消息，劫持一个帐户可能需要几秒钟。</p>
 <p class="translated">“我真正担心的是这种可能性已经被滥用了，”卡茨说。“这不同于大多数入侵，因为数据是临时的，所以一旦离线，任何被盗数据都没有多大用处。”</p>
-<p class="translated">Voxox的联合创始人兼首席技术官凯文·赫兹(Kevin Hertz)在一封电子邮件中表示，该公司“正在调查这个问题，目前正在遵循标准的数据泄露政策”，并且该公司正在“评估影响”。</p>
-<p class="translated">包括脸书、Twitter和Instagram在内的许多公司已经推出了基于应用的双因素认证，以挫败基于短信的验证，这种验证长期以来被视为容易被拦截。</p>
+<p class="translated">Voxox 的联合创始人兼首席技术官凯文·赫兹(Kevin Hertz)在一封电子邮件中表示，该公司“正在调查这个问题，目前正在遵循标准的数据泄露政策”，并且该公司正在“评估影响”。</p>
+<p class="translated">包括脸书、Twitter 和 Instagram 在内的许多公司已经推出了基于应用的双因素认证，以挫败基于短信的验证，这种验证长期以来被视为容易被拦截。</p>
 <p class="translated">如果曾经有过这样的例子，那么最近的曝光会很有帮助。</p>
 
 			</div>

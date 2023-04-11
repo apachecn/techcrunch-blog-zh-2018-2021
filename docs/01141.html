@@ -4,14 +4,14 @@
 <link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<h1 class="translated">这个聪明的人工智能向其创造者隐藏数据，以在其指定的任务中作弊——第258页——TechCrunch</h1>
+<h1 class="translated">这个聪明的人工智能向其创造者隐藏数据，以在其指定的任务中作弊——第 258 页——TechCrunch</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2018/12/31/this-clever-ai-hid-data-from-its-creators-to-cheat-at-its-appointed-task/258/">https://web.archive.org/web/https://techcrunch.com/2018/12/31/this-clever-ai-hid-data-from-its-creators-to-cheat-at-its-appointed-task/258/</a></blockquote><div><div class="article-content">
-				<p id="speakable-summary" class="translated">根据你的偏执程度，这项来自斯坦福大学和谷歌T2的研究要么令人恐惧，要么令人着迷。一个旨在将航空图像转换为街道地图的机器学习代理被发现通过将稍后需要的信息隐藏在“一个几乎察觉不到的高频信号”中进行欺骗。聪明的女孩！</p>
+				<p id="speakable-summary" class="translated">根据你的偏执程度，这项来自斯坦福大学和谷歌 T2 的研究要么令人恐惧，要么令人着迷。一个旨在将航空图像转换为街道地图的机器学习代理被发现通过将稍后需要的信息隐藏在“一个几乎察觉不到的高频信号”中进行欺骗。聪明的女孩！</p>
 <p class="translated">但事实上，这一事件远远没有说明人工智能固有的某种恶意智能，而是简单地揭示了计算机自发明以来就存在的一个问题:它们完全按照你告诉它们的去做。</p>
-<p class="translated">正如你可能猜到的，研究人员的目的是加速和改善将卫星图像转化为谷歌著名的精确地图的过程。为此，该团队正在与所谓的CycleGAN合作，这是一种神经网络，通过大量的实验，它学会尽可能高效而准确地将X和Y类型的图像相互转换。</p>
+<p class="translated">正如你可能猜到的，研究人员的目的是加速和改善将卫星图像转化为谷歌著名的精确地图的过程。为此，该团队正在与所谓的 CycleGAN 合作，这是一种神经网络，通过大量的实验，它学会尽可能高效而准确地将 X 和 Y 类型的图像相互转换。</p>
 <p class="translated">在一些早期的结果中，代理做得很好——<em>可疑地</em>做得很好。让该团队感到意外的是，当代理商从其街道地图重建航空照片时，有许多细节似乎根本不在后者上。例如，当他们要求代理做相反的过程时，在创建街道地图的过程中被消除的屋顶上的天窗会神奇地重新出现:</p>
 <p/><div id="attachment_1763980" class="wp-caption aligncenter"><a href="https://web.archive.org/web/20200626205818/https://techcrunch.com/wp-content/uploads/2018/12/mapdetails.jpg"><img aria-describedby="caption-attachment-1763980" class="breakout size-full wp-image-1763980" src="../Images/f4f7c29c372e1c9b6951a35d9872220e.png" alt="" srcset="https://web.archive.org/web/20200626205818im_/https://techcrunch.com/wp-content/uploads/2018/12/mapdetails.jpg 933w, https://web.archive.org/web/20200626205818im_/https://techcrunch.com/wp-content/uploads/2018/12/mapdetails.jpg?resize=150,57 150w, https://web.archive.org/web/20200626205818im_/https://techcrunch.com/wp-content/uploads/2018/12/mapdetails.jpg?resize=300,114 300w, https://web.archive.org/web/20200626205818im_/https://techcrunch.com/wp-content/uploads/2018/12/mapdetails.jpg?resize=768,291 768w, https://web.archive.org/web/20200626205818im_/https://techcrunch.com/wp-content/uploads/2018/12/mapdetails.jpg?resize=680,258 680w, https://web.archive.org/web/20200626205818im_/https://techcrunch.com/wp-content/uploads/2018/12/mapdetails.jpg?resize=50,19 50w" sizes="(max-width: 933px) 100vw, 933px" data-original-src="https://web.archive.org/web/20200626205818im_/https://techcrunch.com/wp-content/uploads/2018/12/mapdetails.jpg"/></a><p id="caption-attachment-1763980" class="wp-caption-text translated">原图，左；从原始中心生成的街道地图；以及仅从街道地图生成的航空地图。请注意，两张航空地图上都有街道地图上没有的点。</p></div>
-<p class="translated">虽然很难窥视神经网络过程的内部工作，但该团队可以轻松审计它生成的数据。经过一点试验，他们发现CycleGAN确实耍了一个花招。</p>
+<p class="translated">虽然很难窥视神经网络过程的内部工作，但该团队可以轻松审计它生成的数据。经过一点试验，他们发现 CycleGAN 确实耍了一个花招。</p>
 <p class="translated">目的是让代理能够解释任一种地图的特征，并将它们与另一种地图的正确特征相匹配。但是代理商实际上对<em>和</em>评分的标准是航空地图与原始地图的接近程度，以及街道地图的清晰度。</p>
 <p class="translated">所以它<em>没有</em>学会如何把一个从另一个变成一个。它学会了如何巧妙地将其中一个的特征编码到另一个的噪声模式中。航空地图的细节被秘密写入街道地图的实际视觉数据中:人眼不会注意到的数千个微小的颜色变化，但计算机可以轻松检测到。</p>
 <p class="translated">事实上，计算机非常擅长将这些细节融入街道地图，它已经学会将<em>任何</em>航空地图编码成<em>任何</em>街道地图！它甚至不必关注“真实”的街道地图——重建航拍照片所需的所有数据都可以无害地叠加在完全不同的街道地图上，正如研究人员所证实的那样:</p>
@@ -21,7 +21,7 @@
 <p class="translated">人们很容易将此视为“机器变得越来越聪明”这一叙事中的一步，但事实几乎是相反的。这台机器不够聪明，无法完成将这些复杂的图像类型相互转换的实际困难工作，它找到了一种人类<em>不擅长检测的作弊方法。这可以通过对代理结果更严格的评估来避免，毫无疑问，研究人员继续这样做。</em></p>
 <p class="translated">像往常一样，计算机完全按照要求做，所以你必须非常具体地问它们什么。在这种情况下，计算机的解决方案是一个有趣的解决方案，它揭示了这种类型的神经网络的一个可能的弱点——如果没有明确阻止计算机这样做，它基本上会找到一种方法将细节传输给自己，以便快速轻松地解决给定的问题。</p>
 <p class="translated">这实际上只是计算领域最古老格言中的一课:PEBKAC。"键盘和椅子之间存在问题。"(显然，不是我之前无意中写的“和计算机”。这意味着电缆或无线接口有问题。感谢网上大家指出来。)或者如哈尔所说:“这只能归咎于人为错误。”</p>
-<p class="translated"><a href="https://web.archive.org/web/20200626205818/https://arxiv.org/pdf/1712.02950.pdf">论文《隐写术大师cycle gan》</a>在2017年神经信息处理系统大会上发表。感谢<a href="https://web.archive.org/web/20200626205818/https://twitter.com/fioraesoterica/status/1079446464663703552">菲奥拉秘传</a>和Reddit让我注意到这篇古老而有趣的论文。</p>
+<p class="translated"><a href="https://web.archive.org/web/20200626205818/https://arxiv.org/pdf/1712.02950.pdf">论文《隐写术大师 cycle gan》</a>在 2017 年神经信息处理系统大会上发表。感谢<a href="https://web.archive.org/web/20200626205818/https://twitter.com/fioraesoterica/status/1079446464663703552">菲奥拉秘传</a>和 Reddit 让我注意到这篇古老而有趣的论文。</p>
 			</div>
 
 			</div>    

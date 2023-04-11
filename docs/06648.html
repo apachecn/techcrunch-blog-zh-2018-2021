@@ -6,37 +6,37 @@
 <body>
 <h1 class="translated">脸书通过淘汰弱者加速人工智能训练</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2020/01/21/facebook-speeds-up-ai-training-by-culling-the-weak/">https://web.archive.org/web/https://techcrunch.com/2020/01/21/facebook-speeds-up-ai-training-by-culling-the-weak/</a></blockquote><div><div class="article-content">
-				<p id="speakable-summary" class="translated">训练一个人工智能代理做一些事情，比如在复杂的3D世界中导航，在计算上是昂贵和耗时的。为了更好地创造这些潜在有用的系统，脸书的工程师们从本质上把最慢的一批留在后面获得了巨大的效率收益。</p>
+				<p id="speakable-summary" class="translated">训练一个人工智能代理做一些事情，比如在复杂的 3D 世界中导航，在计算上是昂贵和耗时的。为了更好地创造这些潜在有用的系统，脸书的工程师们从本质上把最慢的一批留在后面获得了巨大的效率收益。</p>
 <p class="translated">这是该公司对“具体化人工智能”的新关注的一部分，这意味着机器学习系统可以与周围环境智能交互。这可能意味着很多事情——例如，使用对话上下文来响应语音命令，但也可能是更微妙的事情，如机器人知道它进入了错误的房间。到底为什么脸书如此感兴趣，我将留给你自己的猜测，但事实是他们已经招募并资助了严肃的研究人员来研究这一领域以及人工智能工作的相关领域。</p>
-<p class="translated">为了创建这样的“具体化”系统，你需要使用真实世界的合理复制品来训练它们。你不能指望一个从未见过真实走廊的人工智能知道墙和门是什么。考虑到真实机器人在现实生活中的实际移动速度，你不能指望它们在这里学到教训。这就是<a href="https://web.archive.org/web/20230227154229/https://techcrunch.com/2019/06/14/facebook-is-creating-photorealistic-homes-for-ais-to-work-and-learn-in/">让脸书创造Habitat </a>的原因，这是一套模拟现实世界的环境，足够逼真，人工智能通过导航学习的东西也可以应用到现实世界中。</p>
+<p class="translated">为了创建这样的“具体化”系统，你需要使用真实世界的合理复制品来训练它们。你不能指望一个从未见过真实走廊的人工智能知道墙和门是什么。考虑到真实机器人在现实生活中的实际移动速度，你不能指望它们在这里学到教训。这就是<a href="https://web.archive.org/web/20230227154229/https://techcrunch.com/2019/06/14/facebook-is-creating-photorealistic-homes-for-ais-to-work-and-learn-in/">让脸书创造 Habitat </a>的原因，这是一套模拟现实世界的环境，足够逼真，人工智能通过导航学习的东西也可以应用到现实世界中。</p>
 
 <p class="translated">这种模拟器在机器人和人工智能培训中很常见，也很有用，因为作为模拟器，你可以同时运行它们的许多实例——对于简单的实例，可以同时运行数千个实例，每个实例中都有一个代理试图解决一个问题，并最终将其发现报告给调度它的中央系统。</p>
-<p class="translated">不幸的是，与更简单的虚拟环境相比，照片级的3D环境使用了大量的计算，这意味着研究人员被限制在少数几个同时发生的情况下，这使得学习速度相当缓慢。</p>
-<p class="translated">由Dhruv Batra和Erik Wijmans领导的脸书研究人员发现了一种将这一过程加快一个数量级或更多的方法，前者是教授，后者是佐治亚理工学院的博士生。结果是一个人工智能系统可以从起点到目标导航3D环境，成功率为99.9%，几乎没有错误。</p>
+<p class="translated">不幸的是，与更简单的虚拟环境相比，照片级的 3D 环境使用了大量的计算，这意味着研究人员被限制在少数几个同时发生的情况下，这使得学习速度相当缓慢。</p>
+<p class="translated">由 Dhruv Batra 和 Erik Wijmans 领导的脸书研究人员发现了一种将这一过程加快一个数量级或更多的方法，前者是教授，后者是佐治亚理工学院的博士生。结果是一个人工智能系统可以从起点到目标导航 3D 环境，成功率为 99.9%，几乎没有错误。</p>
 <p/>
 <p class="translated">简单的导航是工作的“具体化人工智能”或机器人的基础，这就是为什么该团队选择在不增加任何额外困难的情况下追求它。</p>
-<p class="translated">“这是第一个任务。忘记问题回答，忘记上下文——你能从A点到B点吗？当代理有地图时，这很容易，但没有地图，这是一个公开的问题，”Batra说。"导航失败意味着，无论在其上构建什么样的堆栈，它都将轰然倒塌."</p>
+<p class="translated">“这是第一个任务。忘记问题回答，忘记上下文——你能从 A 点到 B 点吗？当代理有地图时，这很容易，但没有地图，这是一个公开的问题，”Batra 说。"导航失败意味着，无论在其上构建什么样的堆栈，它都将轰然倒塌."</p>
 <p class="translated">他们发现，问题在于训练系统花费了太多的时间等待慢船。也许这样称呼他们是不公平的——这些人工智能代理人无论出于什么原因都无法快速完成他们的任务。</p>
-<p class="translated">Wijmans解释说:“这并不一定是他们学得慢。“但如果你在模拟一个一居室的公寓，这比在一个10居室的豪宅中导航要容易得多。”</p>
-<p class="translated">中央系统被设计为等待其所有被派遣的代理完成他们的虚拟任务并报告回来。如果一个代理花费的时间是其他代理的10倍，这意味着系统在等待更新信息并发送新的一批信息时会浪费大量时间。</p>
-<p/><div id="attachment_1935228" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1935228" decoding="async" class="wp-image-1935228 size-full" src="../Images/561cf4cdee6fd9bb3c37ae358f21fbfc.png" alt="" data-original-src="https://web.archive.org/web/20230227154229im_/https://techcrunch.com/wp-content/uploads/2020/01/gpu-param.gif"/><p id="caption-attachment-1935228" class="wp-caption-text translated">这张小小的解释性gif展示了当一个代理陷入困境时，它是如何延迟其他人从它的经历中学习的。</p></div>
+<p class="translated">Wijmans 解释说:“这并不一定是他们学得慢。“但如果你在模拟一个一居室的公寓，这比在一个 10 居室的豪宅中导航要容易得多。”</p>
+<p class="translated">中央系统被设计为等待其所有被派遣的代理完成他们的虚拟任务并报告回来。如果一个代理花费的时间是其他代理的 10 倍，这意味着系统在等待更新信息并发送新的一批信息时会浪费大量时间。</p>
+<p/><div id="attachment_1935228" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1935228" decoding="async" class="wp-image-1935228 size-full" src="../Images/561cf4cdee6fd9bb3c37ae358f21fbfc.png" alt="" data-original-src="https://web.archive.org/web/20230227154229im_/https://techcrunch.com/wp-content/uploads/2020/01/gpu-param.gif"/><p id="caption-attachment-1935228" class="wp-caption-text translated">这张小小的解释性 gif 展示了当一个代理陷入困境时，它是如何延迟其他人从它的经历中学习的。</p></div>
 <p class="translated">脸书团队的创新之处在于，在这些不幸的落后者完成之前，聪明地将他们砍掉。经过一段时间的模拟后，他们就完成了，他们收集的任何数据都会被添加到存储库中。</p>
-<p class="translated">“你让所有这些工人都在运行，他们都在做他们的事情，他们都在互相交谈，”Wijmans说。“一个人会告诉其他人，‘好了，我快完成了’，然后他们都会汇报他们的进度。任何发现自己落后于其他人的人都会在大同步发生之前减少工作量。”</p>
+<p class="translated">“你让所有这些工人都在运行，他们都在做他们的事情，他们都在互相交谈，”Wijmans 说。“一个人会告诉其他人，‘好了，我快完成了’，然后他们都会汇报他们的进度。任何发现自己落后于其他人的人都会在大同步发生之前减少工作量。”</p>
 <p/><div id="attachment_1935229" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1935229" decoding="async" loading="lazy" class="wp-image-1935229 size-full" src="../Images/16e96d3d0e4ae493df7bbf31b627e93c.png" alt="" data-original-src="https://web.archive.org/web/20230227154229im_/https://techcrunch.com/wp-content/uploads/2020/01/ddppogif.gif"/><p id="caption-attachment-1935229" class="wp-caption-text translated">在这种情况下，您可以看到每个工作者同时停止并同时共享。</p></div>
 <p class="translated">如果一个机器学习代理会感觉不好，我相信它在这一点上会感觉不好，而且确实那个代理会受到系统的“惩罚”，因为它不会像其他代理一样得到那么多的虚拟“强化”。拟人化的术语使其看起来更像人类——本质上低效的算法或处于困难环境中的算法的重要性会降低。但是他们的贡献仍然是有价值的。</p>
-<p class="translated">“我们利用工人积累的所有经验，无论多少，无论是成功还是失败，我们都从中学习，”Wijmans解释说。</p>
+<p class="translated">“我们利用工人积累的所有经验，无论多少，无论是成功还是失败，我们都从中学习，”Wijmans 解释说。</p>
 <p class="translated">这意味着不存在一些工人等待其他人完成的浪费周期。及时带来手头工作的更多经验意味着下一批稍微好一点的员工会更早离开，这是一个自我强化的循环，会产生巨大的收益。</p>
-<p class="translated">在他们进行的实验中，研究人员发现，这个系统，引人注目地命名为分散分布式近似策略优化(DD-PPO)，似乎几乎可以理想地扩展，随着更多的计算能力专用于该任务，性能几乎呈线性增长。也就是说，把计算能力提高10倍产生了近10倍的结果。另一方面，标准算法导致了非常有限的扩展，10倍或100倍的计算能力只能对结果产生很小的提升，因为这些复杂的模拟器是如何束缚自己的。</p>
+<p class="translated">在他们进行的实验中，研究人员发现，这个系统，引人注目地命名为分散分布式近似策略优化(DD-PPO)，似乎几乎可以理想地扩展，随着更多的计算能力专用于该任务，性能几乎呈线性增长。也就是说，把计算能力提高 10 倍产生了近 10 倍的结果。另一方面，标准算法导致了非常有限的扩展，10 倍或 100 倍的计算能力只能对结果产生很小的提升，因为这些复杂的模拟器是如何束缚自己的。</p>
 
-<p class="translated">这些有效的方法让脸书的研究人员生产出能够在规定时间内以99.9%的可靠性解决虚拟环境中点对点导航任务的代理。他们甚至表现出对错误的鲁棒性，找到一种方法来快速识别他们走错了方向，并返回另一条路。</p>
-<p class="translated">研究人员推测，代理已经学会了“利用结构规则”，这个短语在某些情况下意味着人工智能知道如何作弊。但Wijmans澄清说，他们使用的环境更有可能有一些现实世界的布局规则。</p>
+<p class="translated">这些有效的方法让脸书的研究人员生产出能够在规定时间内以 99.9%的可靠性解决虚拟环境中点对点导航任务的代理。他们甚至表现出对错误的鲁棒性，找到一种方法来快速识别他们走错了方向，并返回另一条路。</p>
+<p class="translated">研究人员推测，代理已经学会了“利用结构规则”，这个短语在某些情况下意味着人工智能知道如何作弊。但 Wijmans 澄清说，他们使用的环境更有可能有一些现实世界的布局规则。</p>
 <p class="translated">“这些是我们数字化的真实房屋，所以他们正在学习西式房屋的布局，”他说。正如你不会期望厨房直接进入卧室一样，人工智能已经学会识别其他模式并做出其他“假设”</p>
 <p class="translated">下一个目标是找到一种方法，让这些代理用更少的资源完成他们的任务。每个代理都有一个虚拟相机，它可以导航，为它提供普通和深度图像，但也有一个可靠的坐标系统来告诉它行进的位置，还有一个指南针，总是指向目标。要是事情总是这么简单就好了！但是直到这个实验，即使有这些资源，即使有更多的训练时间，成功率还是相当低。</p>
-<p class="translated">Habitat本身也获得了一些交互性和可定制性。</p>
+<p class="translated">Habitat 本身也获得了一些交互性和可定制性。</p>
 <p/><div id="attachment_1843681" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1843681" decoding="async" loading="lazy" class="size-full wp-image-1843681" src="../Images/c766805d43489c10fc128a39904989ce.png" alt="" srcset="https://web.archive.org/web/20230227154229im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg 1244w, https://web.archive.org/web/20230227154229im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=150,111 150w, https://web.archive.org/web/20230227154229im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=300,223 300w, https://web.archive.org/web/20230227154229im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=768,570 768w, https://web.archive.org/web/20230227154229im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=680,505 680w, https://web.archive.org/web/20230227154229im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=1200,891 1200w, https://web.archive.org/web/20230227154229im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg?resize=50,37 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230227154229im_/https://techcrunch.com/wp-content/uploads/2019/06/habitat_sense.jpg"/><p id="caption-attachment-1843681" class="wp-caption-text translated">通过各种虚拟视觉系统看到的栖息地。</p></div>
 <p class="translated">“在这些改进之前，栖息地是一个静态的宇宙，”威曼斯解释说。“代理可以移动和撞到墙壁，但它不能打开抽屉或打翻桌子。我们这样做是因为我们想要快速、大规模的模拟——但如果你想解决像‘从我的桌子上拿起我的笔记本电脑’这样的任务，你最好能够真正拿起那台笔记本电脑。”</p>
-<p class="translated">因此，现在Habitat允许用户向房间添加对象，对这些对象施加力，检查碰撞等等。毕竟，现实生活不仅仅是无实体地在一个无摩擦的3D结构中滑行。</p>
-<p class="translated">这些改进应该会使Habitat成为一个更强大的实验平台，也将使接受过培训的代理人能够直接将他们的学习成果转移到现实世界中去——该团队已经开始了这方面的工作，并将很快发表一篇论文。</p>
+<p class="translated">因此，现在 Habitat 允许用户向房间添加对象，对这些对象施加力，检查碰撞等等。毕竟，现实生活不仅仅是无实体地在一个无摩擦的 3D 结构中滑行。</p>
+<p class="translated">这些改进应该会使 Habitat 成为一个更强大的实验平台，也将使接受过培训的代理人能够直接将他们的学习成果转移到现实世界中去——该团队已经开始了这方面的工作，并将很快发表一篇论文。</p>
 			</div>
 
 			</div>    

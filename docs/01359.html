@@ -4,33 +4,33 @@
 <link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<h1 class="translated">Amadeus航空订票系统的缺陷使得更改乘客记录变得很容易</h1>
+<h1 class="translated">Amadeus 航空订票系统的缺陷使得更改乘客记录变得很容易</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/01/15/amadeus-airline-booking-vulnerability-passenger-records/">https://web.archive.org/web/https://techcrunch.com/2019/01/15/amadeus-airline-booking-vulnerability-passenger-records/</a></blockquote><div><div class="article-content">
-				<p id="speakable-summary" class="translated">你可能不知道Amadeus的名字，但每年有数亿游客使用它。</p>
-<p class="translated">无论您是出差还是度假，大多数消费者都通过商业航空业使用的少数几个定制预订系统之一预订航班。Amadeus是最大的预订系统之一，为法国航空公司、英国航空公司、冰岛航空公司、澳洲航空公司等的客户提供服务。并且每个预订系统必须能够通过全球分销系统反向信道相互交谈。</p>
+				<p id="speakable-summary" class="translated">你可能不知道 Amadeus 的名字，但每年有数亿游客使用它。</p>
+<p class="translated">无论您是出差还是度假，大多数消费者都通过商业航空业使用的少数几个定制预订系统之一预订航班。Amadeus 是最大的预订系统之一，为法国航空公司、英国航空公司、冰岛航空公司、澳洲航空公司等的客户提供服务。并且每个预订系统必须能够通过全球分销系统反向信道相互交谈。</p>
 <p class="translated">没有这些相互联系的系统，大多数政府都不知道谁来谁往。</p>
-<p class="translated">即使在这个一切都需要密码、登机口需要面部识别的时代，你和重新预订航班的人之间唯一的障碍就是乘客的姓氏和你机票上的预订参考，即所谓的乘客姓名记录——或PNR。</p>
+<p class="translated">即使在这个一切都需要密码、登机口需要面部识别的时代，你和重新预订航班的人之间唯一的障碍就是乘客的姓氏和你机票上的预订参考，即所谓的乘客姓名记录——或 PNR。</p>
 <p class="translated">但是，这些过时和陈旧的乘客记录系统需要在国际上共享旅客的数据，从来没有考虑到今天所需的安全性，并且在保护乘客记录安全方面远远不够。</p>
 <p class="translated">以色列安全研究员诺姆·罗特姆对此再清楚不过了。</p>
-<p class="translated">他发现，任何使用Amadeus的航空公司都可以很容易地编辑和更改某人的预订，只需他们的预订参考号。不需要姓。在某些情况下，他甚至不需要获得某人的订房号。</p>
-<p class="translated">Rotem在公开披露前与TechCrunch分享的一篇文章中解释说<a href="https://web.archive.org/web/20230321053133/https://www.safetydetective.com/blog/major-security-breach-discovered-affecting-nearly-half-of-all-airline-travelers-worldwide/">他可以在以色列航空公司El Al网站的错误网址中插入任何人的预订参考——尽管被要求在网站的登记页面上输入姓氏。</a></p>
-<p class="translated">Rotem说，这不仅降低了想要操纵一个人的预订的门槛，例如改变座位和改变常旅客号码，而且也很容易从航空公司获得一个人的个人信息，例如他们的电话号码、电子邮件和家庭地址。</p>
+<p class="translated">他发现，任何使用 Amadeus 的航空公司都可以很容易地编辑和更改某人的预订，只需他们的预订参考号。不需要姓。在某些情况下，他甚至不需要获得某人的订房号。</p>
+<p class="translated">Rotem 在公开披露前与 TechCrunch 分享的一篇文章中解释说<a href="https://web.archive.org/web/20230321053133/https://www.safetydetective.com/blog/major-security-breach-discovered-affecting-nearly-half-of-all-airline-travelers-worldwide/">他可以在以色列航空公司 El Al 网站的错误网址中插入任何人的预订参考——尽管被要求在网站的登记页面上输入姓氏。</a></p>
+<p class="translated">Rotem 说，这不仅降低了想要操纵一个人的预订的门槛，例如改变座位和改变常旅客号码，而且也很容易从航空公司获得一个人的个人信息，例如他们的电话号码、电子邮件和家庭地址。</p>
 <p class="translated">六位数预订参考本身的安全性如何？历史表明它仍然太容易获得了。</p>
 <p class="translated">如果您的六位数字预订参考号尚未出现在您的登机牌、机票或行李标签上，您仍然可以在条形码中找到它。这个条形码，<a href="https://web.archive.org/web/20230321053133/https://www.theguardian.com/technology/2016/dec/28/airline-passenger-details-online-bookings-easy-prey-hackers-say-researchers">在几年前被解密</a>，可以被大多数移动条形码应用程序轻松读取，这使得犯罪分子很容易在值机区或候机室走动，并在你不注意的时候扫描你的机票照片。</p>
-<p class="translated">更糟糕的是，普通黑客不必离开他们的房子。每天都有数十人在推特和Instagram上发布他们的登机牌和条形码，标签为<a href="https://web.archive.org/web/20230321053133/https://www.instagram.com/explore/tags/boardingpass/">#登机通行证</a>和<a href="https://web.archive.org/web/20230321053133/https://www.instagram.com/explore/tags/planetickets/"># planet tickets</a>。</p>
-<p/><div id="attachment_1769274" class="wp-caption alignnone"><img aria-describedby="caption-attachment-1769274" decoding="async" class="wp-image-1769274 size-full" src="../Images/0ddbd59c161fd7aadc474fa8faedccee.png" alt="" srcset="https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg 1400w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=150,100 150w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=300,200 300w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=768,513 768w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=680,454 680w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=1200,801 1200w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=50,33 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg"/><p id="caption-attachment-1769274" class="wp-caption-text translated">一天之内发布到Twitter和Instagram上的许多登机牌中的一些。(图片:TechCrunch)</p></div>
-<p class="translated">但Rotem表示，预订系统如何首先生成乘客姓名记录号码的固有弱点，使得黑客很容易用自己生成的预订参考资料暴力破解任何与Amadeus相关的航空公司网站。</p>
-<p class="translated">因为Amadeus的系统没有限制在任何给定时间可以处理多少请求，Rotem可以运行一个脚本来随机生成预订参考，他说这是“简单的猜测”，然后将它们插入到易受攻击的网址中，并等待肯定的响应返回。在某些情况下，该脚本发现了与真实客户相关的预订参考。因为每个Amadeus生成的预订参考的部分是连续的，所以很容易继续攻击具有相似或相同姓氏的乘客。而且，没有速率限制，允许研究人员每分钟运行任意多的请求，从而加快了进程。(TechCrunch看到了一个生成预订参考号的脚本短片，但没有验证任何内容，因为使用他人的预订参考号登录是非法的。)</p>
+<p class="translated">更糟糕的是，普通黑客不必离开他们的房子。每天都有数十人在推特和 Instagram 上发布他们的登机牌和条形码，标签为<a href="https://web.archive.org/web/20230321053133/https://www.instagram.com/explore/tags/boardingpass/">#登机通行证</a>和<a href="https://web.archive.org/web/20230321053133/https://www.instagram.com/explore/tags/planetickets/"># planet tickets</a>。</p>
+<p/><div id="attachment_1769274" class="wp-caption alignnone"><img aria-describedby="caption-attachment-1769274" decoding="async" class="wp-image-1769274 size-full" src="../Images/0ddbd59c161fd7aadc474fa8faedccee.png" alt="" srcset="https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg 1400w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=150,100 150w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=300,200 300w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=768,513 768w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=680,454 680w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=1200,801 1200w, https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg?resize=50,33 50w" sizes="(max-width: 1024px) 100vw, 1024px" data-original-src="https://web.archive.org/web/20230321053133im_/https://techcrunch.com/wp-content/uploads/2019/01/passenger-records.jpg"/><p id="caption-attachment-1769274" class="wp-caption-text translated">一天之内发布到 Twitter 和 Instagram 上的许多登机牌中的一些。(图片:TechCrunch)</p></div>
+<p class="translated">但 Rotem 表示，预订系统如何首先生成乘客姓名记录号码的固有弱点，使得黑客很容易用自己生成的预订参考资料暴力破解任何与 Amadeus 相关的航空公司网站。</p>
+<p class="translated">因为 Amadeus 的系统没有限制在任何给定时间可以处理多少请求，Rotem 可以运行一个脚本来随机生成预订参考，他说这是“简单的猜测”，然后将它们插入到易受攻击的网址中，并等待肯定的响应返回。在某些情况下，该脚本发现了与真实客户相关的预订参考。因为每个 Amadeus 生成的预订参考的部分是连续的，所以很容易继续攻击具有相似或相同姓氏的乘客。而且，没有速率限制，允许研究人员每分钟运行任意多的请求，从而加快了进程。(TechCrunch 看到了一个生成预订参考号的脚本短片，但没有验证任何内容，因为使用他人的预订参考号登录是非法的。)</p>
 <p class="translated">例如，一个熟练的攻击者可以使用这种技术来预订自己的航班或吸走累积的航空里程。然而，一个无聊的黑客可以对任何数量的乘客的信用卡造成严重破坏。</p>
-<p class="translated">Amadeus的网站声称总共支持200多家航空公司。我们很好奇这个漏洞有多严重。</p>
-<p class="translated">使用从El Al收集的cookie数据，TechCrunch能够使用网络威胁情报公司RiskIQ收集的数据找到数十家其他受影响的航空公司，该公司在网络上搜索信息。RiskIQ的威胁研究员Yonathan Klijnsma说:“在RiskIQ的爬行过程中，我们的爬行器就像它们被指示模仿的浏览器一样，这意味着它们将维护cookies和其他特定于网站的元数据。”</p>
+<p class="translated">Amadeus 的网站声称总共支持 200 多家航空公司。我们很好奇这个漏洞有多严重。</p>
+<p class="translated">使用从 El Al 收集的 cookie 数据，TechCrunch 能够使用网络威胁情报公司 RiskIQ 收集的数据找到数十家其他受影响的航空公司，该公司在网络上搜索信息。RiskIQ 的威胁研究员 Yonathan Klijnsma 说:“在 RiskIQ 的爬行过程中，我们的爬行器就像它们被指示模仿的浏览器一样，这意味着它们将维护 cookies 和其他特定于网站的元数据。”</p>
 <p class="translated">我们联系了几家被认为受该漏洞影响的大型航空公司，但在本文发表前，没有来自法航、英航、冰岛航空或澳航的人发表评论。</p>
-<p class="translated">一位发言人说，当联系到Amadeus时，该公司确认收到了问题警报，并采取了“立即行动”。“我们正在与客户密切合作，我们对这种情况可能造成的任何中断感到抱歉。”</p>
-<p class="translated">“我们与行业内的客户和合作伙伴合作，从整体上解决PNR安全问题。航空业依赖于国际航空运输协会的标准，这些标准是为了在全球范围内提高效率和客户服务而引入的。由于该行业致力于共同的行业标准，包括PNR，进一步的改进应该包括审查和改变一些行业标准本身，这需要行业合作，”声明补充说。“在Amadeus，我们将安全放在首位，并不断监控和更新我们所有的产品和系统。”</p>
-<p class="translated">Rotem认为，bot保护机制和限制在一定时间内可以提交多少请求可以防止未来的自动攻击，但潜在的问题仍然存在。如果整个行业不努力改变预订方式，这种情况不太可能改变。</p>
-<p class="translated">事实上，我们会在一段时间内被PNR困住——这个问题不会很快消失。</p>
+<p class="translated">一位发言人说，当联系到 Amadeus 时，该公司确认收到了问题警报，并采取了“立即行动”。“我们正在与客户密切合作，我们对这种情况可能造成的任何中断感到抱歉。”</p>
+<p class="translated">“我们与行业内的客户和合作伙伴合作，从整体上解决 PNR 安全问题。航空业依赖于国际航空运输协会的标准，这些标准是为了在全球范围内提高效率和客户服务而引入的。由于该行业致力于共同的行业标准，包括 PNR，进一步的改进应该包括审查和改变一些行业标准本身，这需要行业合作，”声明补充说。“在 Amadeus，我们将安全放在首位，并不断监控和更新我们所有的产品和系统。”</p>
+<p class="translated">Rotem 认为，bot 保护机制和限制在一定时间内可以提交多少请求可以防止未来的自动攻击，但潜在的问题仍然存在。如果整个行业不努力改变预订方式，这种情况不太可能改变。</p>
+<p class="translated">事实上，我们会在一段时间内被 PNR 困住——这个问题不会很快消失。</p>
 <hr/>
-<p class="translated"><i> <a href="https://web.archive.org/web/20230321053133/https://medium.com/@zackwhittaker/how-to-contact-me-securely-38dc5c5bc756">得到了提示？</a>你可以通过Signal和WhatsApp安全地发送提示至+1 646-755–8849。也可以发PGP邮件，指纹:4d 0e 92 F2 E36A EC51 DAAE 5d 97 CB8C 15 fa EB6C ee a5。</i></p>
+<p class="translated"><i> <a href="https://web.archive.org/web/20230321053133/https://medium.com/@zackwhittaker/how-to-contact-me-securely-38dc5c5bc756">得到了提示？</a>你可以通过 Signal 和 WhatsApp 安全地发送提示至+1 646-755–8849。也可以发 PGP 邮件，指纹:4d 0e 92 F2 E36A EC51 DAAE 5d 97 CB8C 15 fa EB6C ee a5。</i></p>
 			</div>
 
 			</div>    

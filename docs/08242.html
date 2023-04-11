@@ -4,7 +4,7 @@
 <link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<h1 class="translated">苹果和CMU的研究人员为智能家居设备演示了一个低摩擦的听听学习系统</h1>
+<h1 class="translated">苹果和 CMU 的研究人员为智能家居设备演示了一个低摩擦的听听学习系统</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2020/04/23/apple-and-cmu-researchers-demo-a-low-friction-learn-by-listening-system-for-smarter-home-devices/">https://web.archive.org/web/https://techcrunch.com/2020/04/23/apple-and-cmu-researchers-demo-a-low-friction-learn-by-listening-system-for-smarter-home-devices/</a></blockquote><div><div class="article-content">
 				<p id="speakable-summary" class="translated">来自苹果公司和卡耐基梅隆大学人机交互研究所(T2)的一组研究人员展示了一个嵌入式人工智能系统，该系统通过倾听环境中的噪音进行学习，不需要预先的训练数据，也不会给用户带来监督学习过程的巨大负担。总体目标是让智能设备更容易地建立上下文/情境感知，以增加它们的效用。</p>
 <p class="translated">这个系统被他们称为<a href="https://web.archive.org/web/20230228022350/https://chrisharrison.net/projects/listenlearner/ListenLearner.pdf">听力学习器</a>，它依靠声学活动识别来使智能设备<span>如配备麦克风的扬声器</span>通过自我监督学习过程解释周围发生的事件，通过一次性用户交互完成手动标记——如扬声器问一个人“那是什么声音？”在它听到噪音足够长的时间后，它会被分类成一个集群。</p>
@@ -18,13 +18,13 @@
 <div class="page" title="Page 4">
 <div class="layoutArea">
 <div class="column">
-<p class="translated">他们在论文中解释道:“T <span> he算法通过迭代聚类未知样本来学习集成模型，然后根据最终的聚类分配来训练</span> <span>分类器。”“这允许与用户进行‘一次性’交互，以便在集合模型被激活时标记它们的部分。”</span></p>
+<p class="translated">他们在论文中解释道:“T <span> he 算法通过迭代聚类未知样本来学习集成模型，然后根据最终的聚类分配来训练</span> <span>分类器。”“这允许与用户进行‘一次性’交互，以便在集合模型被激活时标记它们的部分。”</span></p>
 </div>
 </div>
 </div>
-<p class="translated"><span>使用自适应阈值对音频事件进行分段</span>，当麦克风输入电平比过去一分钟的平均值高1.5个标准偏差时触发该阈值。</p>
+<p class="translated"><span>使用自适应阈值对音频事件进行分段</span>，当麦克风输入电平比过去一分钟的平均值高 1.5 个标准偏差时触发该阈值。</p>
 <p class="translated">“我们采用滞后技术(例如，去抖动)来进一步平滑我们的阈值方案，”他们补充道，并进一步指出:“尽管许多环境具有持续和特有的背景声音(例如，HVAC)，但为了计算效率，我们忽略了它们(以及静音)。注意，如果输入样本与环境噪声太相似，则丢弃它们，但是分段窗口内的静音不会被去除。”</p>
-<p class="translated">他们使用的CNN(卷积神经网络)音频模型最初是在<a href="https://web.archive.org/web/20230228022350/https://research.google.com/youtube8m/"> YouTube-8M数据集</a>上训练的——根据该论文，该数据集增加了专业音效库。</p>
+<p class="translated">他们使用的 CNN(卷积神经网络)音频模型最初是在<a href="https://web.archive.org/web/20230228022350/https://research.google.com/youtube8m/"> YouTube-8M 数据集</a>上训练的——根据该论文，该数据集增加了专业音效库。</p>
 <p class="translated">使用深度神经网络嵌入的选择，可以被视为输入数据的学习低维表示，与流形假设(即，高维数据大致位于低维流形上)一致。通过对这种低维的学习表示进行聚类和分类，我们的系统能够更容易地发现和识别新的声音类别，”他们补充道。</p>
 <div class="page" title="Page 3">
 <div class="layoutArea">
@@ -34,8 +34,8 @@
 <div class="page" title="Page 4">
 <div class="layoutArea">
 <div class="column">
-<p class="translated">“虽然我们的聚类算法通过最小化总的类内方差来将数据分成类，但我们也寻求基于它们的可分类性来评估类。在聚类阶段之后，我们使用无监督的单类支持向量机(SVM)算法，该算法学习用于新颖性检测的决策边界。他们补充说:“对于每个候选聚类，一个一类SVM在一个聚类的数据点上进行训练，其F1得分是用数据池中的所有样本计算的。”</p>
-<p class="translated">“传统的聚类算法试图通过提供一个聚类分配来描述输入数据，但这本身不能用于区分看不见的样本。因此，为了提高我们系统的推理能力，我们使用上一步生成的单类支持向量机构建了一个集成模型。我们采用迭代过程来构建我们的集成模型，通过选择F1分数超过阈值𝜃&amp;'(的第一个分类器，并将其添加到集成中。当添加一个分类器时，我们在数据池上运行它，并标记被识别的样本。然后，我们重新开始聚类-分类循环，直到1)池中的所有样本都被标记，或者2)循环不再产生任何分类器。"</p>
+<p class="translated">“虽然我们的聚类算法通过最小化总的类内方差来将数据分成类，但我们也寻求基于它们的可分类性来评估类。在聚类阶段之后，我们使用无监督的单类支持向量机(SVM)算法，该算法学习用于新颖性检测的决策边界。他们补充说:“对于每个候选聚类，一个一类 SVM 在一个聚类的数据点上进行训练，其 F1 得分是用数据池中的所有样本计算的。”</p>
+<p class="translated">“传统的聚类算法试图通过提供一个聚类分配来描述输入数据，但这本身不能用于区分看不见的样本。因此，为了提高我们系统的推理能力，我们使用上一步生成的单类支持向量机构建了一个集成模型。我们采用迭代过程来构建我们的集成模型，通过选择 F1 分数超过阈值𝜃&amp;'(的第一个分类器，并将其添加到集成中。当添加一个分类器时，我们在数据池上运行它，并标记被识别的样本。然后，我们重新开始聚类-分类循环，直到 1)池中的所有样本都被标记，或者 2)循环不再产生任何分类器。"</p>
 <h3 class="translated">隐私保护？</h3>
 <p class="translated">该论文触及了这种监听系统引发的隐私问题——考虑到麦克风打开和处理环境数据的频率，并且因为他们注意到不可能总是在设备上本地执行所有处理。</p>
 <div class="page" title="Page 4">

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Apple's CSAM detection tech is under fire — again </title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">苹果公司的 CSAM 探测技术再次遭到抨击</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2021/08/18/apples-csam-detection-tech-is-under-fire-again/">https://web.archive.org/web/https://techcrunch.com/2021/08/18/apples-csam-detection-tech-is-under-fire-again/</a></blockquote><div><div class="article-content">
+				<p id="speakable-summary" class="translated">苹果公司本月早些时候宣布的一项新的儿童性虐待材料(CSAM)检测技术遭遇了巨大的反弹。该系统被苹果称为 NeuralHash，尚未为其超过 10 亿的用户激活，但该技术已经面临安全研究人员的批评，他们说该算法产生了有缺陷的结果。</p>
+<p class="translated">NeuralHash 旨在识别用户设备上的已知 CSAM，而无需拥有图像或知道图像的内容。因为用户存储在 iCloud 中的照片是端到端加密的，所以即使是苹果也无法访问这些数据，NeuralHash 反而会扫描用户设备上的已知 CSAM，苹果<a href="https://web.archive.org/web/20230316203552/https://techcrunch.com/2021/08/10/interview-apples-head-of-privacy-details-child-abuse-detection-and-messages-safety-features/?tpcc=ECTW2020">声称这更有利于隐私</a>，因为它只扫描照片，而不是其他公司扫描用户的所有文件。</p>
+<p class="translated">苹果通过在用户设备上寻找具有相同哈希的图像来做到这一点，哈希是由<a href="https://web.archive.org/web/20230316203552/https://www.missingkids.org/HOME"> NCMEC </a>等儿童保护组织提供的一串字母和数字，可以唯一地识别图像。如果 NeuralHash 找到 30 个或更多匹配的哈希，这些图像就会被标记给苹果公司进行人工审查，然后账户所有者就会被报告给执法部门。苹果表示，假阳性的几率约为万亿分之一。</p>
+<p class="translated">但安全专家和隐私倡导者表示担心，该系统可能会被政府等资源丰富的行为者滥用，以牵连无辜的受害者，或操纵该系统来检测专制国家认为令人反感的其他材料。根据一份泄露给苹果内部员工的备忘录，NCMEC 称批评者为“少数人的尖锐声音”。</p>
+
+<p class="translated">昨晚，Asuhariet Ygvar 将苹果的 NeuralHash 反向工程为 Python 脚本，<a href="https://web.archive.org/web/20230316203552/https://github.com/AsuharietYgvar/AppleNeuralHash2ONNX">向 GitHub </a>发布了代码，允许任何人测试该技术，无论他们是否有苹果设备要测试。在<a href="https://web.archive.org/web/20230316203552/https://old.reddit.com//r/MachineLearning/comments/p6hsoh/p_appleneuralhash2onnx_reverseengineered_apple/">的一篇 Reddit 帖子</a>中，Ygvar 表示，NeuralHash 作为混淆代码“已经存在于”iOS 14.3 中，但在今年晚些时候推出到 iOS 和 macOS 设备之前，他能够重建这项技术，以帮助其他安全研究人员更好地理解该算法。</p>
+<p class="translated">没过多久，其他人就对公布的代码进行了修改，很快就出现了第一个<a href="https://web.archive.org/web/20230316203552/https://github.com/AsuharietYgvar/AppleNeuralHash2ONNX/issues/1">报道的</a>案例“哈希冲突”，在 NeuralHash 的案例中，两个完全不同的图像产生了相同的哈希。<a href="https://web.archive.org/web/20230316203552/https://www.intel.com/content/www/us/en/research/researchers/cory-cornelius.html"> Cory Cornelius </a>，英特尔实验室的知名研究科学家<a href="https://web.archive.org/web/20230316203552/https://github.com/AsuharietYgvar/AppleNeuralHash2ONNX/issues/1#issue-973388387">发现了</a>哈希碰撞。不久后，伊格瓦尔证实了这次碰撞。</p>
+<p class="translated">对于依赖密码术(如加密)来保证安全的系统来说，哈希冲突可能是一记丧钟。多年来，几个著名的密码哈希算法，如 MD5 和 SHA-1，在冲突攻击使它们失效后<a href="https://web.archive.org/web/20230316203552/https://techcrunch.com/2017/02/23/security-researchers-announce-first-practical-sha-1-collision-attack/">退出了历史舞台。</a></p>
+<p class="translated">加密专家和开放加密审计项目的创始人肯尼斯·怀特(Kenneth White)在一条推文中说:“我认为有些人没有意识到 iOS NeuralHash 代码被发现和第一次碰撞之间的时间不是几个月或几天，而是几个小时。”</p>
+<p class="translated">当联系到苹果公司时，该公司发言人拒绝对该记录发表评论。但在一次不允许记者直接引用高管姓名的背景电话中，苹果淡化了哈希冲突，并辩称，它采取的保护措施——比如在向执法部门报告之前对照片进行人工审查——旨在防止滥用。苹果还表示，被逆向工程的 NeuralHash 版本是一个通用版本，而不是将于今年晚些时候推出的完整版本。</p>
+<p class="translated">不仅仅是公民自由组织和安全专家对这项技术表示担忧。德国议会一名资深议员本周致信苹果首席执行官蒂姆·库克，称该公司正走在一条“危险的道路”上，并敦促苹果不要实施该系统。</p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

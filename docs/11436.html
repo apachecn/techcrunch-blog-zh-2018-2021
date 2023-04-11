@@ -6,25 +6,25 @@
 <body>
 <h1 class="translated">诚然，承诺“保护你的隐私”的社交网络应用暴露了私人信息和用户位置</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2020/10/28/true-social-app-privacy-exposed-data/">https://web.archive.org/web/https://techcrunch.com/2020/10/28/true-social-app-privacy-exposed-data/</a></blockquote><div><div class="article-content">
-				<p id="speakable-summary" class="translated">True将自己标榜为“保护你的隐私”的社交网络应用。但是一个安全漏洞暴露了它的一个服务器——并把私人用户数据泄露到互联网上，任何人都可以找到。</p>
-<p class="translated">这款应用是由Hello Mobile在2017年推出的，Hello Mobile是一家鲜为人知的虚拟手机运营商，搭载了T-Mobile的网络。True的网站称，它已经筹集了1400万美元的种子资金，<a href="https://web.archive.org/web/20221208143848/https://www.prnewswire.com/news-releases/launch-of-new-stealth-mobile-app-true-reaches-over-500k-new-users-in-record-time-300561658.html">声称</a>在推出后不久就有超过50万的用户。</p>
+				<p id="speakable-summary" class="translated">True 将自己标榜为“保护你的隐私”的社交网络应用。但是一个安全漏洞暴露了它的一个服务器——并把私人用户数据泄露到互联网上，任何人都可以找到。</p>
+<p class="translated">这款应用是由 Hello Mobile 在 2017 年推出的，Hello Mobile 是一家鲜为人知的虚拟手机运营商，搭载了 T-Mobile 的网络。True 的网站称，它已经筹集了 1400 万美元的种子资金，<a href="https://web.archive.org/web/20221208143848/https://www.prnewswire.com/news-releases/launch-of-new-stealth-mobile-app-true-reaches-over-500k-new-users-in-record-time-300561658.html">声称</a>在推出后不久就有超过 50 万的用户。</p>
 <p class="translated">但该应用程序的一个数据库的仪表板在没有密码的情况下暴露在互联网上，允许任何人阅读、浏览和搜索数据库——包括私人用户数据。</p>
-<p class="translated">总部位于迪拜的网络安全公司SpiderSilk的首席安全官Mossab Hussein发现了暴露的仪表板，并向TechCrunch提供了详细信息。针对暴露数据库和设备的搜索引擎BinaryEdge提供的数据显示，仪表板至少从9月初就已暴露。</p>
+<p class="translated">总部位于迪拜的网络安全公司 SpiderSilk 的首席安全官 Mossab Hussein 发现了暴露的仪表板，并向 TechCrunch 提供了详细信息。针对暴露数据库和设备的搜索引擎 BinaryEdge 提供的数据显示，仪表板至少从 9 月初就已暴露。</p>
 <p>	</p>
 	
-<p class="translated">在我们伸出手后，True将仪表板离线。</p>
-<p class="translated">True的首席执行官布雷特·考克斯(Bret Cox)证实了这一安全漏洞，但没有回答我们的具体问题，包括该公司是否计划通知用户这一安全漏洞，或者是否计划根据州数据泄露通知法向监管机构披露这一事件。</p>
-<p class="translated">仪表板包含从2月份开始的每日服务器日志，包括用户注册的电子邮件地址或电话号码、用户之间私人帖子和消息的内容，以及用户最后已知的地理位置，这可以确定用户当时或曾经在哪里。仪表盘还暴露了用户上传的电子邮件和电话联系人，True使用这些信息来匹配应用程序中的已知朋友。</p>
+<p class="translated">在我们伸出手后，True 将仪表板离线。</p>
+<p class="translated">True 的首席执行官布雷特·考克斯(Bret Cox)证实了这一安全漏洞，但没有回答我们的具体问题，包括该公司是否计划通知用户这一安全漏洞，或者是否计划根据州数据泄露通知法向监管机构披露这一事件。</p>
+<p class="translated">仪表板包含从 2 月份开始的每日服务器日志，包括用户注册的电子邮件地址或电话号码、用户之间私人帖子和消息的内容，以及用户最后已知的地理位置，这可以确定用户当时或曾经在哪里。仪表盘还暴露了用户上传的电子邮件和电话联系人，True 使用这些信息来匹配应用程序中的已知朋友。</p>
 <p class="translated">所有的数据都没有加密。</p>
-<p class="translated">TechCrunch证实，dashboard通过创建一个测试帐户并要求Hussein提供只有我们知道的数据，如用于注册帐户的电话号码，来返回真实的用户数据。</p>
-<p class="translated">侯赛因说，仪表板还泄漏了帐户访问令牌，可以用来侵入和劫持任何用户的帐户。这些帐户访问令牌看起来像一行随机的字母和数字，但让用户登录到应用程序，而不必每次都输入他们的登录信息。使用我们的测试帐户，Hussein从仪表板上找到了我们的访问令牌，并使用它来访问我们的帐户并在我们的feed上发布消息。</p>
-<p class="translated">仪表盘还显示了一次性登录代码，True会将这些代码发送到帐户的相关电子邮件地址或电话号码，而不是存储密码。</p>
-<p class="translated">True表示，删除帐户“将立即从我们的服务器上删除您的所有内容”，但删除我们的测试帐户并不会删除我们的私人消息、帖子和照片，仍然可以从仪表板上进行搜索。</p>
-<p class="translated">“这是任何组织都会发生错误的另一个例子，即使是那些以隐私为中心的组织，”侯赛因告诉TechCrunch。“它不仅强调了构建安全应用程序和网站的重要性，还强调了确保在其内部程序中嵌入适当的数据安全措施的重要性。”</p>
-<p class="translated">无法联系到Hello Mobile的发言人。</p>
+<p class="translated">TechCrunch 证实，dashboard 通过创建一个测试帐户并要求 Hussein 提供只有我们知道的数据，如用于注册帐户的电话号码，来返回真实的用户数据。</p>
+<p class="translated">侯赛因说，仪表板还泄漏了帐户访问令牌，可以用来侵入和劫持任何用户的帐户。这些帐户访问令牌看起来像一行随机的字母和数字，但让用户登录到应用程序，而不必每次都输入他们的登录信息。使用我们的测试帐户，Hussein 从仪表板上找到了我们的访问令牌，并使用它来访问我们的帐户并在我们的 feed 上发布消息。</p>
+<p class="translated">仪表盘还显示了一次性登录代码，True 会将这些代码发送到帐户的相关电子邮件地址或电话号码，而不是存储密码。</p>
+<p class="translated">True 表示，删除帐户“将立即从我们的服务器上删除您的所有内容”，但删除我们的测试帐户并不会删除我们的私人消息、帖子和照片，仍然可以从仪表板上进行搜索。</p>
+<p class="translated">“这是任何组织都会发生错误的另一个例子，即使是那些以隐私为中心的组织，”侯赛因告诉 TechCrunch。“它不仅强调了构建安全应用程序和网站的重要性，还强调了确保在其内部程序中嵌入适当的数据安全措施的重要性。”</p>
+<p class="translated">无法联系到 Hello Mobile 的发言人。</p>
 <p class="translated">侯赛因还发现<a href="https://web.archive.org/web/20221208143848/https://techcrunch.com/2018/12/20/blind-anonymous-app-data-exposure/">一个暴露的数据库仪表板</a>属于“匿名社交网络”Blind，员工们喜欢<a href="https://web.archive.org/web/20221208143848/https://techcrunch.com/2018/02/10/hr-has-lost-the-trust-of-employees-here-is-who-has-it-now/">公开披露</a>他们公司的渎职和不法行为。</p>
 <hr/>
-<p class="translated"><em>你可以使用Signal和WhatsApp安全地联系作者，电话:+1 646-755-8849。</em></p>
+<p class="translated"><em>你可以使用 Signal 和 WhatsApp 安全地联系作者，电话:+1 646-755-8849。</em></p>
 
 			</div>
 

@@ -4,7 +4,7 @@
 <link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<h1 class="translated">如何选择和部署特定行业的人工智能模型TechCrunch</h1>
+<h1 class="translated">如何选择和部署特定行业的人工智能模型 TechCrunch</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2021/04/12/how-to-choose-and-deploy-industry-specific-ai-models/">https://web.archive.org/web/https://techcrunch.com/2021/04/12/how-to-choose-and-deploy-industry-specific-ai-models/</a></blockquote><div><header class="article__header ">
 	<p class="article__title-wrapper">
 						</p><h1 class="article__title translated">如何选择和部署特定行业的人工智能模型</h1>
@@ -21,7 +21,7 @@
 	
 
 		<div class="contributor-byline__bio">
-		<a href="https://web.archive.org/web/20221025222656/https://www.linkedin.com/in/djdas/">DJ Das</a><p class="translated">是的创始人兼首席执行官</p><a href="https://web.archive.org/web/20221025222656/https://thirdeyedata.io/">ThirdEye Data</a><p class="translated">，一家用AI应用改造企业的公司。DJ是一名串行和并行企业家，也是硅谷各种以数据为中心的初创公司的天使投资人。</p></div>
+		<a href="https://web.archive.org/web/20221025222656/https://www.linkedin.com/in/djdas/">DJ Das</a><p class="translated">是的创始人兼首席执行官</p><a href="https://web.archive.org/web/20221025222656/https://thirdeyedata.io/">ThirdEye Data</a><p class="translated">，一家用 AI 应用改造企业的公司。DJ 是一名串行和并行企业家，也是硅谷各种以数据为中心的初创公司的天使投资人。</p></div>
 	
 	</div>
 </div><p id="speakable-summary" class="translated">随着人工智能变得更加先进，以前尖端但通用的人工智能模型变得越来越常见，如谷歌云的<a href="https://web.archive.org/web/20221025222656/https://cloud.google.com/vision/">视觉人工智能</a>或<a href="https://web.archive.org/web/20221025222656/https://aws.amazon.com/rekognition/?blog-cards.sort-by=item.additionalFields.createdDate&amp;blog-cards.sort-order=desc">亚马逊认知</a>。</p>
@@ -30,14 +30,14 @@
 		<blockquote class="translated">任何寻求扩展其人工智能能力的团队都应该首先将其数据和用例应用于通用模型，并评估结果。</blockquote>
 	</div>
 	
-<p class="translated">公司有几种方法可以产生特定行业的结果。一种是采用混合方法——采用开源的通用人工智能模型，并对其进行进一步训练，以符合企业的特定需求。公司也可以寻求第三方供应商，如IBM或C3，并获得现成的完整解决方案。或者，如果他们真的需要，数据科学团队可以在内部从头开始构建自己的模型。</p>
+<p class="translated">公司有几种方法可以产生特定行业的结果。一种是采用混合方法——采用开源的通用人工智能模型，并对其进行进一步训练，以符合企业的特定需求。公司也可以寻求第三方供应商，如 IBM 或 C3，并获得现成的完整解决方案。或者，如果他们真的需要，数据科学团队可以在内部从头开始构建自己的模型。</p>
 <p class="translated">让我们深入了解每一种方法，以及企业如何决定哪一种方法适合他们独特的环境。</p>
 <h2 class="translated">单靠通用模型通常是不够的</h2>
-<p class="translated">当涉及金融或能源行业等行业的利基用例时，Vision AI或Rekognition等通用人工智能模型以及TensorFlow或Scikit-learn的开源模型往往无法产生足够的结果。很多业务都有独特的需求，没有某个行业的上下文数据的模型将无法提供相关的结果。</p>
+<p class="translated">当涉及金融或能源行业等行业的利基用例时，Vision AI 或 Rekognition 等通用人工智能模型以及 TensorFlow 或 Scikit-learn 的开源模型往往无法产生足够的结果。很多业务都有独特的需求，没有某个行业的上下文数据的模型将无法提供相关的结果。</p>
 <h2 class="translated">构建在开源模型之上</h2>
-<p class="translated">在ThirdEye Data，我们最近与一家公用事业公司合作，通过使用人工智能分析数千张图像来标记和检测电线杆中的缺陷。我们开始使用谷歌视觉API，发现它无法产生我们想要的结果——人工智能模型的精度和召回值完全无法使用。模型在90%的时间里都无法阅读电线杆上标签中的字符，因为它无法识别标签中使用的非标准字体和不同的背景颜色。</p>
-<p class="translated">因此，我们从TensorFlow获得了基本的计算机视觉模型，并根据公用事业公司的精确需求对它们进行了优化。经过两个月开发人工智能模型来检测和破译电线杆上的标签，以及另外两个月训练这些模型，结果显示准确率超过90%。随着时间的推移，这些将随着再训练迭代而继续改进。</p>
-<p class="translated">任何寻求扩展其人工智能能力的团队都应该首先将其数据和用例应用于通用模型，并评估结果。公司可以开始使用的开源算法可以在人工智能和ML框架中找到，如TensorFlow、Scikit-learn或微软认知工具包。在ThirdEye Data，我们在TensorFlow上使用了卷积神经网络(CNN)算法。</p>
+<p class="translated">在 ThirdEye Data，我们最近与一家公用事业公司合作，通过使用人工智能分析数千张图像来标记和检测电线杆中的缺陷。我们开始使用谷歌视觉 API，发现它无法产生我们想要的结果——人工智能模型的精度和召回值完全无法使用。模型在 90%的时间里都无法阅读电线杆上标签中的字符，因为它无法识别标签中使用的非标准字体和不同的背景颜色。</p>
+<p class="translated">因此，我们从 TensorFlow 获得了基本的计算机视觉模型，并根据公用事业公司的精确需求对它们进行了优化。经过两个月开发人工智能模型来检测和破译电线杆上的标签，以及另外两个月训练这些模型，结果显示准确率超过 90%。随着时间的推移，这些将随着再训练迭代而继续改进。</p>
+<p class="translated">任何寻求扩展其人工智能能力的团队都应该首先将其数据和用例应用于通用模型，并评估结果。公司可以开始使用的开源算法可以在人工智能和 ML 框架中找到，如 TensorFlow、Scikit-learn 或微软认知工具包。在 ThirdEye Data，我们在 TensorFlow 上使用了卷积神经网络(CNN)算法。</p>
 <p class="translated">然后，如果结果不充分，团队可以通过在自己的行业特定数据上进一步训练来扩展算法。</p>
 <p/>			</div>
 

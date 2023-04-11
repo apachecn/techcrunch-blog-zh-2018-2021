@@ -7,22 +7,22 @@
 <h1 class="translated">一个流行的智能家居中心的安全缺陷让黑客可以打开前门</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2019/07/02/smart-home-hub-flaws-unlock-doors/">https://web.archive.org/web/https://techcrunch.com/2019/07/02/smart-home-hub-flaws-unlock-doors/</a></blockquote><div><div class="article-content">
 				<p id="speakable-summary" class="translated">智能家居什么时候没那么智能了？当它可以被黑的时候。</p>
-<p class="translated">这正是安全研究人员Chase Dardaman和Jason Wheeler在Zipato智能集线器中所做的事情。在周二发表并与TechCrunch分享的新研究中，Dardaman和Wheeler发现了三个安全漏洞，当它们被联系在一起时，可能会被滥用来用智能锁打开前门。</p>
+<p class="translated">这正是安全研究人员 Chase Dardaman 和 Jason Wheeler 在 Zipato 智能集线器中所做的事情。在周二发表并与 TechCrunch 分享的新研究中，Dardaman 和 Wheeler 发现了三个安全漏洞，当它们被联系在一起时，可能会被滥用来用智能锁打开前门。</p>
 <p class="translated">过去一年，智能家居技术受到了越来越多的关注。虽然对一些人来说很方便，但安全专家长期以来一直警告说，给设备添加互联网连接会增加攻击面，使设备不如传统设备安全。控制家中智能设备的智能家居集线器，如水表甚至前门门锁，可以被滥用来允许房东随时进入租户的家中。</p>
 <p class="translated">一月份，安全专家<a href="https://web.archive.org/web/20230407213011/https://twitter.com/hacks4pancakes">莱斯利·卡哈特</a>写了关于<a href="https://web.archive.org/web/20230407213011/https://tisiphone.net/2019/01/28/security-things-to-consider-when-your-apartment-goes-smart/">她的房东决定</a>安装智能锁的文章——迫使她寻找新家。其他租房者和房客也面临着来自房东的类似压力，甚至起诉以保留使用实体钥匙的权利。</p>
-<p class="translated">几个月前，达尔达曼和惠勒开始研究由克罗地亚公司Zipato开发的广受欢迎的智能家居中心ZipaMicro，但只有在缺陷得到修复后才公布他们的发现。</p>
-<p class="translated">研究人员发现，他们可以从设备的存储卡中提取hub的“root ”(具有最高访问级别的用户帐户)的私有SSH密钥。惠勒说，任何有私钥的人都可以访问设备，而不需要密码。</p>
-<p class="translated">他们后来发现，出售给客户的每台集线器中都硬编码了私有SSH密钥——这使得安装了相同集线器的每户家庭都面临风险。</p>
-<p class="translated">利用这个私人密钥，研究人员从设备上下载了一个文件，其中包含用于访问集线器的加密密码。他们发现smart hub使用一种“哈希传递”认证系统，不需要知道用户的明文密码，只需要知道加密版本。通过获取加密的密码并将其传递给智能集线器，研究人员可以欺骗设备，使其认为自己是房主。</p>
+<p class="translated">几个月前，达尔达曼和惠勒开始研究由克罗地亚公司 Zipato 开发的广受欢迎的智能家居中心 ZipaMicro，但只有在缺陷得到修复后才公布他们的发现。</p>
+<p class="translated">研究人员发现，他们可以从设备的存储卡中提取 hub 的“root ”(具有最高访问级别的用户帐户)的私有 SSH 密钥。惠勒说，任何有私钥的人都可以访问设备，而不需要密码。</p>
+<p class="translated">他们后来发现，出售给客户的每台集线器中都硬编码了私有 SSH 密钥——这使得安装了相同集线器的每户家庭都面临风险。</p>
+<p class="translated">利用这个私人密钥，研究人员从设备上下载了一个文件，其中包含用于访问集线器的加密密码。他们发现 smart hub 使用一种“哈希传递”认证系统，不需要知道用户的明文密码，只需要知道加密版本。通过获取加密的密码并将其传递给智能集线器，研究人员可以欺骗设备，使其认为自己是房主。</p>
 <p class="translated">攻击者所要做的就是发送一个命令告诉锁打开或关闭。只用几行代码，研究人员就构建了一个脚本，可以锁定和解锁连接到易受攻击的智能集线器的智能锁。</p>
 <p/><div id="attachment_1851219" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1851219" decoding="async" class="wp-image-1851219 size-full" title="smart-lock-door" src="../Images/fcf7f6136832ac75da99e1c257e7c78d.png" alt="" data-original-src="https://web.archive.org/web/20230407213011im_/https://techcrunch.com/wp-content/uploads/2019/07/smart-lock-door.gif"/><p id="caption-attachment-1851219" class="wp-caption-text translated">让黑客打开智能锁的概念验证代码(图片:Chase Dardaman，Jason Wheeler)</p></div>
-<p class="translated">更糟糕的是，Dardaman说，任何一栋为所有公寓注册了一个主账户的公寓大楼，都可以让他们从同一个密码散列中“打开任何一扇门”。</p>
-<p class="translated">研究人员承认，他们的发现并不是进入每个人家庭的完美万能钥匙。为了利用这些缺陷，攻击者需要与易受攻击的智能集线器在同一个Wi-Fi网络上。达尔达曼说，任何直接连接到互联网的枢纽将被远程利用。研究人员使用一个搜索公开可用设备和数据库的搜索引擎<a href="https://web.archive.org/web/20230407213011/https://techcrunch.com/2019/01/21/shodan-safari/"> Shodan </a>发现了五个这样易受攻击的设备。</p>
-<p class="translated">Zipato表示，它在20，000个家庭中拥有112，000台设备，但易受攻击的集线器的确切数量尚不清楚。</p>
-<p class="translated">我们询问了Zipato的客户、最大的智能家居自动化供应商之一SmartRent，该公司表示，不到5%的公寓客户受到了这一脆弱技术的影响。一位发言人不愿进一步量化这一数字。SmartRent <a href="https://web.archive.org/web/20230407213011/https://smartrent.com/news/smartrent-surpasses-20000-smart-home-installations">称</a>在二月中旬，就在研究人员披露的几周前，它已经安装了超过20，000个。</p>
-<p class="translated">就其本身而言，Zipato在收到研究人员的披露后几周内就修复了漏洞。</p>
-<p class="translated">Zipato的首席执行官塞巴斯蒂安·波波维奇(Sebastian Popovic)告诉TechCrunch，每个智能中心现在都有一个独特的私人SSH密钥和其他安全改进。自那以后，Zipato也停止了ZipaMicro hub的生产，转而生产一种新产品。</p>
-<p class="translated">智能家居技术不太可能很快消失。来自研究公司IDC <a href="https://web.archive.org/web/20230407213011/https://www.idc.com/getdoc.jsp?containerId=prUS44971219">的数据估计</a>2019年将售出超过8 . 32亿台智能家居设备，正如<a href="https://web.archive.org/web/20230407213011/https://techcrunch.com/2018/10/05/california-passes-law-that-bans-default-passwords-in-connected-devices/">国家</a>和<a href="https://web.archive.org/web/20230407213011/https://techcrunch.com/2019/05/01/uk-connected-devices-security/">国家</a>打击互联网连接设备的不良安全性。</p>
+<p class="translated">更糟糕的是，Dardaman 说，任何一栋为所有公寓注册了一个主账户的公寓大楼，都可以让他们从同一个密码散列中“打开任何一扇门”。</p>
+<p class="translated">研究人员承认，他们的发现并不是进入每个人家庭的完美万能钥匙。为了利用这些缺陷，攻击者需要与易受攻击的智能集线器在同一个 Wi-Fi 网络上。达尔达曼说，任何直接连接到互联网的枢纽将被远程利用。研究人员使用一个搜索公开可用设备和数据库的搜索引擎<a href="https://web.archive.org/web/20230407213011/https://techcrunch.com/2019/01/21/shodan-safari/"> Shodan </a>发现了五个这样易受攻击的设备。</p>
+<p class="translated">Zipato 表示，它在 20，000 个家庭中拥有 112，000 台设备，但易受攻击的集线器的确切数量尚不清楚。</p>
+<p class="translated">我们询问了 Zipato 的客户、最大的智能家居自动化供应商之一 SmartRent，该公司表示，不到 5%的公寓客户受到了这一脆弱技术的影响。一位发言人不愿进一步量化这一数字。SmartRent <a href="https://web.archive.org/web/20230407213011/https://smartrent.com/news/smartrent-surpasses-20000-smart-home-installations">称</a>在二月中旬，就在研究人员披露的几周前，它已经安装了超过 20，000 个。</p>
+<p class="translated">就其本身而言，Zipato 在收到研究人员的披露后几周内就修复了漏洞。</p>
+<p class="translated">Zipato 的首席执行官塞巴斯蒂安·波波维奇(Sebastian Popovic)告诉 TechCrunch，每个智能中心现在都有一个独特的私人 SSH 密钥和其他安全改进。自那以后，Zipato 也停止了 ZipaMicro hub 的生产，转而生产一种新产品。</p>
+<p class="translated">智能家居技术不太可能很快消失。来自研究公司 IDC <a href="https://web.archive.org/web/20230407213011/https://www.idc.com/getdoc.jsp?containerId=prUS44971219">的数据估计</a>2019 年将售出超过 8 . 32 亿台智能家居设备，正如<a href="https://web.archive.org/web/20230407213011/https://techcrunch.com/2018/10/05/california-passes-law-that-bans-default-passwords-in-connected-devices/">国家</a>和<a href="https://web.archive.org/web/20230407213011/https://techcrunch.com/2019/05/01/uk-connected-devices-security/">国家</a>打击互联网连接设备的不良安全性。</p>
 <p class="translated">这也可能会让黑客和安全研究人员对智能家居技术进行更多审查。</p>
 <p class="translated">“我们想表明这种技术存在风险，公寓楼甚至个人消费者都需要知道，这些不一定比传统门锁更安全，”达尔达曼说。</p>
 

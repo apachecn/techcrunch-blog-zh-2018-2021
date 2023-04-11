@@ -6,29 +6,29 @@
 <body>
 <h1 class="translated">安全漏洞让这些汽车黑客远程控制一辆奔驰</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2020/08/06/security-bugs-mercedes-benz-hack/">https://web.archive.org/web/https://techcrunch.com/2020/08/06/security-bugs-mercedes-benz-hack/</a></blockquote><div><div class="article-content">
-				<p id="speakable-summary" class="translated">很少有人会忘记2015年，安全研究人员查理·米勒和克里斯·瓦拉塞克在高速公路上远程杀死了一辆吉普车的引擎，当时一名连线记者正在驾驶。</p>
+				<p id="speakable-summary" class="translated">很少有人会忘记 2015 年，安全研究人员查理·米勒和克里斯·瓦拉塞克在高速公路上远程杀死了一辆吉普车的引擎，当时一名连线记者正在驾驶。</p>
 <p class="translated">从那时起，汽车黑客世界就开始忙碌，安全研究人员试图在过去十年才出现的新一波联网汽车中找到新的漏洞——以及利用它们的方法。</p>
 <p class="translated">今年的黑帽安全会议——尽管由于冠状病毒疫情而成为虚拟会议——也没有什么不同。</p>
-<p class="translated">奇虎360汽车黑客部门Sky-Go团队的安全研究人员在一辆奔驰E级汽车上发现了十几个漏洞，这些漏洞允许他们远程打开车门和启动引擎。</p>
+<p class="translated">奇虎 360 汽车黑客部门 Sky-Go 团队的安全研究人员在一辆奔驰 E 级汽车上发现了十几个漏洞，这些漏洞允许他们远程打开车门和启动引擎。</p>
 <p class="translated">大多数现代汽车都配有互联网连接，让乘客可以获得车内娱乐、导航和方向，以及更多可供选择的广播电台。但是将汽车连接到互联网会使其面临更大的远程攻击风险——这正是米勒和瓦拉塞克劫持那辆吉普车的方式，那辆吉普车最终掉进了沟里。</p>
-<p class="translated">尽管在过去的五年里，汽车安全已经变得越来越好，但Sky-Go的研究人员表明，即使是最新款的梅赛德斯-奔驰汽车也无法抵御攻击。</p>
-<p class="translated">在本周的一次谈话中，Sky-Go安全研究团队的负责人严敏瑞表示，这19个安全漏洞现在已经修复，但可能会影响中国多达200万辆奔驰联网汽车。</p>
-<p class="translated">梅赛德斯母公司戴姆勒的发言人Katharina Becker指出<a href="https://web.archive.org/web/20230130100805/https://media.daimler.com/marsMediaSite/en/instance/ko/Mercedes-Benz-and-360-Group-to-join-forces-Mercedes-Benz-and-360-Group-with-its-Cyber-Security-Brain-work-together-to-strengthen-car-IT-security-for-industry.xhtml?oid=45208829">去年年底发布的修补安全问题的公司声明</a>。该发言人表示，戴姆勒无法证实受影响车辆的估计数量。</p>
+<p class="translated">尽管在过去的五年里，汽车安全已经变得越来越好，但 Sky-Go 的研究人员表明，即使是最新款的梅赛德斯-奔驰汽车也无法抵御攻击。</p>
+<p class="translated">在本周的一次谈话中，Sky-Go 安全研究团队的负责人严敏瑞表示，这 19 个安全漏洞现在已经修复，但可能会影响中国多达 200 万辆奔驰联网汽车。</p>
+<p class="translated">梅赛德斯母公司戴姆勒的发言人 Katharina Becker 指出<a href="https://web.archive.org/web/20230130100805/https://media.daimler.com/marsMediaSite/en/instance/ko/Mercedes-Benz-and-360-Group-to-join-forces-Mercedes-Benz-and-360-Group-with-its-Cyber-Security-Brain-work-together-to-strengthen-car-IT-security-for-industry.xhtml?oid=45208829">去年年底发布的修补安全问题的公司声明</a>。该发言人表示，戴姆勒无法证实受影响车辆的估计数量。</p>
 <p class="translated">“在市场上的任何车辆受到影响之前，我们解决了所有发现并修复了所有可能被利用的漏洞，”该发言人说。</p>
 <p class="translated">经过一年多的研究，最终的结果是一系列的漏洞，形成了一个可以远程控制车辆的攻击链。</p>
 <p class="translated">首先，研究人员建立了一个测试平台，对汽车的组件进行逆向工程，以寻找漏洞，转储汽车的软件，并分析汽车的内部漏洞。</p>
-<p class="translated">研究人员随后获得了一辆E系列汽车来验证他们的发现。</p>
-<p class="translated">研究的核心是E系列的远程信息处理控制单元，或TCU，严说这是汽车“最关键”的组件，因为它允许汽车与互联网通信。</p>
-<p class="translated">通过篡改TCU的文件系统，研究人员获得了根外壳的访问权限——这是一种以最高级别访问车辆内部的方式运行命令的方法。通过root shell访问，研究人员可以远程打开车门。</p>
-<p class="translated">TCU文件系统还存储汽车的秘密，如密码和证书，保护车辆在没有适当授权的情况下不被访问或修改。但是研究人员能够提取几个不同地区的几个证书的密码，包括欧洲和中国。通过获得车辆的证书和密码，研究人员可以深入访问车辆的内部网络。严说，该车在中国地区的牌照密码较弱，这使得在中国劫持一辆易受攻击的汽车变得更加容易。</p>
+<p class="translated">研究人员随后获得了一辆 E 系列汽车来验证他们的发现。</p>
+<p class="translated">研究的核心是 E 系列的远程信息处理控制单元，或 TCU，严说这是汽车“最关键”的组件，因为它允许汽车与互联网通信。</p>
+<p class="translated">通过篡改 TCU 的文件系统，研究人员获得了根外壳的访问权限——这是一种以最高级别访问车辆内部的方式运行命令的方法。通过 root shell 访问，研究人员可以远程打开车门。</p>
+<p class="translated">TCU 文件系统还存储汽车的秘密，如密码和证书，保护车辆在没有适当授权的情况下不被访问或修改。但是研究人员能够提取几个不同地区的几个证书的密码，包括欧洲和中国。通过获得车辆的证书和密码，研究人员可以深入访问车辆的内部网络。严说，该车在中国地区的牌照密码较弱，这使得在中国劫持一辆易受攻击的汽车变得更加容易。</p>
 <p class="translated">严说，他们的目标是进入汽车的后端，即汽车内部网络的核心。研究人员表示，只要汽车的后端服务可以从外部访问，汽车就有遭受攻击的风险。</p>
-<p class="translated">研究人员做到这一点的方法是拆除车辆的嵌入式SIM卡，这使得汽车能够与手机网络通话。一项安全功能意味着研究人员无法在不冻结手机网络接入的情况下将SIM卡插入路由器。研究人员修改了他们的路由器来欺骗车辆，有效地使手机网络认为这是汽车。</p>
+<p class="translated">研究人员做到这一点的方法是拆除车辆的嵌入式 SIM 卡，这使得汽车能够与手机网络通话。一项安全功能意味着研究人员无法在不冻结手机网络接入的情况下将 SIM 卡插入路由器。研究人员修改了他们的路由器来欺骗车辆，有效地使手机网络认为这是汽车。</p>
 <p class="translated">随着车辆的固件被丢弃，网络协议被理解，其证书被获得和破解，研究人员说他们可以远程控制受影响的车辆。</p>
 <p class="translated">研究人员表示，该车的安全设计非常坚固，能够抵御多次攻击，但并非无懈可击。</p>
 <p class="translated">“让每个后端组件始终安全很难，”研究人员说。“没有一家公司能做到这一点。”</p>
 <p class="translated">但至少就奔驰而言，它的汽车比一年前安全多了。</p>
 <hr/>
-<p class="translated"><em>通过Signal和WhatsApp安全地发送提示至+1 646-755-8849或发送加密电子邮件至:zack.whittaker@protonmail.com</em></p>
+<p class="translated"><em>通过 Signal 和 WhatsApp 安全地发送提示至+1 646-755-8849 或发送加密电子邮件至:zack.whittaker@protonmail.com</em></p>
 			</div>
 
 			</div>    

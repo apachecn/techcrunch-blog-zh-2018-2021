@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Let's Encrypt's root certificate has expired, and it might break your devices </title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">Let's Encrypt 的根证书已过期，它可能会损坏您的设备</h1>
+<blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2021/09/21/lets-encrypt-root-expiry/">https://web.archive.org/web/https://techcrunch.com/2021/09/21/lets-encrypt-root-expiry/</a></blockquote><div><header class="article__header ">
+	<p class="article__title-wrapper">
+						</p><h1 class="article__title translated">Let's Encrypt 的根证书已过期，它可能会损坏您的设备</h1>
+		
+
+			
+	
+			
+	</header>
+
+			<div class="article-content">
+				<p id="speakable-summary" class="translated">最大的 HTTPS 证书提供商之一，<a href="https://web.archive.org/web/20230327235642/https://techcrunch.com/tag/lets-encrypt/"> Let's Encrypt </a>的根证书于本周到期，这意味着你可能需要升级你的设备以防止它们被破解。</p>
+<p class="translated">免费使用的非营利组织 Let's Encrypt 发布证书，对你的设备和更广泛的互联网之间的连接进行加密，确保没有人能够在传输中拦截和窃取你的数据。<a href="https://web.archive.org/web/20230327235642/https://techcrunch.com/2018/09/14/three-years-later-lets-encrypt-now-secures-75-of-the-web/">光是几百万网站</a>就靠咱们加密。但是，正如安全研究员 Scott Helme 警告的那样，Let's Encrypt 目前使用的根证书 IdentTrust DST 根 CA X3 证书——将于 9 月 30 日到期。过期后，计算机、设备和 web 客户端(如浏览器)将不再信任此证书颁发机构颁发的证书。</p>
+<p class="translated">对于绝大多数网站用户来说，没有什么可担心的，9 月 30 日将照常营业。然而，旧设备可能会遇到一些问题，就像 5 月份 AddTrust 外部 CA 根过期时一样。Stripe、Red Hat 和 Roku 都因此遭遇了宕机。</p>
+<p class="translated">“鉴于 Let's Encrypt 和 AddTrust 之间的相对大小差异，我有一种感觉，IdenTrust 根到期有可能导致更多问题，”Helme 在一篇博客文章中警告<a href="https://web.archive.org/web/20230327235642/https://scotthelme.co.uk/lets-encrypt-old-root-expiration/">，指的是即将到来的到期。</a></p>
+<p>	</p><div class="article-block block--pullout block--right">
+		<blockquote class="translated">“至少某个东西，某个地方要坏掉了。”<cite>斯科特·赫尔姆，安全研究员</cite></blockquote>
+	</div>
+	
+<p class="translated">可能受到证书到期影响的设备是那些不定期更新的设备，如设计为不自动更新的嵌入式系统或运行多年前发布的软件的智能手机。运行旧版本 macOS 2016 和 Windows XP(带有 Service Pack 3)的用户可能会面临问题，依赖 OpenSSL 1.0.2 或更早版本的客户端，以及尚未升级到新固件的旧 PlayStations。</p>
+<p class="translated">虽然 Android(用 Let's Encrypt 的话说是)有一个“长期以来众所周知的操作系统更新问题”，但这家非营利组织有一个变通办法，可能会防止大多数智能手机受到到期的影响。该组织今年过渡到了自己的 ISRG 根 X1 证书，该证书直到 2035 年才到期。虽然许多<a href="https://web.archive.org/web/20230327235642/https://techcrunch.com/tag/android/"> Android </a>设备仍然不信任这个证书——即 Android (Nougat) 7.1.1 和更早的版本——但让我们加密获得了其自己证书的交叉签名，其有效期比签名根更长，这意味着大多数 Android 设备应该在三年内保持无破损。</p>
+<p class="translated">一些 Android 设备可能仍然会遇到问题，让我们加密说，它建议运行 Android (Lollipop) 5.0 的用户安装 Firefox。</p>
+<p class="translated">“对于 Android 手机的内置浏览器，可信根证书的列表来自操作系统——这在这些旧手机上已经过时了，”Let's Encrypt 解释道。"然而，Firefox 目前在浏览器中是独一无二的——它有自己的可信根证书列表."</p>
+<p class="translated">Let's Encrypt 自 2014 年成立以来，截至 9 月初已颁发了超过 20 亿份证书，它告诉 TechCrunch，用户应该看看有多少客户端正在使用受影响的 OpenSSL 版本和多年前的操作系统。它给那些不能升级的人的建议是“看看用我们新的交叉标志服务一个证书链是否有意义。”</p>
+<p class="translated"><em>首次发布于 9 月 21 日，在根证书过期后更新。</em></p>
+
+			</div>
+
+			</div>    
+</body>
+</html>

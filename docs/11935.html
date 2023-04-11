@@ -4,19 +4,19 @@
 <link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<h1 class="translated">灵活的表情可以让3D生成的人脸脱离恐怖谷TechCrunch</h1>
+<h1 class="translated">灵活的表情可以让 3D 生成的人脸脱离恐怖谷 TechCrunch</h1>
 <blockquote>原文：<a href="https://web.archive.org/web/https://techcrunch.com/2020/11/25/flexible-expressions-could-lift-3d-generated-faces-out-of-the-uncanny-valley/">https://web.archive.org/web/https://techcrunch.com/2020/11/25/flexible-expressions-could-lift-3d-generated-faces-out-of-the-uncanny-valley/</a></blockquote><div><div class="article-content">
-				<p id="speakable-summary" class="translated">现在，3D渲染的人脸是任何主要电影或游戏的重要组成部分，但以自然的方式捕捉和制作人脸动画可能是一项艰巨的任务。迪士尼研究部门正在研究平滑这一过程的方法，其中包括一种机器学习工具，它使生成和操纵3D人脸变得更加容易，而无需进入恐怖谷。</p>
-<p class="translated">当然，这项技术已经从早期呆板的表情和有限的细节中走了很长的路。高分辨率、令人信服的3D人脸可以快速、良好地制作成动画，但人类表情的微妙之处不仅种类繁多，而且很容易出错。</p>
+				<p id="speakable-summary" class="translated">现在，3D 渲染的人脸是任何主要电影或游戏的重要组成部分，但以自然的方式捕捉和制作人脸动画可能是一项艰巨的任务。迪士尼研究部门正在研究平滑这一过程的方法，其中包括一种机器学习工具，它使生成和操纵 3D 人脸变得更加容易，而无需进入恐怖谷。</p>
+<p class="translated">当然，这项技术已经从早期呆板的表情和有限的细节中走了很长的路。高分辨率、令人信服的 3D 人脸可以快速、良好地制作成动画，但人类表情的微妙之处不仅种类繁多，而且很容易出错。</p>
 <p class="translated">想想某人微笑时整张脸的变化——每个人都不同，但有足够多的相似之处，我们认为我们可以分辨出某人是“真的”微笑还是假装微笑。你如何能在一张人造脸上达到那种细节水平？</p>
 <p class="translated">现有的“线性”模型简化了表情的微妙之处，使“快乐”或“愤怒”可以细微调整，但以准确性为代价——它们无法表达每一张可能的脸，但很容易导致不可能的脸。较新的神经模型通过观察表情的相互联系来学习复杂性，但像其他这样的模型一样，它们的工作方式模糊不清，难以控制，并且可能无法推广到它们所学习的面孔之外。它们无法实现艺术家在电影或游戏中所需的控制水平，或者导致面部(人类非常善于发现这一点)不知何故只是<em>关闭</em>。</p>
 <p class="embed breakout embed--video embed--youtube translated"><iframe title="Semantic Deep Face Models" src="https://web.archive.org/web/20221208144308if_/https://www.youtube.com/embed/awnqYKNJamU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">视频</iframe></p>
 <p class="translated">迪士尼研究所的一个团队提出了一个两全其美的新模型——它称之为“语义深度人脸模型”不涉及具体的技术执行，基本的改进是，它是一个神经模型，可以学习面部表情如何影响整张脸，但不仅限于单张脸——此外，它是非线性的，允许表情如何与面部几何形状以及相互之间进行交互。</p>
-<p class="translated">可以这样想:一个线性模型可以让你在任何3D人脸上获得0-100的表情(比如微笑或亲吻)，但结果可能不现实。一个神经模型可以让你从0-100现实地学习表情，但只是在它学习的脸上。<em>这个</em>模型可以在任何3D人脸上平滑的取0-100的表情。这有点过于简化了，但是你明白了。</p>
+<p class="translated">可以这样想:一个线性模型可以让你在任何 3D 人脸上获得 0-100 的表情(比如微笑或亲吻)，但结果可能不现实。一个神经模型可以让你从 0-100 现实地学习表情，但只是在它学习的脸上。<em>这个</em>模型可以在任何 3D 人脸上平滑的取 0-100 的表情。这有点过于简化了，但是你明白了。</p>
 <p/><div id="attachment_2078806" class="wp-caption aligncenter"><a href="https://web.archive.org/web/20221208144308/https://techcrunch.com/wp-content/uploads/2020/11/disney-faces-deep.gif"><img aria-describedby="caption-attachment-2078806" decoding="async" loading="lazy" class="size-full wp-image-2078806" src="../Images/967aa6abc7f01e088bfad3821d3435a2.png" alt="Computer generated faces all assume similar expressions in a row." data-original-src="https://web.archive.org/web/20221208144308im_/https://techcrunch.com/wp-content/uploads/2020/11/disney-faces-deep.gif"/></a><p id="caption-attachment-2078806" class="wp-caption-text translated"><strong>图片来源:</strong>迪士尼研究</p></div><p class="piano-inline-promo"/>
-<p class="translated">结果是强大的:你可以生成一千张不同形状和色调的脸，然后用相同的表情制作它们的动画，而不需要任何额外的工作。想一想，这将如何产生不同的CG人群，你可以通过几次点击来召集，或者游戏中的角色具有逼真的面部表情，不管他们是否是手工制作的。</p>
+<p class="translated">结果是强大的:你可以生成一千张不同形状和色调的脸，然后用相同的表情制作它们的动画，而不需要任何额外的工作。想一想，这将如何产生不同的 CG 人群，你可以通过几次点击来召集，或者游戏中的角色具有逼真的面部表情，不管他们是否是手工制作的。</p>
 <p class="translated">这不是一个银弹，它只是艺术家和工程师在使用这项技术的各个行业中进行的一系列巨大改进的一部分——无标记人脸跟踪、更好的皮肤变形、逼真的眼球运动和几十个感兴趣的领域也是这个过程的重要部分。</p>
-<p class="translated">迪士尼的研究论文在3D视觉国际会议上发表；你可以在这里阅读全文<a href="https://web.archive.org/web/20221208144308/https://studios.disneyresearch.com/app/uploads/2020/11/Semantic-Deep-Face-Models.pdf">。</a></p>
+<p class="translated">迪士尼的研究论文在 3D 视觉国际会议上发表；你可以在这里阅读全文<a href="https://web.archive.org/web/20221208144308/https://studios.disneyresearch.com/app/uploads/2020/11/Semantic-Deep-Face-Models.pdf">。</a></p>
 
 			</div>
 
